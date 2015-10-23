@@ -1,0 +1,144 @@
+[ 2015-08-28T12:24:24+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=login&dosubmit=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.004001s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000000s ]
+NOTIC: [2] unlink(C:\wamp\www\ThinkPHPCMS\Public\Runtime\Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory C:\wamp\www\ThinkPHPCMS\Libs\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.027002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.029002s ]
+SQL: SHOW COLUMNS FROM `app2_admin` [ RunTime:0.010001s ]
+SQL: SHOW COLUMNS FROM `app2_times` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `app2_admin` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `app2_times` WHERE ( `username` = 'admin' ) AND ( `isadmin` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: DELETE FROM `app2_times` WHERE ( `username` = 'admin' ) [ RunTime:0.001000s ]
+SQL: UPDATE `app2_admin` SET `lastloginip`='127.0.0.1',`lastlogintime`=1440735864 WHERE ( `userid` = 1 ) [ RunTime:0.001000s ]
+
+[ 2015-08-28T12:24:28+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_main&_=1440735865089
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.003000s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000000s ]
+NOTIC: [2] unlink(C:\wamp\www\ThinkPHPCMS\Public\Runtime\Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory C:\wamp\www\ThinkPHPCMS\Libs\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.019001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020001s ]
+SQL: SHOW COLUMNS FROM `app2_admin` [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `app2_admin_role` [ RunTime:0.003000s ]
+SQL: SELECT `userid`,`username`,`roleid`,`encrypt`,`lastloginip`,`lastlogintime`,`email`,`realname` FROM `app2_admin` WHERE ( `userid` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `rolename` FROM `app2_admin_role` WHERE ( `roleid` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2048] Non-static method Admin\Common\Sysinfo::getinfo() should not be called statically, assuming $this from incompatible context C:\wamp\www\ThinkPHPCMS\App\Admin\Controller\IndexController.class.php 第 111 行.
+NOTIC: [2048] Non-static method Admin\Common\Sysinfo::sys_windows() should not be called statically, assuming $this from incompatible context C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 19 行.
+NOTIC: [2048] Non-static method Admin\Common\Sysinfo::GetWMI() should not be called statically, assuming $this from incompatible context C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 250 行.
+NOTIC: [2] reset() expects parameter 1 to be array, object given C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 300 行.
+NOTIC: [2048] Non-static method Admin\Common\Sysinfo::GetWMI() should not be called statically, assuming $this from incompatible context C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 262 行.
+NOTIC: [2] reset() expects parameter 1 to be array, object given C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 300 行.
+NOTIC: [2048] Non-static method Admin\Common\Sysinfo::GetWMI() should not be called statically, assuming $this from incompatible context C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 285 行.
+NOTIC: [2] reset() expects parameter 1 to be array, object given C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 300 行.
+NOTIC: [2048] Non-static method Admin\Common\Sysinfo::GetWMI() should not be called statically, assuming $this from incompatible context C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 288 行.
+NOTIC: [2] reset() expects parameter 1 to be array, object given C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 300 行.
+NOTIC: [8] Undefined index: memCached C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 25 行.
+NOTIC: [8] Undefined index: memRealPercent C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 25 行.
+NOTIC: [8] Undefined index: memCachedPercent C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 25 行.
+NOTIC: [8] Undefined index: swapTotal C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 25 行.
+NOTIC: [8] Undefined index: swapUsed C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 25 行.
+NOTIC: [8] Undefined index: swapFree C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 25 行.
+NOTIC: [8] Undefined index: swapPercent C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 25 行.
+NOTIC: [2] file(/proc/net/dev): failed to open stream: No such file or directory C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 33 行.
+NOTIC: [8] Undefined index: memBuffers C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 68 行.
+NOTIC: [8] Undefined index: memRealUsed C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 73 行.
+NOTIC: [8] Undefined index: memRealFree C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 74 行.
+NOTIC: [8] Undefined offset: 2 C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 82 行.
+NOTIC: [8] Undefined offset: 3 C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 83 行.
+NOTIC: [8] Undefined offset: 4 C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 84 行.
+NOTIC: [8] Undefined offset: 5 C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 85 行.
+NOTIC: [8] Undefined offset: 6 C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 86 行.
+NOTIC: [8] Undefined offset: 7 C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 87 行.
+NOTIC: [8] Undefined offset: 8 C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 88 行.
+NOTIC: [8] Undefined offset: 9 C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 89 行.
+NOTIC: [8] Undefined offset: 10 C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 90 行.
+NOTIC: [8] Undefined variable: NetInput C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 91 行.
+NOTIC: [8] Undefined variable: NetInput C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 92 行.
+NOTIC: [8] Undefined variable: NetInput C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 93 行.
+NOTIC: [8] Undefined variable: NetInput C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 94 行.
+NOTIC: [8] Undefined variable: NetInput C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 95 行.
+NOTIC: [8] Undefined variable: NetInput C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 96 行.
+NOTIC: [8] Undefined variable: NetInput C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 97 行.
+NOTIC: [8] Undefined variable: NetInput C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 98 行.
+NOTIC: [8] Undefined variable: NetInput C:\wamp\www\ThinkPHPCMS\App\Admin\Common\Sysinfo.class.php 第 99 行.
+NOTIC: [2] file(/proc/net/dev): failed to open stream: No such file or directory C:\wamp\www\ThinkPHPCMS\App\Admin\Controller\IndexController.class.php 第 115 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2015-08-28T12:24:28+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_menuleft
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.005000s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.001000s ]
+NOTIC: [2] unlink(C:\wamp\www\ThinkPHPCMS\Public\Runtime\Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory C:\wamp\www\ThinkPHPCMS\Libs\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.141008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.144008s ]
+SQL: SHOW COLUMNS FROM `app2_menu` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `app2_menu` WHERE ( `parentid` = 1 ) AND ( `display` = 1 ) ORDER BY listorder ASC LIMIT 1000   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `app2_menu` WHERE ( `parentid` = 6 ) AND ( `display` = 1 ) ORDER BY listorder ASC LIMIT 1000   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `app2_menu` WHERE ( `parentid` = 47 ) AND ( `display` = 1 ) ORDER BY listorder ASC LIMIT 1000   [ RunTime:0.001000s ]
+
+[ 2015-08-28T12:24:29+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=dictdata&a=dictlist&menuid=48&_=1440735869505
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.004000s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.001000s ]
+NOTIC: [2] unlink(C:\wamp\www\ThinkPHPCMS\Public\Runtime\Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory C:\wamp\www\ThinkPHPCMS\Libs\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.030002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2015-08-28T12:24:30+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=dictdata&a=dictlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.004000s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.001000s ]
+NOTIC: [2] unlink(C:\wamp\www\ThinkPHPCMS\Public\Runtime\Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory C:\wamp\www\ThinkPHPCMS\Libs\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.018001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.020001s ]
+SQL: SHOW COLUMNS FROM `app2_dict` [ RunTime:0.009001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `app2_dict` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `dict_id`,`fname`,`value1`,`value2` FROM `app2_dict` LIMIT 0,15   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-08-28T12:24:30+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=dictdata&a=getfirstdict
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.003000s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000000s ]
+NOTIC: [2] unlink(C:\wamp\www\ThinkPHPCMS\Public\Runtime\Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory C:\wamp\www\ThinkPHPCMS\Libs\ThinkPHP\Library\Think\Cache\Driver\File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.207012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.211012s ]
+SQL: SHOW COLUMNS FROM `app2_dict` [ RunTime:0.004000s ]
+SQL: SELECT `dict_id`,`fname` FROM `app2_dict` WHERE ( `value1` = 5 )  [ RunTime:0.001000s ]
+NOTIC: [8] Array to string conversion C:\wamp\www\ThinkPHPCMS\App\Admin\Controller\DictdataController.class.php 第 128 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
