@@ -4,10 +4,10 @@ jQuery(document).ready(function(){
  	var oldAnswer = 0;
  	var totalNum = $("#hid_totalNum").val();
  	var paperID = $("#hid_paperID").val();
- 	//showFrame();
+ 	showFrame();
  	getShowQuestion(num);
  	showNumberTag();
-  	$("#btn_next").click(function() {
+  	$("#btn-next").click(function() {
   		var num = parseInt($("#hid_nowNum").val())+1;
   		var nowAnswer = checkAnswer();
   		if (nowAnswer != oldAnswer) {  //检查选项是否发生改变
@@ -17,27 +17,37 @@ jQuery(document).ready(function(){
   		if (num-1 >= totalNum) {return;};
   		$("#hid_nowNum").val(num);
   		getShowQuestion(num);
-  		getOldAnswer(paperID,num);
+  		//getOldAnswer(paperID,num);
   	});
-  	$("#btn_last").click(function(){
+  	$("#btn-last").click(function(){
   		var num = parseInt($("#hid_nowNum").val())-1;
   		if (num+1 <= 1) {return;};
   		$("#hid_nowNum").val(num);
   		getShowQuestion(num);
-  		getOldAnswer(paperID,num);
+  		//getOldAnswer(paperID,num);
   	});
 });
+function asd (argument) {
+	var ele = $("#option-input-2").val();
+	alert(ele);
+}
+//showFrame ,show the input radio frame
 function showFrame () {
 	for (var i = 1; i < 9; i++) {
-		$("#div_span").append('<div class="custom-radio"><input name="answer" type="radio" id="input_'+i+'" value="'+i+'" hidefocus="true" class="gradient" style="outline: none; display: inline-block;"><label for="input_'+i+'" id="text_option_'+i+'"><p></p></label></div>');
-		//$("#div_span").append('<label for="input_'+i+'" id="text_option_'+i+'"></label></div>');
-		//$("#div_span").append('<input name="answer" type="radio" id="input_'+i+'" value="'+(1<<i)+'">');
-		//$("#div_span").append('<label for="input_'+i+'" id="text_option_'+i+'"><p></p></label>');
+		var labelID = "option-label-"+i;
+		var inputID= "option-input-"+i;
+		var innerHTML= '<div ><input type="radio" name="answer" value="'+(1<<i-1)+'" id="'+inputID+'"><label for="'+inputID+'" id="'+labelID+'"></label></div> ';
+		//var innerHTML=' <div><label id="'+labelID+'"><input type="radio"  name="answer" value="'+(1<<i-1)+'">1</label><div>';
+		$("#option").append(innerHTML);
 	}
 }
+function showFrameTag (startNum,num) {
+	for (var i = 1; i <= num; i++) {
+		var nowNum = startNum+i-1;
+		$("#page_num_next").before('<button type="button" class="btn btn-default" id="page_num_'+i+'" value="'+nowNum+'">'+nowNum+'</button>');
+	};
+}
 function getShowQuestion( num ){
-	/*var num = $("#questionNum").val();
-	var nextNum = parseInt(num)+1;*/
 	$.post("index.php/home/index/question",
 	{
 		q:num,
@@ -45,48 +55,35 @@ function getShowQuestion( num ){
 	},
 	function(data,status) {
 		if (status == "success") {
-			var classType = "rowRadio";
-			var classList = "input_styled inlinelist";
-			var inputType = "radio";
-			switch(data.type){
-				case "102":
-					classType = "rowCheckbox";
-					classList = "input_styled checklist";
-					inputType = "checkbox";
-					$("div.custom-radio").attr("class","custom-"+inputType);
-					break;
-				default:
-					classType = "rowRadio";
-					classList = "input_styled inlinelist";
-					inputType = "radio";
-					$("div.custom-checkbox").attr("class","custom-"+inputType);
-					break;
-			}
-			$("#class_input").attr("class",classType);
-			$("#class_input_list").attr("class",classList);
-			$("#text_title").text(data.num+"."+data.title);
+			var inputType={'102':'checkbox','101':'radio','103':'radio'} ;
+			$("#option input").attr("type",inputType[data.type]);
+			$("#option input").hide();
+			$("#option label").hide();
+			$("#title").hide();
+			$("#title").text(data.num+"."+data.title).fadeIn(500);
 			for (var i = 1; i < 9; i++) {
-				if (data != null && data.option[i-1]) {
-					$("#input_"+i).show();
-					$("#input_"+i).attr("type",inputType);
-					$("#text_option_"+i).show();
+				if (data.option[i-1]) {
+					$("#option-label-"+i).fadeIn(i*200);
+					$("#option-input-"+i).fadeIn(i*200);
 					var option = String.fromCharCode(i+64);
-					$("#text_option_"+i).html(option+"."+data["option"][i-1]);
+					$("#option-label-"+i).text(option+"."+data["option"][i-1]);
 				}else{
-					$("#input_"+i).hide();
-					$("#text_option_"+i).hide();
+					$("#option-label-"+i).hide();
+					$("#option-input-"+i).hide();
 				}
 			};
 		};		
 	});
 	getOldAnswer($("#hid_paperID").val(),num);
+	
 }
 function checkAnswer () {
 	var answer = 0;
+	//alert($(":checked").val());
 	for (var i = 1; i < 9; i++) {
-		var checkedRes = $("#text_option_"+i).hasClass("checked");
+		var checkedRes = $("#option-input-"+i).prop("checked");
 		if (checkedRes) {
-			answer += parseInt($("#input_"+i).val());
+			answer += parseInt($("#option-input-"+i).val());
 		};
 	};
 	return answer;
@@ -122,23 +119,32 @@ function getOldAnswer (paperID,num) {
   			paperID:paperID
   		},
   		function(data,status) {
-  			for (var i = 1; i < 9; i++) {
-  				$("#text_option_"+i).removeClass("checked");
-  				if(data != null && data.indexOf(i)!= -1){
-  					$("#text_option_"+i).addClass("checked");
-  				}
+  			$("#option input:checked").prop("checked",false);    
+  			//alert(data.length);
+  			for (var i = 0; i < data.length; i++) {
+  				$("#option-input-"+data[i]).prop("checked",true);
+  				$("#option-input-"+data[i]).show();
   			};
+  			/*for (var i = 1; i < 9; i++) {
+
+  				//$("#option-input-"+i).prop("checked",false);
+  				var match = data.indexOf(i);
+  				if(data.indexOf(i)!= -1){
+  					$("#option-input-"+i).prop("checked",true);
+  				}
+  			};*/
   		})
 }
 function showNumberTag () {
 	var totalNum = parseInt($("#hid_totalNum").val());
-	var pageNum  = parseInt(totalNum/4);
-	var leftNum  = totalNum%4;
+	var eachTagNum = 4;
+	var pageNum  = parseInt(totalNum/eachTagNum);  //the resalut is float,we need an intenger
+	var leftNum  = totalNum%eachTagNum;
 	var nowPage  = 1; 
 	if (pageNum>=1) {
-		showPage(1,4);
+		showFrameTag(1,eachTagNum);
 	}else{
-		showPage(1,leftNum);
+		showFrameTag(1,leftNum);
 	}
 	$(document).ready(function(){
 		$("#page_num_last").click(function () {
@@ -146,7 +152,7 @@ function showNumberTag () {
 				;
 			}else{
 				nowPage--;
-				showEachPage((nowPage-1)*4+1,4);
+				showEachPage((nowPage-1)*eachTagNum+1,eachTagNum);
 			};
 		});
 		$("#page_num_next").click(function () {
@@ -154,10 +160,10 @@ function showNumberTag () {
 				;
 			}else if(nowPage == pageNum){
 				nowPage++;
-				showEachPage((nowPage-1)*4+1,leftNum);
+				showEachPage((nowPage-1)*eachTagNum+1,leftNum);
 			}else{
 				nowPage++;
-				showEachPage((nowPage-1)*4+1,4);
+				showEachPage((nowPage-1)*eachTagNum+1,eachTagNum);
 			};
 		});
 		$("#page_num_1").click(function () {
@@ -182,19 +188,13 @@ function showNumberTag () {
 		});
 	});
 }
-function showPage (startNum,num) {
-	$("#page_num_next").before('<a href="#" class="btn btn-left btn-green" id="page_num_last"><span><<</span></a>');
-	for (var i = 1; i <= num; i++) {
-		var nowNum = startNum+i-1;
-		$("#page_num_next").before('<a href="#" class="btn btn-acute" id="page_num_'+i+'" value="'+nowNum+'"><span id="span_page_'+i+'">'+nowNum+'</span></a>');
-	};
-}
+
 function showEachPage(startNum,num) {
 	for (var i = 1; i <= num; i++) {
 		var nowNum = startNum+i-1;
 		$("#page_num_"+i).show();
 		$("#page_num_"+i).attr("value",nowNum);
-		$("#span_page_"+i).text(nowNum);
+		$("#page_num_"+i).text(nowNum);
 	}
 	for (var i = num+1; i <= 4; i++) {
 		$("#page_num_"+i).hide();

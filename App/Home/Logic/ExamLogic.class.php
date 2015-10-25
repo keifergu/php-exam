@@ -120,9 +120,9 @@ class ExamLogic {
 	{
 			$submitModel = D('Submit');
 			$query = array('student_id' => $studentID,
-							'paper_id'  => $paperID,
-							'num'       => $num);
-			$oldAnswer = $submitModel->where($query)->getField('answer');
+					'paper_id'   => $paperID,
+					'num'          => $num);
+			$oldAnswer = explode(';',$submitModel->where($query)->getField('answer'));
 			return $oldAnswer;
 	}
 
