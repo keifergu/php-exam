@@ -51,9 +51,15 @@
                 <div class="tagcloud style3 margin-10">
                     <a href="#" class="tag-link-7" hidefocus="true" style="outline: none;"><span>当前考试科目</span></a>
                 </div>
-              <div class="list-group">
-                <?php if(is_array($testData)): foreach($testData as $key=>$vo): ?><a href="<?php echo ($vo["examUrl"]); ?>" class="list-group-item"><?php echo ($vo["testName"]); ?></a><?php endforeach; endif; ?>
-              </div>
+                <div class="list-group">
+                  <?php if(is_array($testData)): foreach($testData as $key=>$vo): ?><a href="<?php echo ($vo["examUrl"]); ?>" class="list-group-item"><?php echo ($vo["testName"]); ?></a><?php endforeach; endif; ?>
+                </div>
+                <div class="tagcloud style3 margin-10">
+                    <a href="#" class="tag-link-7" hidefocus="true" style="outline: none;"><span>Finish Paper</span></a>
+                </div>
+                <div class="list-group">
+                  <?php if(is_array($finishPaper)): foreach($finishPaper as $key=>$vo): ?><a href="" class="list-group-item"><?php echo ($vo["testName"]); ?></a><?php endforeach; endif; ?>
+                </div>
             </div>
             <div class="tab-pane fade" id="user">
                 <!--place your content here-->

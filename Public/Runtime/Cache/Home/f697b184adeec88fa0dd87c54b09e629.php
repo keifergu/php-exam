@@ -10,23 +10,25 @@
 <script src ="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
 <script src ="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="/thinkphpcms/Public/App/Home/Index/js/exam.js"></script>
+<link rel="stylesheet" type="text/css" href="/thinkphpcms/Public/App/Home/Index/css/windows8.css">
 </head>
  
 <body>
+
 <input type="hidden" id="hid_totalNum" value="<?php echo ($paper["question_num"]); ?>">
 <input type="hidden" id="hid_paperID" value="<?php echo ($paper["paper_id"]); ?>">
 <input type="hidden" id="hid_nowNum" value="1">
   <div class="containter-fluid">
     <div id="title" class="col-xs-12">
     </div>
-    <!-- <button onclick="asd()">w</button> -->
+    <button onclick="asd()">w</button>
     <form id="option" class="">
 
     </form>
     
     <div class="btn-group btn-group-default col-xs-12" role="group" >
       <button type="button" class="btn btn-default" id="btn-last"> Last</button>
-      <button type="button" class="btn btn-default">Submit</button>
+      <button type="button" class="btn btn-default" id="btn-submit">Submit</button>
       <button type="button" class="btn btn-default" id="btn-next">Next</button>
     </div>      
 

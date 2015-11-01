@@ -26,8 +26,16 @@ jQuery(document).ready(function(){
   		getShowQuestion(num);
   		//getOldAnswer(paperID,num);
   	});
+  	$("#btn-submit").click(function () {
+  		var num = parseInt($("#hid_nowNum").val());
+  		var answer = convertAnswer(checkAnswer());
+  		var status=submitAnswer(answer,paperID,num);
+  		window.location.assign(" index.php?m=&c=index&a=finish");
+  	});
 });
 function asd (argument) {
+	alert("SSS");
+	window.location.assign("index.php?m=&c=index&a=finish");
 	var ele = $("#option-input-2").val();
 	alert(ele);
 }
@@ -72,9 +80,10 @@ function getShowQuestion( num ){
 					$("#option-input-"+i).hide();
 				}
 			};
+			getOldAnswer($("#hid_paperID").val(),num);
 		};		
 	});
-	getOldAnswer($("#hid_paperID").val(),num);
+	
 	
 }
 function checkAnswer () {
