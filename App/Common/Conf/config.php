@@ -2,7 +2,7 @@
 defined('THINK_PATH') or exit();
 return array(
 	//'配置项'=>'配置值'
-	'SHOW_PAGE_TRACE'       =>true,        //调试配置
+	'SHOW_PAGE_TRACE'       =>false,        //调试配置
 	'APP_USE_NAMESPACE'     => true,
 
 	'DEFAULT_MODULE'        => 'Home',

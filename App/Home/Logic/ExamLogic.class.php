@@ -102,7 +102,6 @@ class ExamLogic {
 		}
 
 		$question = $this->getQuestionInfo($paperID,$num);
-		dump($question);
 		$submitModel = D('Submit');
 		$data['submit_id'] = $paperID.$studentID.$question['question_id'];
 		$data['num'] = $num;

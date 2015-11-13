@@ -1,44 +1,87 @@
-<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
-<head>
-<meta charset="utf-8">
-<meta name="author" content="">
-<meta name="keywords" content="">
-<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,maximum-scale=1,">
-<title><?php echo ($paper["paper_name"]); ?></title>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title><?php echo ($paper["paper_name"]); ?></title>
 
-<link rel   ="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<script src ="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-<script src ="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script src="/thinkphpcms/Public/App/Home/Index/js/exam.js"></script>
-<link rel="stylesheet" type="text/css" href="/thinkphpcms/Public/App/Home/Index/css/windows8.css">
-</head>
- 
+        <link    rel   ="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src ="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+        <script src ="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="/thinkphpcms/Public/App/Home/Index/js/exam.js"></script>
+    </head>
+
+
 <body>
-
-<input type="hidden" id="hid_totalNum" value="<?php echo ($paper["question_num"]); ?>">
-<input type="hidden" id="hid_paperID" value="<?php echo ($paper["paper_id"]); ?>">
-<input type="hidden" id="hid_nowNum" value="1">
-  <div class="containter-fluid">
-    <div id="title" class="col-xs-12">
+    <div>
+        <input type="hidden" id="hid_totalNum" value="<?php echo ($paper["question_num"]); ?>">
+        <input type="hidden" id="hid_paperID" value="<?php echo ($paper["paper_id"]); ?>">
+        <input type="hidden" id="hid_nowNum" value="1">
     </div>
-    <button onclick="asd()">w</button>
-    <form id="option" class="">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12  col-sm-offset-4 col-md-offset-4" style="padding-left:4%;padding-right:4%">
+                <div class="row">
+                    <div class="col-xs-12" id="title" ></div>
+                </div>
+                <form class="row" id="option" >
+              
+                </form>
+                <div class="row" style="display:none">
+                    <ul class="pagination">
+                        <li>
+                              <a href="#">
+                                  <span>&laquo;</span>
+                              </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#">
+                                <span>&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <nav class="nav navbar-fixed-bottom">
+                  <ul class="pager">
+                    <li class=""><a href="#" id="btn-last">上一题</a></li>
+                    <li><a href="#" id="btn-submit">交卷</a></li>    
+                    <li><a href="#" id="btn-next">下一题</a></li>
+                  </ul>
+                  <div  style="text-align:center;margin-top:-2em;margin-bottom:-1em">
+                  <ul class="pagination">
+                        <li id="position-page">
+                              <a href="#" id="page_num_last">
+                                  <span>&laquo;</span>
+                              </a>
+                        </li>
+                        <li>
+                            <a href="#" id="page_num_next">
+                                <span>&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                    </div>
 
-    </form>
-    
-    <div class="btn-group btn-group-default col-xs-12" role="group" >
-      <button type="button" class="btn btn-default" id="btn-last"> Last</button>
-      <button type="button" class="btn btn-default" id="btn-submit">Submit</button>
-      <button type="button" class="btn btn-default" id="btn-next">Next</button>
-    </div>      
+                </nav>
 
-    <div class="btn-group btn-group-default col-xs-12" role="group" >
-      <button type="button" class="btn btn-default" id="page_num_last">
-        <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"  ></span>
-      </button>
-      <button type="button" class="btn btn-default " id="page_num_next">
-        <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
-      </button> 
+                <div class="">
+                                 <div class="btn-group btn-group-justified" style="display:none">
+                      <button type="button" class="btn btn-default" id="page_num_last-">
+                      <span  >&laquo;</span>
+                      </button>
+                      <button type="button" class="btn btn-default " id="page_num_next-">
+                        <span>&raquo;</span>
+                       </button> 
+                 </div>
+            </div>
+    </div>
+    </div>
     </div>
 </body>
 </html>

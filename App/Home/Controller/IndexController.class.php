@@ -53,6 +53,7 @@ class IndexController extends Controller {
     	}
     	//$this->display();
     }
+
     public function login(){
     	$student_id = I('param.username','','htmlspecialchars');
     	$password 	= I('param.password');
@@ -81,7 +82,15 @@ class IndexController extends Controller {
             $testUrl    = U('Index/exam_start',array('paperID' => $key));
             $testData[] = array('testId'=> $key,'testName'=>$value,'examUrl'=>$testUrl);
         }
-        
+        $finishPaper = $studentLogic->getFinishPaper($studentID);
+        foreach ($finishPaper as $key => $value) {
+            //$testUrl    = U('Index/exam_start',array('paperID' => $key));
+            $finishPaperData[] = array('testId'=> $key,'testName'=>$value);
+        }
+        $studentInfo = $studentLogic->getStudentInfo($studentID);
+        $this->assign('testData',$testData);
+        $this->assign('finishPaper',$finishPaperData);
+        $this->display();
     	/*$stuId = '123';
     	$t_stuInfo  = M(C('STUDENT_INFO'));  		//打开学生信息表
     	$t_teaInfo  = M(C('TEACHER_INFO'));	 	//打开教师信息表
@@ -107,8 +116,7 @@ class IndexController extends Controller {
 
 
     	
-    	$this->assign('testData',$testData);
-    	$this->display();
+ 
     }
 
     public function exam_start($paperID){
@@ -159,6 +167,7 @@ class IndexController extends Controller {
         //$this->assign('url',$Url);
         //$this->assign('question',$question);
         //$this->assign('num',$num);
+        
         $this->assign('paper',$paperInfo);
         $this->display();
 
@@ -280,7 +289,7 @@ class IndexController extends Controller {
 
 
     public function finish(){
-    	//$this->display();
+    	$this->display();
     	$this->redirect('Index/user',array(),2,' ');
     }
 

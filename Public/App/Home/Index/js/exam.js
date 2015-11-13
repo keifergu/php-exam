@@ -33,26 +33,21 @@ jQuery(document).ready(function(){
   		window.location.assign(" index.php?m=&c=index&a=finish");
   	});
 });
-function asd (argument) {
-	alert("SSS");
-	window.location.assign("index.php?m=&c=index&a=finish");
-	var ele = $("#option-input-2").val();
-	alert(ele);
-}
 //showFrame ,show the input radio frame
 function showFrame () {
 	for (var i = 1; i < 9; i++) {
 		var labelID = "option-label-"+i;
 		var inputID= "option-input-"+i;
-		var innerHTML= '<div ><input type="radio" name="answer" value="'+(1<<i-1)+'" id="'+inputID+'"><label for="'+inputID+'" id="'+labelID+'"></label></div> ';
+		var innerHTML= '<div class="col-xs-12 "><input type="radio" name="answer" value="'+(1<<i-1)+'" id="'+inputID+'"><label for="'+inputID+'" id="'+labelID+'"></label></div> ';
 		//var innerHTML=' <div><label id="'+labelID+'"><input type="radio"  name="answer" value="'+(1<<i-1)+'">1</label><div>';
 		$("#option").append(innerHTML);
 	}
 }
 function showFrameTag (startNum,num) {
-	for (var i = 1; i <= num; i++) {
+	for (var i = num; i >= 1; i--) {
 		var nowNum = startNum+i-1;
-		$("#page_num_next").before('<button type="button" class="btn btn-default" id="page_num_'+i+'" value="'+nowNum+'">'+nowNum+'</button>');
+		//$("#page_num_next").before('<button type="button" class="btn btn-default" id="page_num_'+i+'" value="'+nowNum+'">'+nowNum+'</button>');
+		$("#page_num_last").parents("li").after('<li><a href="#" id="page_num_'+i+'" value="'+nowNum+'">'+nowNum+'</a></li>');
 	};
 }
 function getShowQuestion( num ){

@@ -51,11 +51,19 @@
                 <div class="tagcloud style3 margin-10">
                     <a href="#" class="tag-link-7" hidefocus="true" style="outline: none;"><span>当前考试科目</span></a>
                 </div>
-              <div class="list-group">
-                <foreach name="testData" item="vo">
-                  <a href="<{$vo.examUrl}>" class="list-group-item"><{$vo.testName}></a>
-                </foreach>
-              </div>
+                <div class="list-group">
+                  <foreach name="testData" item="vo">
+                    <a href="<{$vo.examUrl}>" class="list-group-item"><{$vo.testName}></a>
+                  </foreach>
+                </div>
+                <div class="tagcloud style3 margin-10">
+                    <a href="#" class="tag-link-7" hidefocus="true" style="outline: none;"><span>Finish Paper</span></a>
+                </div>
+                <div class="list-group">
+                  <foreach name="finishPaper" item="vo">
+                    <a href="" class="list-group-item"><{$vo.testName}></a>
+                  </foreach>
+                </div>
             </div>
             <div class="tab-pane fade" id="user">
                 <!--place your content here-->
