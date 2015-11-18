@@ -28,25 +28,6 @@
                 <form class="row" id="option" >
               
                 </form>
-                <div class="row" style="display:none">
-                    <ul class="pagination">
-                        <li>
-                              <a href="#">
-                                  <span>&laquo;</span>
-                              </a>
-                        </li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li>
-                            <a href="#">
-                                <span>&raquo;</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
                 <nav class="nav navbar-fixed-bottom">
                   <ul class="pager">
                     <li class=""><a href="#" id="btn-last">上一题</a></li>
@@ -54,31 +35,20 @@
                     <li><a href="#" id="btn-next">下一题</a></li>
                   </ul>
                   <div  style="text-align:center;margin-top:-2em;margin-bottom:-1em">
-                  <ul class="pagination">
-                        <li id="position-page">
-                              <a href="#" id="page_num_last">
+                         <ul class="pagination">
+                               <li>
+                                <a href="#" id="page_num_last">
                                   <span>&laquo;</span>
                               </a>
-                        </li>
-                        <li>
+                               </li>
+                               <li>
                             <a href="#" id="page_num_next">
                                 <span>&raquo;</span>
                             </a>
-                        </li>
-                    </ul>
-                    </div>
-
+                               </li>
+                           </ul>
+                   </div>
                 </nav>
-
-                <div class="">
-                                 <div class="btn-group btn-group-justified" style="display:none">
-                      <button type="button" class="btn btn-default" id="page_num_last-">
-                      <span  >&laquo;</span>
-                      </button>
-                      <button type="button" class="btn btn-default " id="page_num_next-">
-                        <span>&raquo;</span>
-                       </button> 
-                 </div>
             </div>
     </div>
     </div>
