@@ -17,7 +17,7 @@ return array(
     'DB_USER'               => 'root',       // 用户名
     'DB_PWD'                => 'pw123.',           // 密码
     'DB_PORT'               => '3306',       // 端口
-    'DB_PREFIX'             => 'app_',      // 数据库表前缀
+    'DB_PREFIX'             => 'app2_',      // 数据库表前缀
 	
     'DB_CONFIG2'            => 'mysql://root:@localhost:3306/app',
     /* URL配置 */

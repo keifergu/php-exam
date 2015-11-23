@@ -15,7 +15,14 @@
 </head>
 <body>
     <div class="container">
-    <p>试卷完成</p>
+    <div class="row">
+    	<div class="col-xs-12">
+    		<div class="text-center" style="padding:30%">
+    			<span class="glyphicon glyphicon-ok" aria-hidden="true">试卷完成</span>
+    		</div>
+    	</div>
+    </div>
+    
     </div>
 </body>
 </html>

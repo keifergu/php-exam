@@ -31,7 +31,40 @@ class IndexController extends Controller {
         $submitResult = $examLogic->submitAnswer($studentID,$paperID,$num,$answer);
         $this->ajaxReturn($submitResult);
     }
+    public function set()
+    {
+        $studentID = '123';
+        $data = I('post.');
+        $StudentModel = D('Student','Logic');
+        switch ($data['type']) {
+            case 'course':
+                $result = $StudentModel->addCourse($studentID,$data['data']);
+                break;
+            
+            default:
+                $result = false;
+                break;
+        }
+        $this->ajaxReturn($result);
+    }
 
+    public function remove()
+    {
+        $studentID = '123';
+        $data = I("post.");
+        //此处应该对数据的合法性进行检查
+        $StudentModel = D('Student','Logic');
+        switch ($data['type']) {
+            case 'course':
+                $result = $StudentModel->removeCourse($studentID,$data['data']);
+                break;
+            
+            default:
+                $result = 'false';
+                break;
+        }
+        $this->ajaxReturn($result);
+    }
     public function index(){
        /* $c = D('Paper');
         dump($c->getPaperName('201001'));
@@ -88,6 +121,10 @@ class IndexController extends Controller {
             $finishPaperData[] = array('testId'=> $key,'testName'=>$value);
         }
         $studentInfo = $studentLogic->getStudentInfo($studentID);
+        $courseInfo   = $studentLogic->getAllCourse();
+        $this->assign('course',$courseInfo);
+        $this->assign('user',$studentInfo);
+        dump($studentInfo);
         $this->assign('testData',$testData);
         $this->assign('finishPaper',$finishPaperData);
         $this->display();

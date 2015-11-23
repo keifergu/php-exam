@@ -1,72 +1,126 @@
-<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
-<!--[if lt IE 7 ]><html lang="en" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]><html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]><html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]><html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class="no-js"> <!--<![endif]-->
-<head>
-<meta charset="utf-8">
-<meta name="author" content="">
-<meta name="keywords" content="">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>用户中心</title>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>用户中心</title>
 
-<!-- main JS libs -->
-<script src="/thinkphpcms/Public/ui-cream/js/libs/modernizr.min.js"></script>
-<script src="/thinkphpcms/Public/ui-cream/js/libs/jquery-1.10.0.js"></script>
-<script src="/thinkphpcms/Public/ui-cream/js/libs/jquery-ui.min.js"></script>
-<script src="/thinkphpcms/Public/ui-cream/js/libs/bootstrap.min.js"></script>
+        <link    rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src ="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+        <script src ="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </head>
 
-<!-- Style CSS -->
-<link href="/thinkphpcms/Public/ui-cream/css/bootstrap.css" media="screen" rel="stylesheet">
-<link href="/thinkphpcms/Public/ui-cream/style.css" media="screen" rel="stylesheet">
-
-<!-- scripts -->
-<script src="/thinkphpcms/Public/ui-cream/js/general.js"></script>
-
-<!-- Include all needed stylesheets and scripts here -->
-<script src="/thinkphpcms/Public/ui-cream/js/jquery.customInput.js"></script>
-<script type="text/javascript" src="/thinkphpcms/Public/ui-cream/js/custom.js"></script>
-<!--[if lt IE 9]><script src="js/respond.min.js"></script><![endif]-->
-<!--[if gte IE 9]>
-<style type="text/css">
-    .gradient {filter: none !important;}
-</style>
-<![endif]-->
-</head>
- 
 <body>
-  <div class="body_wrap">
     <div class="container">
-      <div class="tabs_framed styled">
-        <div class="inner">
-          <ul class="tabs clearfix active_bookmark1">
-              <li class="active"><a href="#exam" data-toggle="tab">考试信息</a></li>
-              <li><a href="#user" data-toggle="tab">用户中心</a></li>
-          </ul>
+        <div class="row">
+            <div>
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">试卷信息</a></li>
+                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">我的信息</a></li>
+                            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">设置</a></li>
+                  </ul>
 
-          <div class="tab-content clearfix">
-            <div class="tab-pane fade in active" id="exam">
-                <!--place your content here-->
-                <div class="tagcloud style3 margin-10">
-                    <a href="#" class="tag-link-7" hidefocus="true" style="outline: none;"><span>当前考试科目</span></a>
-                </div>
-                <div class="list-group">
-                  <?php if(is_array($testData)): foreach($testData as $key=>$vo): ?><a href="<?php echo ($vo["examUrl"]); ?>" class="list-group-item"><?php echo ($vo["testName"]); ?></a><?php endforeach; endif; ?>
-                </div>
-                <div class="tagcloud style3 margin-10">
-                    <a href="#" class="tag-link-7" hidefocus="true" style="outline: none;"><span>Finish Paper</span></a>
-                </div>
-                <div class="list-group">
-                  <?php if(is_array($finishPaper)): foreach($finishPaper as $key=>$vo): ?><a href="" class="list-group-item"><?php echo ($vo["testName"]); ?></a><?php endforeach; endif; ?>
-                </div>
+                  <!-- Tab panes -->
+                  <div class="tab-content" style="padding:0.5em">
+                    <!-- 个人的试卷信息 -->
+                            <div role="tabpanel" class="tab-pane active" id="home">
+                            <span>正在进行的考试</span>
+                                <div class="list-group">
+                                    <?php if(is_array($testData)): foreach($testData as $key=>$vo): ?><a href="<?php echo ($vo["examUrl"]); ?>" class="list-group-item"><?php echo ($vo["testName"]); ?></a><?php endforeach; endif; ?>
+                                </div>
+                            <span>完成的试卷</span>
+                                <div class="list-group">
+                                    <?php if(is_array($finishPaper)): foreach($finishPaper as $key=>$vo): ?><a href="#" class="list-group-item"><?php echo ($vo["testName"]); ?></a><?php endforeach; endif; ?>
+                                </div>
+                            </div>
+
+                    <!-- 用户中心 -->
+                            <div role="tabpanel" class="tab-pane" id="profile">
+                                <ul>
+                                    <li><p>姓名：<?php echo ($user["name"]); ?></p></li>
+                                    <li>
+                                        <p>课程：</p>
+                                        <ul>
+                                            <?php if(is_array($user['course'])): foreach($user['course'] as $key=>$vo): ?><li><?php echo ($vo); ?></li><?php endforeach; endif; ?>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+                    <!-- 设置 -->
+                            <div role="tabpanel" class="tab-pane" id="settings">
+                                    <div class="btn-group" role="group">
+                                    <!-- 下拉按钮组 -->
+                                        <div class="btn-group"> 
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                       添加课程 <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <?php if(is_array($course)): foreach($course as $k=>$vo): ?><li><a href="#"  value="<?php echo ($k); ?>" onclick="setCourse(<?php echo ($k); ?>)"><?php echo ($vo); ?></a></li><?php endforeach; endif; ?>
+                                            </ul>
+                                        </div>
+                                    <!-- 删除按钮 -->
+                                        <button type="button" class="btn btn-default" onclick="removeCourse()"><span>删除</span></button>
+                                    </div>
+                                    <!-- 课程显示 -->
+                                        <div class="input-group">
+                                            <?php if(is_array($user['course'])): foreach($user['course'] as $k=>$vo): ?><div class="checkbox">
+                                                    <label><input type="checkbox" value="<?php echo ($k); ?>" name="courseCheck"><?php echo ($vo); ?></label>
+                                                </div><?php endforeach; endif; ?>
+                                        </div>
+                            </div>
+                  </div>
             </div>
-            <div class="tab-pane fade" id="user">
-                <!--place your content here-->
-            
-          </div>
         </div>
     </div>
-  </div>
+    <script type="text/javascript">
+    function setCourse(course){
+        $.post("index.php/home/index/set",
+        {
+            type:'course',
+            data:course
+        },
+        function(data,status) {
+            if (status == 'success' && data != false) {
+                location.reload(true);
+            }else if(data == false){
+                alert("添加失败");
+            }
+        });
+    };
+    function removeCourse(){
+        var courseVal = new Array();
+        $("input[name='courseCheck']:checked").each(function(){
+            //alert(this.value);
+            courseVal.push(this.value); 
+        });
+       $.post("index.php/home/index/remove",
+        {
+            type:'course',
+            data:courseVal
+        },
+        function(data,status) {
+            if (status == 'success' && data != false) {
+                location.reload(true);
+            }else if(data == false){
+                alert("添加失败");
+            };
+        });
+    };
+    $('#navTab li:eq(0)').click(function (e) {
+      e.preventDefault();
+      $(this).tab('show');
+    });
+    $('#navTab li:eq(1)').click(function (e) {
+      e.preventDefault();
+      $(this).tab('show');
+    });
+    $('#navTab li:eq(2)').click(function (e) {
+      e.preventDefault();
+      $(this).tab('show');
+    });
+    </script>
 </body>
 </html>
