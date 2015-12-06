@@ -3,7 +3,7 @@ namespace Home\Model;
 use Think\Model;
 class QuestionModel extends Model {
 
-	protected $tableName = 'option';
+	protected $tableName = 'optiondata';
 
 	public function getOption($questionID)
 	{

@@ -11,7 +11,7 @@ jQuery(document).ready(function(){
   		var num = parseInt($("#hid_nowNum").val())+1;
   		var nowAnswer = checkAnswer();
   		if (nowAnswer != oldAnswer) {  //检查选项是否发生改变
-  			answer = convertAnswer(nowAnswer);
+  			answer = nowAnswer;
   			var status = submitAnswer(answer,paperID,num-1);
   		};
   		if (num-1 >= totalNum) {return;};
@@ -28,7 +28,7 @@ jQuery(document).ready(function(){
   	});
   	$("#btn-submit").click(function () {
   		var num = parseInt($("#hid_nowNum").val());
-  		var answer = convertAnswer(checkAnswer());
+  		var answer = checkAnswer();
   		var status=submitAnswer(answer,paperID,num);
   		window.location.assign(" index.php?m=&c=index&a=finish");
   	});
@@ -38,7 +38,7 @@ function showFrame () {
 	for (var i = 1; i < 9; i++) {
 		var labelID = "option-label-"+i;
 		var inputID= "option-input-"+i;
-		var innerHTML= '<div class="col-xs-12 "><input type="radio" name="answer" value="'+(1<<i-1)+'" id="'+inputID+'"><label for="'+inputID+'" id="'+labelID+'"></label></div> ';
+		var innerHTML= '<div class="col-xs-12 "><input type="radio" name="answer" value="'+(1<<i-1)+'" id="'+inputID+'"><label for="'+inputID+'" id="'+labelID+'" style="margin-top:12px;font-weight:100"></label></div>';
 		//var innerHTML=' <div><label id="'+labelID+'"><input type="radio"  name="answer" value="'+(1<<i-1)+'">1</label><div>';
 		$("#option").append(innerHTML);
 	}
@@ -114,7 +114,7 @@ function convertAnswer(argument) { //将单个数字解包为数组
 			if (argument == 0) {break;};
 		};
 	};
-	return answer.join(";");
+	return answer;
 }
 function getOldAnswer (paperID,num) {
 	$.post("index.php/home/index/getOldAnswer",
@@ -124,19 +124,11 @@ function getOldAnswer (paperID,num) {
   		},
   		function(data,status) {
   			$("#option input:checked").prop("checked",false);    
-  			//alert(data.length);
+  			data = convertAnswer(data);
   			for (var i = 0; i < data.length; i++) {
   				$("#option-input-"+data[i]).prop("checked",true);
   				$("#option-input-"+data[i]).show();
   			};
-  			/*for (var i = 1; i < 9; i++) {
-
-  				//$("#option-input-"+i).prop("checked",false);
-  				var match = data.indexOf(i);
-  				if(data.indexOf(i)!= -1){
-  					$("#option-input-"+i).prop("checked",true);
-  				}
-  			};*/
   		})
 }
 function showNumberTag () {
@@ -160,7 +152,7 @@ function showNumberTag () {
 			};
 		});
 		$("#page_num_next").click(function () {
-			if (nowPage == pageNum+1) {
+			if (nowPage == pageNum+1 || leftNum == 0) {
 				;
 			}else if(nowPage == pageNum){
 				nowPage++;

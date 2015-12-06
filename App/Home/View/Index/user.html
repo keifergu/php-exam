@@ -57,7 +57,18 @@
                             </div>
                     <!--成绩查询  -->
                             <div role="tabpanel" class="tab-pane" id="grade">
-
+                            <table class="table table-striped">
+                                <tr>
+                                    <td>试卷名称</td>
+                                    <td>得分</td>
+                                </tr>
+                                 <foreach name="grade" item="vo">
+                                    <tr>
+                                         <td><{$vo.name}></td>
+                                         <td><{$vo.grade}></td>
+                                    </tr>
+                                 </foreach>
+                            </table>
                             </div>
                     <!-- 设置 -->
                             <div role="tabpanel" class="tab-pane" id="settings">

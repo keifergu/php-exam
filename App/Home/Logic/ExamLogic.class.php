@@ -34,12 +34,8 @@ class ExamLogic {
 		$questionModel= D('Question');
 		$field 		  = array('title','type');
 		$question = $questionModel->where('question_id='.$nowQuestion)->field($field)->find();
-		// $question['title']  = $questionModel->getTitle($nowQuestion);
 		$question['option'] = $questionModel->getOption($nowQuestion);
-		// $question['type']	= $questionModel->getType($nowQuestion);
 		$question['num']	= $num;
-		//$question['next']   = $questionList[$num];
-		//$question['last']   = $questionList[$num-2];
 		return $question;
 	}
 
@@ -49,7 +45,7 @@ class ExamLogic {
 		$paperModel  = D('Paper');
 		$query=array('paper_id' => $paperID);
 		$questionList = $paperModel->where($query)->getField('content');
-		$questionList = _strDataToArray($questionList);
+		$questionList = json_decode($questionList);
 		$nowQuestion  = $questionList[$num-1];
 		return $nowQuestion;
 	}
@@ -121,7 +117,7 @@ class ExamLogic {
 			$query = array('student_id' => $studentID,
 					'paper_id'   => $paperID,
 					'num'          => $num);
-			$oldAnswer = explode(';',$submitModel->where($query)->getField('answer'));
+			$oldAnswer = $submitModel->where($query)->getField('answer');
 			return $oldAnswer;
 	}
 

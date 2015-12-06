@@ -62,7 +62,6 @@ class StudentLogic {
 			return false;
 		}
 		$finishList  = _strDataToArray($studentModel->where($queryStu)->getField('finish_paper'));
-		//获得每个教师所设置的当前测试的试卷
 		foreach ($courseList as $key => $value) {
 			$queryPaper = array('course_id' => $value);
 			$field 	          = array('paper_id','paper_name');
@@ -155,5 +154,23 @@ class StudentLogic {
 		$courseDiff = json_encode(array_diff($courseArr, $value));
 		$reslut = $studentModel->where($query)->setField('student_course',$courseDiff);
 		return $reslut;
+	}
+	public function getAllGrade($studentID)
+	{
+		if(!isset($studentID)){
+			return 'getCourse ID is not set';
+		}
+		$GradeModel = D('Summary');
+		$PaperModel = D('Paper');
+		$query = array('student_id' => $studentID);
+		$field 	= array('paper_id','grade');
+		$gradeInfo = $GradeModel->where($query)->field($field)->select();
+		if($gradeInfo != null){
+
+			foreach ($gradeInfo as $key => $value) {
+				$gradeInfo[$key]['name'] = $PaperModel->getPaperName($value['paper_id']);
+			}
+		}
+		return $gradeInfo;
 	}
 }

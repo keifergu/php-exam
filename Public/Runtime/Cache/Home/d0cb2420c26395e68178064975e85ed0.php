@@ -19,6 +19,7 @@
                   <ul class="nav nav-tabs" role="tablist">
                             <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">试卷信息</a></li>
                             <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">我的信息</a></li>
+                            <li role="presentation"><a href="#grade" aria-controls="grade" role="tab" data-toggle="tab">成绩查询</a></li>
                             <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">设置</a></li>
                   </ul>
 
@@ -48,7 +49,19 @@
                                     </li>
                                 </ul>
                             </div>
-
+                    <!--成绩查询  -->
+                            <div role="tabpanel" class="tab-pane" id="grade">
+                            <table class="table table-striped">
+                                <tr>
+                                    <td>试卷名称</td>
+                                    <td>得分</td>
+                                </tr>
+                                 <?php if(is_array($grade)): foreach($grade as $key=>$vo): ?><tr>
+                                         <td><?php echo ($vo["name"]); ?></td>
+                                         <td><?php echo ($vo["grade"]); ?></td>
+                                    </tr><?php endforeach; endif; ?>
+                            </table>
+                            </div>
                     <!-- 设置 -->
                             <div role="tabpanel" class="tab-pane" id="settings">
                                     <div class="btn-group" role="group">
