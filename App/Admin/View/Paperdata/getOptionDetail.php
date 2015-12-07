@@ -1,7 +1,7 @@
 <?php
 //$User = new UserModel();
 // $itemid = mysql_real_escape_string($_REQUEST['itemid']);
-$conn = @mysql_connect('127.0.0.1','root','');
+$conn = @mysql_connect('127.0.0.1','root','pw123.');
 $res=mysql_query("SET NAMES 'UTF8'");//在连接数据库的时候需要加上这样三句话避免出现???的情况
 $res=mysql_query("SET CHARACTER SET UTF8");
 $res=mysql_query("SET CHARACTER_SET_RESULTS=UTF8'");
