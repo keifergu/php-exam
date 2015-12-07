@@ -1,0 +1,140 @@
+<!doctype html>
+<!--[if lt IE 7 ]><html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]><html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>考试</title>
+
+<!-- main JS libs -->
+<script src="__PUBLIC__/ui-cream/js/libs/modernizr.min.js"></script>
+<script src="__PUBLIC__/ui-cream/js/libs/jquery-1.10.0.js"></script>
+<script src="__PUBLIC__/ui-cream/js/libs/jquery-ui.min.js"></script>
+<script src="__PUBLIC__/ui-cream/js/libs/bootstrap.min.js"></script>
+
+<!-- Style CSS -->
+<link href="__PUBLIC__/ui-cream/css/bootstrap.css" media="screen" rel="stylesheet">
+<link href="__PUBLIC__/ui-cream/style.css" media="screen" rel="stylesheet">
+
+<!-- scripts -->
+<script src="__PUBLIC__/ui-cream/js/general.js"></script>
+
+<!-- Include all needed stylesheets and scripts here -->
+<script src="__PUBLIC__/ui-cream/js/jquery.customInput.js"></script>
+<!--[if lt IE 9]><script src="js/respond.min.js"></script><![endif]-->
+<!--[if gte IE 9]>
+<style type="text/css">
+    .gradient {filter: none !important;}
+</style>
+<![endif]-->
+
+</head>
+ 
+<body>
+<input type="hidden" id="questionType" value="<{$question['type']}>">
+<input type="hidden" id="questionNum" value="<{$num}>">
+<input type="hidden" id="paperID" value="<{$paperID}>">
+  <div class="body_wrap">
+  <div class="container">
+  	<br><br>
+  		<h6><div id="text_title"><{$question.num}>.<{$question.title}></div></h6>
+    	<form method="post" action="<{$url.next}>" id="form_0">
+
+	  		<switch name="question['type']">
+	  			<case value="101|103">
+	  				<div class="input_styled inlinelist">
+						<div class="rowRadio">
+							<volist name="question['option']" id="vo" key="i">
+								<if condition="($i eq $question['old_answer']) ">
+									<input name="answer" type="radio" id="input_<{$i}>" value="<{$i}>"  checked>
+									<label for="input_<{$i}>" id="text_option_<{$i}>"><p><{$key}>.<{$vo}></p></label>
+								<else />
+			    					<input name="answer" type="radio" id="input_<{$i}>" value="<{$i}>"  >
+									<label for="input_<{$i}>" id="text_option_<{$i}>"><p><{$key}>.<{$vo}></p></label>
+								</if>
+							</volist>
+						</div>
+					</div>
+				</case>
+				
+				<case value="102">
+					<div class="input_styled checklist">
+						<div class="rowCheckbox">
+							<volist name="question['option']" id="vo" key="i">
+								<in name="i" value="$question['old_answer']">
+									<input name="answer" type="checkbox" id="input_<{$i}>" value="<{$i}>" checked>
+									<label for="input_<{$i}>" id="text_option_<{$i}>"><{$key}>.<{$vo}></label>
+								<else />
+									<input name="answer" type="checkbox" id="input_<{$i}>" value="<{$i}>">
+									<label for="input_<{$i}>" id="text_option_<{$i}>"><{$key}>.<{$vo}></label>
+								</in>
+							</volist>
+						</div>
+					</div>
+				</case>
+				
+				<default />	<p>题目不存在</p>
+			</switch>
+				
+			<switch name="url['status']">
+				<case value="first">
+					<span class="btn btn-right"><input type="submit" id="submit" value="下一题" /></span>
+				</case>
+				<case value="end">
+					<a href="<{$url.last}>" class="btn btn-left"><span>上一题</span></a>
+					<span class="btn btn-hover" hidefocus="true" style="outline: none;"><input type="submit" value="交卷" /></span>
+				</case>
+				<default />
+					<a href="<{$url.last}>" class="btn btn-left"><span>上一题</span></a>
+					<span class="btn btn-right"><input type="submit" id="submit" value="下一题" /></span>
+			</switch>
+
+  		</form>
+  	<button id="form11">ss</button>
+  </div>
+  
+  </div>
+  <script type="text/javascript">
+ $(document).ready(function(){
+  	$("#submit").click(function() {
+
+  		/*$.post("index.php/home/index/question",
+  		{
+  			q:$("#questionNum").val();
+  			paperID:$("#paperID").val();
+  		}
+  		function(data,status) {
+  			alert(data+"\n"+status);
+  		}
+  		);*/
+  	});
+  	$("#form11").click(function(){
+  		var num = $("#questionNum").val();
+  		var nextNum = parseInt(num)+1;
+  		$.post("index.php/home/index/question",
+  		{
+  			q:nextNum,
+  			paperID:$("#paperID").val()
+  		},
+  		function(data,status) {
+  			if (status == "success") {
+  				$("#questionNum").val(nextNum);
+	  			$("#text_title").text(data.num+"."+data.title);
+	  			for (var i = 1; i < 9; i++) {
+	  				var option = String.fromCharCode(i+64);
+	  				$("#text_option_"+i).html(option+"."+data["option"][i-1]);		
+	  			};
+  			};
+  			
+  		});
+  	});
+
+});
+  </script>
+</body>
+</html>

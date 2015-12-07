@@ -2,7 +2,7 @@
 defined('THINK_PATH') or exit();
 return array(
 	//'配置项'=>'配置值'
-	'SHOW_PAGE_TRACE'       =>true,        //调试配置
+	'SHOW_PAGE_TRACE'       =>false,        //调试配置
 	'APP_USE_NAMESPACE'     => true,
 
 	'DEFAULT_MODULE'        => 'Home',
@@ -10,26 +10,13 @@ return array(
 	'MODULE_ALLOW_LIST'     => array('Home','Admin','Install','Api'),
 	//'URL_MODULE_MAP'        => array('manage'=>'admin'), //隐藏真实后台入口地址，开启后需要在MODULE_ALLOW_LIST中替换对应的模块名
 
-
-
-
-
-
-
-
-
 	/* 数据库设置 */
-  /*  'DB_TYPE'               => 'mysql',     // 数据库类型
-   'DB_HOST'               => '139.129.130.200',  // 服务器地址
-   'DB_USER'               => 'app',       // 用户名
-   'DB_PWD'                => 'pwsql963.',       // 密码*/
-
-
-    'DB_TYPE'               => 'mysqli',     // 数据库类型
+    'DB_TYPE'               => 'mysql',     // 数据库类型
     'DB_HOST'               => '127.0.0.1',  // 服务器地址
     'DB_NAME'               => 'app',        // 数据库名
     'DB_USER'               => 'root',       // 用户名
-    'DB_PWD'                => '',           // 密码
+    'DB_PWD'                => 'pw123.',           // 密码
+
     'DB_PORT'               => '3306',       // 端口
     'DB_PREFIX'             => 'app2_',      // 数据库表前缀
 	
