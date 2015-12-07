@@ -1,0 +1,23 @@
+<form id="admin_rolelist_permission_dialog_form" onsubmit="return adminRolePermissionDialogFormSubmit()">
+	<ul id="admin_rolelist_permission_dialog_form_tree" class="easyui-tree" data-options="url:'<{:U('Admin/rolePermission?id='.$id)}>',method:'post',animate:true,checkbox:true,lines:true"></ul>
+</form>
+
+<script type="text/javascript">
+function adminRolePermissionDialogFormSubmit(){
+	var nodes = $('#admin_rolelist_permission_dialog_form_tree').tree('getChecked');
+	var menuids = [];
+	for(var i=0; i<nodes.length; i++){
+		menuids.push(nodes[i]['id']);
+		menuids.push(nodes[i]['attributes']['parent']);
+	}
+	$.post('<{:U('Admin/rolePermission?dosubmit=1&id='.$id)}>', {menuids: menuids.join(',')}, function(res){
+		if(!res.status){
+			$.messager.alert('提示信息', res.info, 'error');
+		}else{
+			$.messager.alert('提示信息', res.info, 'info');
+			$('#admin_rolelist_permission_dialog').dialog('close');
+		}
+	});
+	return false;
+}
+</script>

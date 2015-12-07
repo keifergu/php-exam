@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="wangdong">
+<title><{:C('SYSTEM_NAME')}></title>
+<include file="Common:head" />
+<include file="Common:xheditor" />
+</head>
+<body>
+<!-- 头部按钮 -->
+<div style="border-bottom:1px solid #ddd;margin-bottom:1px;padding:1px">
+	<a href="javascript:;" onclick="condtentEditNewsGoBack()" class="easyui-linkbutton" data-options="plain:true,iconCls:'icons-arrow-arrow_left'">返回栏目列表</a>
+</div>
+
+<form id="content_edit_news_form" onsubmit="return contentEditNewsFormSubmit()">
+	<table width="100%" cellpadding="2">
+		<tr>
+			<td width="80">标题：</td>
+			<td width="450"><input type="text" name="info[title]" value="<{$info.title}>" style="width:100%" /></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>关键字：</td>
+			<td><input type="text" name="info[keywords]" value="<{$info.keywords}>" style="width:100%" /></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>描述：</td>
+			<td colspan="2"><textarea name="info[description]" style="width:90%;height:60px"><{$info.description}></textarea></td>
+		</tr>
+		<tr>
+			<td>作者：</td>
+			<td><input type="text" name="info[username]" value="<{$info.username}>" style="width:60%" /></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>缩略图：</td>
+			<td>
+				<input id="content_edit_news_form_thumb_input" onclick="return contentEditNewsFormThumbUpload(this);" type="image" src="<{$info.thumb}>" alt="点击上传缩略图" style="width:200px;height:100px;display:block;border:1px solid #ddd;padding:2px" />
+				<input type="hidden"  name="info[thumb]" value="<{$info.thumb}>" />
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>内容：</td>
+			<td colspan="2"><textarea id="content_edit_news_form_textarea_editor" name="info[content]" style="width:90%;height:360px"><{$info.content}></textarea></td>
+		</tr>
+		<tr>
+			<td>转向链接：</td>
+			<td colspan="2">
+				<label><input type="checkbox" name="info[islink]" value="1" id="contentEditNewsFormLink" <eq name="info.islink" value="1">checked</eq> /> 启用 </label>&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="text" name="info[url]" <eq name="info.islink" value="1">value="<{$info.url}>"<else/>value="http://" disabled</eq> style="width:50%" />
+			</td>
+		</tr>
+		<tr>
+			<td>状态：</td>
+			<td>
+				<label><input type="checkbox" name="info[status]" value="1" <eq name="info.status" value="1">checked</eq> /> 发布 </label>
+			</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td colspan="3"><a class="easyui-linkbutton" onclick="$('#content_edit_news_form').submit()">提交</a></td>
+		</tr>
+	</table>
+</form>
+
+<!-- 缩略图上传 -->
+<div id="content_edit_news_thumb_upload_div" style="display:none"></div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	//初始化编辑器
+	$('#content_edit_news_form_textarea_editor').xheditor(xheditorSetting);
+	
+	//转向链接
+	$('#contentEditNewsFormLink').click(function(){
+		var checked = $(this).attr('checked');
+		$(this).parent('label').next('input').attr('disabled', true);
+		if(checked) $(this).parent('label').next('input').attr('disabled', false);
+	});
+})
+//表单提交
+function contentEditNewsFormSubmit(){
+	$.post('<{:U('Content/edit_news_iframe', array('catid'=>$catid, 'id'=>$info['id']) )}>', $("#content_edit_news_form").serialize(), function(res){
+		if(!res.status){
+			parent.$.messager.alert('提示信息', res.info, 'error');
+		}else{
+			parent.$.messager.alert('提示信息', res.info, 'info');
+			condtentEditNewsGoBack();
+		}
+	});
+	return false;
+}
+//返回栏目列表
+function condtentEditNewsGoBack(){
+	parent.contentRightTreeTypeFunc('0', <{$catid|default=0}>);
+}
+
+//缩略图上传初始化
+function contentEditNewsFormThumbUpload(that){
+	var action = '<{:U('Upload/thumb', array('width'=>200, 'height'=>100))}>';
+	var iframe = 'content_edit_news_upload_iframe';
+	var html = '<iframe onload="thumbUploadCallback(this)" id="'+iframe+'" name="'+iframe+'" style="display:none"></iframe>'+
+	'<form id="content_edit_news_thumb_upload_div_form" action="'+action+'" target="content_edit_news_upload_iframe" method="post" enctype="multipart/form-data">'+
+	'<input id="content_edit_news_form_up_file" type="file" tabindex="-1" name="filedata" size="13" onchange="contentEditNewsFormThumbUploadSubmit()">'+
+	'</form>';
+	$('#content_edit_news_thumb_upload_div').html(html);
+	$('#content_edit_news_form_up_file').click();
+	return false;
+}
+//缩略图上传提交
+function contentEditNewsFormThumbUploadSubmit() {
+	$('#content_edit_news_thumb_upload_div_form').submit();
+}
+//缩略图上传回调函数
+function thumbUploadCallback(that){
+    var text = that.contentWindow.document.body.innerHTML.replace(/^[^\{]+|[^\}]+$|^\s+|\s+$/g, '');
+    if(!text) return false;
+	//判断上传结果
+	var data = {};
+	try {
+		data = eval("(" + text + ")");
+	} catch(err) {}
+	if(data.msg && (typeof(data.msg) == 'string' || typeof(data.msg.url) == 'string')){
+		var url = (typeof(data.msg) == 'string') ? data.msg : data.msg.url;
+		$('#content_edit_news_form_thumb_input').attr('src', url);
+		$('#content_edit_news_form_thumb_input').next('input:hidden').val(url);
+		
+		//清空上传生成的临时内容
+	    $('#content_edit_news_thumb_upload_div').html('');
+	}else{
+		var tip = data.err ? data.err : '上传失败';
+		parent.$.messager.alert('提示信息', tip, 'error');
+	}
+}
+</script>
+
+</body>
+</html>
