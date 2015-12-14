@@ -46,7 +46,6 @@
 
                 </form></h4>
                 <br><br><br><br><br><br><br>
-                <br><br><br><br><br><br><br>
                 <nav class="nav navbar-fixed-bottom">
                   <ul class="pager" style="font-size:19px;margin-bottom:2.7em">
                     <li class=""><a href="#" id="btn-last">上一题</a></li>
