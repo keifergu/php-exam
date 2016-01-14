@@ -35,21 +35,20 @@
 
 	<script type="text/javascript">
 		$(function() {
-			 $("#StuImport_fileForm").ajaxForm({
-                //定义返回JSON数据，还包括xml和script格式
-                dataType:'json',
-                beforeSend: function() {
-                    //表单提交前做表单验证
-                },
-                success: function(data) {
-                    //提交成功后调用
-                    $.messager.alert('My Title',data , function(r){
-                        if(r){
-
-                        }
-                    });
-                }
-            });
+			$("#StuImport_fileForm").ajaxForm({
+               			 //定义返回JSON数据，还包括xml和script格式
+               			 dataType:'json',
+               			 beforeSend: function() {
+                    			//表单提交前做表单验证
+                    		},
+                    		success: function(data) {
+                    				//提交成功后调用
+                    				$.messager.alert('My Title',data , function(r){
+                    					if(r){
+                    					}
+                    				});
+                    			}
+                    		});
 			$('#StuImport_index_dg').datagrid(
 			{
 				view : detailview,

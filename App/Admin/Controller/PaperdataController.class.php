@@ -175,105 +175,106 @@ class PaperdataController extends CommonController {
 					$urlEdit="\"index.php?m=admin&c=Optiondata&a=Optionedit&id=".$data['question_id']."\" ";
 					//<td><a href='javascript:void(0)'  onclick='openUrl(".$url.",".$data['question_id'].")'>修改</a></td>
 					//<td><a href=".$url.">修改</td>
-					echo"<table width='700px'>
-					<tr>
-						<td colspan='3'>第".($key+1)."题:</td>
-						<td><a target='_blank' href=".$urlEdit.">修改</td>
-						<td><a href='javascript:void(0)'  onclick='RemoveOption(".$paper_id.",".$data['question_id'].")'>删除</a></td>
-					</tr>
-					<tr>
-						<td width='25%'>".$data['question_id']."</td>
-						<td width='25%'>".$data['type']."</td>
-						<td width='25%'>".$data['keyword']."</td>
-					</tr>
-					<tr>
-						<td colspan='3'>标题:".$data['title']."</td>
-					</tr>
-					";
-					if($data['A']){
-						echo"
-						<tr>
-							<td colspan='3'>A:".$data['A']."</td>
-						</tr>
-						";
-					}
-					if($data['B']){
-						echo"
-						<tr>
-							<td colspan='3'>B:".$data['B']."</td>
-						</tr>
-						";
-					}
-					if($data['C']){
-						echo"
-						<tr>
-							<td colspan='3'>C:".$data['C']."</td>
-						</tr>
-						";
-					}
-					if($data['D']){
-						echo"
-						<tr>
-							<td colspan='3'>D:".$data['D']."</td>
-						</tr>
-						";
-					}
-					if($data['E']){
-						echo"
-						<tr>
-							<td colspan='3'>E:".$data['E']."</td>
-						</tr>
-						";
-					}
-					if($data['F']){
-						echo"
-						<tr>
-							<td colspan='3'>F:".$data['F']."</td>
-						</tr>
-						";
-					}
-					if($data['G']){
-						echo"
-						<tr>
-							<td colspan='3'>G:".$data['G']."</td>
-						</tr>
-						";
-					}
-					if($data['H']){
-						echo"
-						<tr>
-							<td colspan='3'>H:".$data['H']."</td>
-						</tr>
-						";
-					}
-					$ans="";
-					switch ($data['typeid']) {
-						case 101:
-						$ans=$ans.chr($data['ans']+64);
-						break;
-						case 102:
-						$tempans=intval($data['ans']);
-						for($i=7;$i>=0;$i--){
-							if(intval($tempans/(1<<$i))){
-								//var_dump($i);	
-								$ans=chr($i+65).$ans;
-								$tempans=$tempans-(1<<$i);
-							}
-						}
-						break;
-						case 103:
-						$ans=$ans.chr($data['ans']+64);
-						break;
-						default:
-								# code...
-						break;
-					}
-
 					echo"
-					<tr>
-						<td colspan='3'>答案:".$ans."</td>
-					</tr>
-					";
+					<table width='700px'>
+						<tr>
+							<td colspan='3'>第".($key+1)."题:</td>
+							<td><a target='_blank' href=".$urlEdit.">修改</td>
+							<td><a href='javascript:void(0)'  onclick='RemoveOption(".$paper_id.",".$data['question_id'].")'>删除</a></td>
+						</tr>
+						<tr>
+							<td width='25%'>".$data['question_id']."</td>
+							<td width='25%'>".$data['type']."</td>
+							<td width='25%'>".$data['keyword']."</td>
+						</tr>
+						<tr>
+							<td colspan='3'>标题:".$data['title']."</td>
+						</tr>
+						";
+						if($data['A']){
+							echo"
+							<tr>
+								<td colspan='3'>A:".$data['A']."</td>
+							</tr>
+							";
+						}
+						if($data['B']){
+							echo"
+							<tr>
+								<td colspan='3'>B:".$data['B']."</td>
+							</tr>
+							";
+						}
+						if($data['C']){
+							echo"
+							<tr>
+								<td colspan='3'>C:".$data['C']."</td>
+							</tr>
+							";
+						}
+						if($data['D']){
+							echo"
+							<tr>
+								<td colspan='3'>D:".$data['D']."</td>
+							</tr>
+							";
+						}
+						if($data['E']){
+							echo"
+							<tr>
+								<td colspan='3'>E:".$data['E']."</td>
+							</tr>
+							";
+						}
+						if($data['F']){
+							echo"
+							<tr>
+								<td colspan='3'>F:".$data['F']."</td>
+							</tr>
+							";
+						}
+						if($data['G']){
+							echo"
+							<tr>
+								<td colspan='3'>G:".$data['G']."</td>
+							</tr>
+							";
+						}
+						if($data['H']){
+							echo"
+							<tr>
+								<td colspan='3'>H:".$data['H']."</td>
+							</tr>
+							";
+						}
+						$ans="";
+						switch ($data['typeid']) {
+							case 101:
+							$ans=$ans.chr($data['ans']+64);
+							break;
+							case 102:
+							$tempans=intval($data['ans']);
+							for($i=7;$i>=0;$i--){
+								if(intval($tempans/(1<<$i))){
+								//var_dump($i);	
+									$ans=chr($i+65).$ans;
+									$tempans=$tempans-(1<<$i);
+								}
+							}
+							break;
+							case 103:
+							$ans=$ans.chr($data['ans']+64);
+							break;
+							default:
+								# code...
+							break;
+						}
+
+						echo"
+						<tr>
+							<td colspan='3'>答案:".$ans."</td>
+						</tr>
+						";
 					echo "</table>";
 				}
 			}else{

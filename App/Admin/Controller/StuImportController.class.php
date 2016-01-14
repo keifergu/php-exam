@@ -21,7 +21,8 @@ class StuImportController extends CommonController
 		//用以解决中文不能显示出来的问题 
 		$file_name=iconv("utf-8","gb2312",$file_name); 
 		//绝对路径
-		$file_sub_path=$_SERVER['DOCUMENT_ROOT']."ThinkPHPCMS/public/Downloads/"; 
+		$file_sub_path=$_SERVER['DOCUMENT_ROOT']."/thinkphpcms/Public/Downloads/"; 
+		echo $file_sub_path;
 		$file_path=$file_sub_path.$file_name; 
 		//首先要判断给定的文件存在与否 
 		if(!file_exists($file_path)){ 
@@ -59,12 +60,14 @@ class StuImportController extends CommonController
 		if (!$info) {
 			echo json_encode($upload->getError());
 		} else {
-			$filename = 'Uploads\\' . $info ['savepath'] . $info ['savename'];
+			$filename = 'Uploads/' . $info ['savepath'] . $info ['savename'];
 			$ext = $info ['ext'];
+			var_dump($filename);
 			$this->XlsToSql( $filename, $ext );
+
 		}
 	}
-	function XlsToSql($filename, $exts = 'xls') {
+	function XlsToSql($filename='Uploads/2016-01-14/160114020254.xls', $exts = 'xls') {
 		vendor ( 'PHPExcel.PHPExcel' );
 		$PHPExcel = new \PHPExcel ();
 		if ($exts == 'xls') {
@@ -82,7 +85,6 @@ class StuImportController extends CommonController
 				$data [$currentRow] [$currentColumn] = $currentSheet->getCell ( $address )->getValue ();
 			}
 		}
-		//var_dump($data);
 		$Dictdata_db=D('Dictdata');
 		$Paperdata_db=D('Paperdata');
 		$StuImport_db=D('StuImport');
@@ -119,7 +121,7 @@ class StuImportController extends CommonController
 			}
 		}
 		$susses='成功导入'.$count.'条数据！<br/>';
-		echo json_encode($susses.$error);
+		echo ($susses.$error);
 	}
 }
 ?>
