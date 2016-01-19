@@ -16,13 +16,12 @@ class StuImportController extends CommonController
 	}
 
 	public function download(){
-		header("Content-type:text/html;charset=utf-8"); 
+		header("Content-type:application/-excel;charset=utf-8"); 
 		$file_name='StuImport_Demo.xls' ;
 		//用以解决中文不能显示出来的问题 
 		$file_name=iconv("utf-8","gb2312",$file_name); 
 		//绝对路径
-		$file_sub_path=$_SERVER['DOCUMENT_ROOT']."/thinkphpcms/Public/Downloads/"; 
-		echo $file_sub_path;
+		$file_sub_path=$_SERVER['DOCUMENT_ROOT']."/thinkphpcms/Public/Downloads/"; 	
 		$file_path=$file_sub_path.$file_name; 
 		//首先要判断给定的文件存在与否 
 		if(!file_exists($file_path)){ 
@@ -56,18 +55,18 @@ class StuImportController extends CommonController
 		$upload->rootPath = './Uploads/';
 		$upload->saveName = date ( 'ymdhis' );
 		$info = $upload->upload ();
-		$info = $info ['xlsfile'];
+		$info = $info ['xlsfile'];   
 		if (!$info) {
 			echo json_encode($upload->getError());
 		} else {
 			$filename = 'Uploads/' . $info ['savepath'] . $info ['savename'];
 			$ext = $info ['ext'];
-			var_dump($filename);
 			$this->XlsToSql( $filename, $ext );
 
 		}
 	}
-	function XlsToSql($filename='Uploads/2016-01-14/160114020254.xls', $exts = 'xls') {
+	function XlsToSql($filename, $exts = 'xls') {
+		//excel  学号姓名课程
 		vendor ( 'PHPExcel.PHPExcel' );
 		$PHPExcel = new \PHPExcel ();
 		if ($exts == 'xls') {
@@ -76,6 +75,7 @@ class StuImportController extends CommonController
 			$PHPReader = new \PHPExcel_Reader_Excel2007 ();
 		}
 		$PHPExcel = $PHPReader->load ( $filename );
+		
 		$currentSheet = $PHPExcel->getSheet ( 0 );
 		$allColumn = $currentSheet->getHighestColumn ();
 		$allRow = $currentSheet->getHighestRow ();
@@ -85,6 +85,8 @@ class StuImportController extends CommonController
 				$data [$currentRow] [$currentColumn] = $currentSheet->getCell ( $address )->getValue ();
 			}
 		}
+		
+		
 		$Dictdata_db=D('Dictdata');
 		$Paperdata_db=D('Paperdata');
 		$StuImport_db=D('StuImport');
@@ -120,8 +122,9 @@ class StuImportController extends CommonController
 				$error.='学号:'.$value['A'].' 姓名:'.$value['B'].' 课程:'.$value['C'].' 数据已存在！<br/>';
 			}
 		}
+		
 		$susses='成功导入'.$count.'条数据！<br/>';
-		echo ($susses.$error);
+		echo json_encode ($susses.$error);
 	}
 }
 ?>
