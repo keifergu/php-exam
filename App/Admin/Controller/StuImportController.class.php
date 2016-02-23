@@ -126,5 +126,12 @@ class StuImportController extends CommonController
 		$susses='成功导入'.$count.'条数据！<br/>';
 		echo json_encode ($susses.$error);
 	}
+	public function test(){
+		$a['name']="asdfadsfsdfsadf";
+		$a['id']=20001;
+		$a['address']="asdfasdfsadf";
+		var_dump($a);
+		
+	}
 }
 ?>

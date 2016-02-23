@@ -18,7 +18,7 @@ class OptiondataController extends CommonController {
 			$total = $option_db->count ();
 			$order = $sort . ' ' . $order;
 			$limit = ($page - 1) * $rows . "," . $rows;
-			$condition ['course'] = $courseid;
+			$condition ['course_id'] = $courseid;
 			$condition ['type'] = $typeid;
 			$list = $option_db->where ( $condition )->limit ( $limit )->select ();
 			// if ($courseid=='' && $typeid=='') {
@@ -55,7 +55,7 @@ class OptiondataController extends CommonController {
 		}
 	}
 	function optionAdd() {
-			$this->display ( 'option_add' );
+		$this->display ( 'option_add' );
 	}
 	function optionEdit($id = 0) {
 		$Optiondata_db=D('Optiondata');
@@ -67,10 +67,8 @@ class OptiondataController extends CommonController {
 	function getOptionData() {
 		$id = $_POST ['id'];
 		$db = M ( 'optiondata' );
-		$data = array (
-				'id' => $id 
-		);
-		$result = $db->where ( 'question_id=' . $id )->select ();
+		$condition= array ('question_id' => $id );
+		$result = $db->where ( $condition)->select ();
 		$this->ajaxReturn ( $result [0] );
 	}
 	function update() {
@@ -92,7 +90,7 @@ class OptiondataController extends CommonController {
 		$Optiondata_db = M ( 'optiondata' );
 		$result = $Optiondata_db->where ( 'question_id=' . $data ['question_id'] )->delete ();
 		$Optiondata_db->add ( $data );
-		$this->success('',U("optionList"));
+		$this->display('Common/close');
 	}
 	function optionRemove($id = 0) {
 		if ($id) {

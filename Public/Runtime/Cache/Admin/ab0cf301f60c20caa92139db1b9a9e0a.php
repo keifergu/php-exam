@@ -73,7 +73,7 @@ $(document).ready(function(){
                     		},
                     		success: function(data) {
                     				//提交成功后调用
-                    				$.messager.alert('My Title',data , function(r){
+                    				$.messager.alert(' 导入结果',data , function(r){
                     					if(r){
                     					}
                     				});

@@ -42,27 +42,25 @@ class PaperdataController extends CommonController {
 		//$courseid=201;
 		//$typeid=101;
 		//$paper_id=201001;  
-		
 		//var_dump($paper_option);
 		if (IS_POST && $courseid != '' && $typeid != '') {
 			$paper_db=D('Paperdata');
-			$condition=array(
-				'paper_id'=>$paper_id,
-				);
+			$condition=array('paper_id'=>$paper_id,);
 			$paperinfo=$paper_db->where($condition)->select();
 			$paper_option=json_decode($paperinfo[0]['content'],true);
 			if($paper_option){
 				$condition=array(
-					'course'=>$courseid,
+					'course_id'=>$courseid,
 					'type'=>$typeid,
 					'question_id'=>array('NOT IN',$paper_option)
 					);
 			}else{
 				$condition=array(
-					'course'=>$courseid,
+					'course_id'=>$courseid,
 					'type'=>$typeid
 					);
 			};
+			//var_dump($condition);
 			$option_db = M ( 'Optiondata' );
 			$total = $option_db->where($condition)->count ();
 			$order = $sort . ' ' . $order;
@@ -103,9 +101,9 @@ class PaperdataController extends CommonController {
 	}
 
 	function EditOptionList($page = 1, $rows = 10, $sort = 'dictid', $order = 'asc', $typeid = '' ,$courseid='',$paper_id='') {
-		/*$courseid=201;
+		$courseid=201;
 		$typeid=101;
-		$paper_id=201001;*/
+		$paper_id=201001;
 		//只需要查询PaperData表进行数据导出
 		if($paper_id!=''){
 			$Paperdata_db=D('Paperdata');
@@ -152,8 +150,8 @@ class PaperdataController extends CommonController {
 					}
 				</script>
 				';
-				echo '<h1>'.$paperinfo[0]['paper_name'].'</h1>';
-				echo '<h6>'.getDictName($paperinfo[0]['course_id'])[0]['type_name'].'</h6>';
+				echo '<h6>试卷名称:' .$paperinfo[0]['paper_name'].'</h6>';
+				echo '<h6>所属科目:'.getDictName($paperinfo[0]['course_id'])[0]['type_name'].'</h6>';
 				foreach ($paper_option as $key=>$value){
 					$optioninfo=$Optiondata_db->where('question_id='.$value)->select();
 					$data['question_id'] = $optioninfo[0]['question_id'];
@@ -172,15 +170,17 @@ class PaperdataController extends CommonController {
 					$data['H']=$optioninfo[0]['h'];
 					$data['img']=$optioninfo[0]['img'];
 					$data['ans']=$optioninfo[0]['answer'];
-					$urlEdit="\"index.php?m=admin&c=Optiondata&a=Optionedit&id=".$data['question_id']."\" ";
+					//$value=$data['question_id']   使用value可以处理题目被删除之后的$data['question_id']查询不到没有数据的情况
+					$urlEdit="\"index.php?m=admin&c=Optiondata&a=Optionedit&id=".$value."\" ";
 					//<td><a href='javascript:void(0)'  onclick='openUrl(".$url.",".$data['question_id'].")'>修改</a></td>
 					//<td><a href=".$url.">修改</td>
 					echo"
+					<hr />
 					<table width='700px'>
 						<tr>
 							<td colspan='3'>第".($key+1)."题:</td>
 							<td><a target='_blank' href=".$urlEdit.">修改</td>
-							<td><a href='javascript:void(0)'  onclick='RemoveOption(".$paper_id.",".$data['question_id'].")'>删除</a></td>
+							<td><a href='javascript:void(0)'  onclick='RemoveOption(".$paper_id.",".$value.")'>删除</a></td>
 						</tr>
 						<tr>
 							<td width='25%'>".$data['question_id']."</td>
@@ -344,9 +344,7 @@ class PaperdataController extends CommonController {
 		$optionid=$_POST['optionid'];
 		$paperid=$_POST['paperid'];
 		//需要修改的试卷信息和需要添加的题目信息
-		$condition=array(
-			'paper_id'=>$paperid,
-			);
+		$condition=array('paper_id'=>$paperid);
 		$paperinfo=$Paperdata_db->where($condition)->select()[0];
 		$paper_option=json_decode($paperinfo['content'],true);
 		var_dump($paper_option);

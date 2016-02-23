@@ -1,0 +1,12 @@
+[ 2016-01-25T08:05:50+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.016727s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.001251s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.065607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.066218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000160s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000253s ]
+

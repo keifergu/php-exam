@@ -61,13 +61,11 @@ $(document).ready(function(){
     	$(document).ready(function() {
     		getData();
     	});
-/*    	$(function(){
-    		getData();
-    	});*/
+
 
     	function getData(){
     		$.post('index.php/admin/Optiondata/getOptionData',{id:$("#hidden_option_id").val()},function(data){
-    			document.getElementsByName("option_title")[0].value=data['title'];
+    			$("*[name=option_title]").val(data['title']);
     			$("#hidden_option_course").val(data['course_id']);
     			$("#hidden_option_type").val(data['type']);
     			$("#hidden_option_keyword").val(data['keyword']);
@@ -115,8 +113,7 @@ $(document).ready(function(){
 		  onselect();
 		  getCheckBoxState();
 		});
-
-    	}
+}
 
   		// 声明全局数据
   		if(typeof OPTION_TYPE_ENUM == "undefined"){
@@ -245,11 +242,9 @@ $(document).ready(function(){
 		}
 	}
 </script>
-<form id="fm" method="post" novalidate action="index.php?m=admin&c=optiondata&a=update">
+<form id="fm" method="post" novalidate action="index.php?m=admin&c=optiondata&a=update" target='_self' >
 	<table style="width: 700px" cellspacing="0" cellpadding="0">
 		<tr>
-			<th></th>
-			<lable id=toolbar_course_name_lable></lable>
 			<th style="text-align: left;">
 				<label>课程名称</label> 
 				<input class="easyui-combobox" name="course_name" readonly="readonly"
@@ -261,6 +256,8 @@ $(document).ready(function(){
 				panelHeight:'auto',
 				value:201 
 				">
+			</th>
+			<th style="text-align: left;">
 				<label>题目类型</label> 
 				<input class="easyui-combobox" name="option_type" id="option_t" readonly="readonly"
 				data-options="
@@ -276,79 +273,100 @@ $(document).ready(function(){
 				<!-- value为设置默认的值 -->
 			</th>
 		</tr>
+	</table>
+	<table style="width: 700px" cellspacing="0" cellpadding="0">
 		<tr>
-			<th><label>题目</label></th>
-			<th><textarea name="option_title" class="txtNewsContent" id="optiontitle">title</textarea></th>
+			<td><label>题目</label></td>
+			<td><textarea name="option_title" class="txtNewsContent" id="optiontitle"></textarea></td>
 		</tr>
 		<tr id="hide1">
-			<th><label>选项A</label></th>
-			<th><textarea name="optionA" class="txtNewsContent" id="option"></textarea></th>
+			<td><label>选项A</label></td>
+			<td><textarea name="optionA" class="txtNewsContent" id="option"></textarea></td>
 		</tr>
 		<tr id="hide2">
-			<th><label>选项B</label></th>
-			<th><textarea name="optionB" class="txtNewsContent" id="option"></textarea></th>
+			<td><label>选项B</label></td>
+			<td><textarea name="optionB" class="txtNewsContent" id="option"></textarea></td>
 		</tr>
 		<tr id="hide3">
-			<th><label>选项C</label></th>
-			<th><textarea name="optionC" class="txtNewsContent" id="option"></textarea></th>
+			<td><label>选项C</label></td>
+			<td><textarea name="optionC" class="txtNewsContent" id="option"></textarea></td>
 		</tr>
 		<tr id="hide4">
-			<th><label>选项D</label></th>
-			<th><textarea name="optionD" class="txtNewsContent" id="option"></textarea></th>
+			<td><label>选项D</label></td>
+			<td><textarea name="optionD" class="txtNewsContent" id="option"></textarea></td>
 		</tr>
 		<tr id="hide5">
-			<th><label>选项E</label></th>
-			<th><textarea name="optionE" class="txtNewsContent" id="option"></textarea></th>
+			<td><label>选项E</label></td>
+			<td><textarea name="optionE" class="txtNewsContent" id="option"></textarea></td>
 		</tr>
 		<tr id="hide6">
-			<th><label>选项F</label></th>
-			<th><textarea name="optionF" class="txtNewsContent" id="option"></textarea></th>
+			<td><label>选项F</label></td>
+			<td><textarea name="optionF" class="txtNewsContent" id="option"></textarea></td>
 		</tr>
+	</table>
+	<table style="width: 700px" cellspacing="0" cellpadding="0">
 		<tr>
-			<th></th>
-			<th style="text-align: left;">
+			<td >
 				<!-- 如果将radio都设置为一个名字则只能选择其中一个答案 --> 
 				<span id="hideanswer1">
-					<input type="checkbox" name="optionAnswer" id="answer1" value="1" onclick="getCheckBoxState()">A</input>
+					<input type="checkbox" name="optionAnswer" id="answer1" value="1" onclick="getCheckBoxState()"/>
+					<label id="lable-answer1" for="answer1">A</label>
 				</span> 
+			</td>
+			<td>
 				<span id="hideanswer2">
-					<input type="checkbox" name="optionAnswer" id="answer2" value="2" onclick="getCheckBoxState()">B</input>
+					<input type="checkbox" name="optionAnswer" id="answer2" value="2" onclick="getCheckBoxState()"/>
+					<label id="lable-answer1" for="answer2">B</label>
 				</span> 
+			</td>
+			<td >
 				<span id="hideanswer3">
-					<input type="checkbox" name="optionAnswer" id="answer3" value="4" onclick="getCheckBoxState()">C</input>
+					<input type="checkbox" name="optionAnswer" id="answer3" value="4" onclick="getCheckBoxState()"/>
+					<label id="lable-answer1" for="answer3">C</label>
 				</span>
+			</td>
+			<td >
 				<span id="hideanswer4">
-					<input type="checkbox" name="optionAnswer" id="answer4" value="8" onclick="getCheckBoxState()">D</input>
+					<input type="checkbox" name="optionAnswer" id="answer4" value="8" onclick="getCheckBoxState()"/>
+					<label id="lable-answer1" for="answer4">D</label>
 				</span>
+			</td>
+			<td>
 				<span id="hideanswer5">
-					<input type="checkbox" name="optionAnswer" id="answer5" value="16" onclick="getCheckBoxState()">E</input>
+					<input type="checkbox" name="optionAnswer" id="answer5" value="16" onclick="getCheckBoxState()"/>
+					<label id="lable-answer1" for="answer5">E</label>
 				</span> 
+			</td>
+			<td >
 				<span id="hideanswer6">
-					<input type="checkbox" name="optionAnswer" id="answer6" value="32" onclick="getCheckBoxState()">F</input>
+					<input type="checkbox" name="optionAnswer" id="answer6" value="32" onclick="getCheckBoxState()"/>
+					<label id="lable-answer1" for="answer6">F</label>
 				</span>
-			</th>
+			</td>
+
 		</tr>
-		<tr>
-			<input id="answerserial" type="hidden" name="answerRes">  
-			<input id="hidden_option_id" type="hidden" name="hidden_option_id" value="<?php echo ($optionid); ?>"> 
-			<input id="hidden_option_type" type="hidden" name="hidden_option_type" > 
-			<input id="hidden_option_course" type="hidden" name="hidden_option_course" value="<?php echo ($optioncourse); ?>">
-			<input id="hidden_option_keyword" type="hidden" name="hidden_option_keyword"> 
-			<input id="hidden_option_img" type="hidden" name="hidden_option_img">
-		</tr>
+	</table>
+	
+
+	<input id="answerserial" type="hidden" name="answerRes">  
+	<input id="hidden_option_id" type="hidden" name="hidden_option_id" value="<?php echo ($optionid); ?>"> 
+	<input id="hidden_option_type" type="hidden" name="hidden_option_type" > 
+	<input id="hidden_option_course" type="hidden" name="hidden_option_course" value="<?php echo ($optioncourse); ?>">
+	<input id="hidden_option_keyword" type="hidden" name="hidden_option_keyword"> 
+	<input id="hidden_option_img" type="hidden" name="hidden_option_img">
+	<table style="width: 700px" cellspacing="0" cellpadding="0">
 		<tr>
 			<th></th>
 			<th><input type="submit"></th>
 		</tr>
 	</table>
-	
 </form>
 <span id="result"></span>
 <script type="text/javascript">
 	$('.txtNewsContent').xheditor({
 		tools:'full',
 		skin:'default',
-		showBlocktag:true,
+		showBlocktag:false,
 		internalScript:false,
 		internalStyle:false,
 		width:600,
@@ -358,7 +376,7 @@ $(document).ready(function(){
 		forcePtag:true,
 		upImgUrl:"upload.php",
 		upImgExt:"jpg,jpeg,gif,png"
-		});
+	});
 
-	</script>
+</script>
 </body>

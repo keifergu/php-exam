@@ -10,3 +10,27 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001009s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001122s ]
 
+[ 2016-01-19T13:35:04+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001083s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000094s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.007709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007857s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000380s ]
+
+[ 2016-01-19T13:45:04+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.015029s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000197s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.089892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.091593s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001245s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001769s ]
+
