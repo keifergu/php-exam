@@ -38,49 +38,42 @@ $item=array_filter($item);
 	</tr>
 	<tr>
 		<td class="dv-label">C: </td>
-		<td><?php 
-			echo $item['c'];
-			?>
-		</td>
+		<td><?php echo $item['c'];?></td>
 		<td class="dv-label">D:</td>
 		<td><?php echo $item['d'];?></td>
 	</tr>
 	<tr>
-		<td><?php 
-			if (!empty($item['e']))
-			{
-				echo '<td class="dv-label">E:</td>';
-				echo '<td>'.$item['e'].'</td>';
-			}
-			?>
-		</td>
-		<td><?php 
-			if (!empty($item['f']))
-			{
-				echo '<td class="dv-label">F:</td>';
-				echo $item['f'];
-			}
-			?>
-		</td>
+		<?php 
+		if (!empty($item['e']))
+		{
+			echo '<td class="dv-label">E:</td>';
+			echo '<td>'.$item['e'].'</td>';
+		}
+		?>
+		<?php 
+		if (!empty($item['f']))
+		{
+			echo '<td class="dv-label">F:</td>';
+			echo $item['f'];
+		}
+		?>
 	</tr>
 	<tr>
-		<td><?php 
-			if (!empty($item['g']))
-			{
-				echo '<td class="dv-label">G:</td>';
-				echo $item['g'];
-			}
-			?>
-		</td>
+		<?php 
+		if (!empty($item['g']))
+		{
+			echo '<td class="dv-label">G:</td>';
+			echo $item['g'];
+		}
+		?>
+		<?php 
+		if (!empty($item['h']))
+		{
+			echo '<td class="dv-label">H:</td>';
+			echo $item['h'];
+		}
+		?>
 		
-		<td><?php 
-			if (!empty($item['h']))
-			{
-				echo '<td class="dv-label">H:</td>';
-				echo $item['h'];
-			}
-			?>
-		</td>
 	</tr>
 	<tr>
 		<?php 

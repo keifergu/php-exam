@@ -20,6 +20,7 @@
 		</table>
 		<div id="paper<{$hidden_paper_id}>_add_toolbar">
 			<a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="paperAdd()">添加</a> 
+			<a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onclick="paperEdit()">编辑</a> 
 			<label>课程名称</label>
 			<input id="paper<{$hidden_paper_id}>_add_toolbar_course_name" name="course_name" readonly="readonly">
 			<label>题目类型</label> 
@@ -29,24 +30,24 @@
 
 	<script type="text/javascript">
 		$('#paper<{$hidden_paper_id}>_add_dg').datagrid(
-			{
-				view : detailview,
-				detailFormatter : function(index, row) {
-					return '<div id="paper<{$hidden_paper_id}>-add-ddv-' + index + '" style="padding:5px 0"></div>';
-				},
-				onExpandRow : function(index, row) {
-					$('#paper<{$hidden_paper_id}>-add-ddv-' + index).panel(
-					{
-						border : false,
-						cache : false,
-						href : 'App/Admin/View/Paperdata/getOptionDetail.php?itemid='+ row.question_id,
-						onLoad : function() {
-							$('#paper<{$hidden_paper_id}>_add_dg').datagrid('fixDetailRowHeight',index);
-						}
-					});
-					$('#paper<{$hidden_paper_id}>_add_dg').datagrid('fixDetailRowHeight', index);
-				}
-			});
+		{
+			view : detailview,
+			detailFormatter : function(index, row) {
+				return '<div id="paper<{$hidden_paper_id}>-add-ddv-' + index + '" style="padding:5px 0"></div>';
+			},
+			onExpandRow : function(index, row) {
+				$('#paper<{$hidden_paper_id}>-add-ddv-' + index).panel(
+				{
+					border : false,
+					cache : false,
+					href : 'App/Admin/View/Paperdata/getOptionDetail.php?itemid='+ row.question_id,
+					onLoad : function() {
+						$('#paper<{$hidden_paper_id}>_add_dg').datagrid('fixDetailRowHeight',index);
+					}
+				});
+				$('#paper<{$hidden_paper_id}>_add_dg').datagrid('fixDetailRowHeight', index);
+			}
+		});
 		var purl = "<{:U('Dictdata/getDictNameJson')}>";
 		purl += purl.indexOf('?') != -1 ? '&id=200' : '?id=200';
 		$('#paper<{$hidden_paper_id}>_add_toolbar_course_name').combobox({
@@ -109,6 +110,10 @@
 			}
 			);
 		}
-	</script>
+		function paperEdit(){
+			var row = $('#option_index_dg').datagrid('getSelected');
+        	window.open("<{:U('Optiondata/optionEdit')}>&id="+row.question_id);  //打开一个新的页面
+        }
+    </script>
 
 </body>

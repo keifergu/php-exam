@@ -2,6 +2,42 @@
 namespace Home\Logic;
 class ExamLogic {
 
+	//第一次进入考试界面时设置test_id的cookie,并储存当前时间到数据库summary表中的start_time字段,若已经设置该id值,则表示不是第一次访问,当前考试还没有结束
+	public function setStartTime($studentID,$paperID)
+	{
+		$paperinfo = cookie('paperinfo');
+		$test_id = $paperinfo['test_id'];
+		if ($test_id != NULL) {
+			return false;
+		}else {
+			$SummaryModel = D('Summary');
+			$time['start_time'] = date("Y-m-d h:i:s");
+			$id = $SummaryModel->add($time);
+			if ($id == null) {
+				return false;
+			}
+			$paperinfo['test_id'] = $id;
+			cookie('paperinfo', $paperinfo);
+		}
+	}
+
+	//提交试卷时直接从cookie中得到当前考试的save_id,将结束时间写入数据库,并清楚该cookie表示该次试卷测试结束.
+	public function setEndTime()
+	{
+		$paperinfo = cookie('paperinfo');
+		$test_id = $paperinfo['test_id'];
+		if ($test_id == null) {
+			return false;
+		}
+		$SummaryModel = D('Summary');
+		$field = array('test_id' => $test_id);
+		$time['submit_time'] = date("Y-m-d h:i:s");
+		$id = $SummaryModel->where($field)->add($time);
+		if ($id == null) {
+			return false;
+		}
+		cookie('paperinfo', null);
+	}
 	public function getPaperInfo($paperID)
 	{
 		if (isset($paperID)) {
@@ -98,25 +134,40 @@ class ExamLogic {
 		}
 
 		$question = $this->getQuestionInfo($paperID,$num);
+
+		$paperinfo = cookie('paperinfo');
+		$test_id = $paperinfo['test_id'];
+
 		$submitModel = D('Submit');
-		$data['submit_id'] = $paperID.$studentID.$question['question_id'];
+		//$data['submit_id'] = $paperID.$studentID.$question['question_id'];
 		$data['num'] = $num;
+		$data['test_id'] = $test_id;
 		$data['paper_id'] = $paperID;
 		$data['student_id'] = $studentID;
 		$data['course_id']  = $question['course_id'];
 		$data['question_id'] = $question['question_id'];
 		$data['type'] = $question['type'];
-		$data['answer'] = $answer;
-		$result = $submitModel->add($data,$options=array(),$replace=true);
+		//$data['answer'] = $answer;
+		//$result = $submitModel->add($data,$options=array(),$replace=true);
+		$oldanswer = $submitModel->where($data)->getField('answer');
+		if ($oldanswer == null) {
+			$data['answer'] = $answer;
+			$result = $submitModel->add($data);
+		}else{
+			$result = $submitModel->where($data)->setField('answer', $answer);
+		}
 		return $result;
 	}
 
 	public function getOldAnswer($studentID,$paperID,$num)
 	{
 			$submitModel = D('Submit');
+			$paperinfo = cookie('paperinfo');
+			$test_id = $paperinfo['test_id'];
 			$query = array('student_id' => $studentID,
-					'paper_id'   => $paperID,
-					'num'          => $num);
+						   'paper_id'   => $paperID,
+						   'num'        => $num,
+						   'test_id' 	=> $test_id);
 			$oldAnswer = $submitModel->where($query)->getField('answer');
 			return $oldAnswer;
 	}

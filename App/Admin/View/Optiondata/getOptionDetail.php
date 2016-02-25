@@ -18,62 +18,112 @@ mysql_close($conn);
 <!DOCTYPE html>
 <html>
 <head>
-<include file="Common:head" />
-<script type="text/javascript" src="__STATIC__/js/xheditor/xheditor-1.2.2.min.js"></script> 
-<script type="text/javascript" src="__STATIC__/js/xheditor/xheditor_lang/zh-cn.js"></script>
+	<include file="Common:head" />
+	<script type="text/javascript" src="__STATIC__/js/xheditor/xheditor-1.2.2.min.js"></script> 
+	<script type="text/javascript" src="__STATIC__/js/xheditor/xheditor_lang/zh-cn.js"></script>
 	<style type="text/css">
-	.dv-table td{
-		border:0;
-	}
-	.dv-label{
-		font-weight:bold;
-		color:#15428B;
-		width:100px;
-	}
-</style>
+		.dv-table td{
+			border:0;
+		}
+		.dv-label{
+			font-weight:bold;
+			color:#15428B;
+			width:100px;
+		}
+	</style>
 
 </head>
 <body>
-<table class="dv-table" border="0" style="width:100%;">
-	<tr>
-		<td class="dv-label">title</td>
-		<td colspan="5"><?php echo $item['title'];?></td>
-	</tr>
-	<tr>
-		<td class="dv-label">A: </td>
-		<td><?php echo $item['a'];?></td>
-		<td class="dv-label">B:</td>
-		<td><?php echo $item['b'];?></td>
-	</tr>
-	<tr>
-		<td class="dv-label">C: </td>
-		<td><?php echo $item['c'];?></td>
-		<td class="dv-label">D:</td>
-		<td><?php echo $item['d'];?></td>
-	</tr>
-	<tr>
-		<td class="dv-label">E: </td>
-		<td><?php 
+	<table class="dv-table" border="0" style="width:100%;">
+		<tr>
+			<td class="dv-label">title</td>
+			<td colspan="5"><?php echo $item['title'];?></td>
+		</tr>
+		<tr>
+			<td class="dv-label">A: </td>
+			<td><?php echo $item['a'];?></td>
+			<td class="dv-label">B:</td>
+			<td><?php echo $item['b'];?></td>
+		</tr>
+		<tr>
+			<td class="dv-label">C: </td>
+			<td><?php 
+				echo $item['c'];
+				?>
+			</td>
+			<td class="dv-label">D:</td>
+			<td><?php echo $item['d'];?></td>
+		</tr>
+		<tr>
+			<?php 
 			if (!empty($item['e']))
 			{
-				echo $item['e'];
+				echo '<td class="dv-label">E:</td>';
+				echo '<td>'.$item['e'].'</td>';
 			}
-			?>
-		</td>
-		<td class="dv-label">F:</td>
-		<td><?php 
+			?><?php 
 			if (!empty($item['f']))
 			{
-				echo $item['f'];
+				echo '<td class="dv-label">F:</td>';
+				echo '<td>'.$item['f'].'</td>';
+			}else{
+				echo '<td class="dv-label"></td>';
+				echo '<td></td>';
 			}
 			?>
-		</td>
-	</tr>
-	<tr>
-		<td class="dv-label">ans</td>
-		<td ><?php echo chr(64+$item['answer']);?></td>
-	</tr>
-</table>
+		</tr>
+		<tr>
+			<?php 
+			if (!empty($item['g']))
+			{
+				echo '<td class="dv-label">G:</td>';
+				echo '<td>'.$item['g'].'</td>';
+			}
+			?><?php 
+			if (!empty($item['h']))
+			{
+				echo '<td class="dv-label">H:</td>';
+				echo '<td>'.$item['h'].'</td>';
+			}else{
+				echo '<td class="dv-label"></td>';
+				echo '<td></td>';
+			}
+			?>
+		</tr>
+		<tr>
+			<?php 
+			$ans="";
+			switch ($item['type']) {
+				case 101:
+				$ans=$ans.chr($item['answer']+64);
+				break;
+				case 102:
+				$tempans=intval($item['answer']);
+				for($i=7;$i>=0;$i--){
+					if(intval($tempans/(1<<$i))){
+								//var_dump($i);	
+						$ans=chr($i+65).$ans;
+						$tempans=$tempans-(1<<$i);
+					}
+				}
+				break;
+				case 103:
+				$ans=$ans.chr($item['answer']+64);
+				break;
+				default:
+								# code...
+				break;
+			}
+
+			echo"
+			<tr>
+				<td class='dv-label'>答案:</td>
+				<td>".$ans."</td>
+			</tr>
+			";
+			?>
+		</tr>
+	</table>
 </body>
 <script type="text/javascript">
 	//alert("sdaf");

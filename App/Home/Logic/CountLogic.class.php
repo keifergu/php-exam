@@ -1,8 +1,12 @@
 <?php
 namespace Home\Logic;
 class CountLogic {
+	
 	public function countPaperGrade($paperId,$studentId)
 	{
+		if (is_null($paperId) OR is_null($studentId)) {
+			return "试卷id或学生id未设置";
+		}
 		$SubmitModel = D('Submit');
 		$QuestionModel = D('Question');
 		$PaperModel 	= D('Paper');
@@ -56,17 +60,19 @@ class CountLogic {
 		if (!is_null($studentAnswer)) {
 			;
 		}
-
+		//var_dump($paperAnswer);
+		//var_dump($studentAnswer);
 		//对获取到的答案进行比对
 		$correctQuestion = array();
 		$wrongQuestion  = array();
-		foreach ($studentAnswer as $key => $value) {
+		foreach ($studentAnswer as $key => $value) {	
 			if ($value['answer'] == $paperAnswer[$value['question_id']]) { //此处将该题目的question_id 放入正确答案的数组中作为健,直接得到值,即答案
 				if ( !is_array($correctQuestion[$value['type']])) {
 				 	$correctQuestion[$value['type']] = array();
 				 } 
 				//array_push($correctQuestion[$value['type']], array($value['num'] => $value['question_id']));
 				 $correctQuestion[$value['type']][$value['question_id']] = $value['answer'];
+				 //dump($correctQuestion);
 			}else{
 				if ( !is_array($wrongQuestion[$value['type']])) {
 				 	$wrongQuestion[$value['type']] = array();
@@ -79,7 +85,8 @@ class CountLogic {
 		//进行分数统计
 		$totalGrade = 0;
 		foreach ($correctQuestion as $key => $value) {
-			$typeGrade =  $GradeModel->where('test_type_id='.$paperId.$key)->getField('grade');
+			$gradeQuery = array('paper_id' => $paperId,'question_type' => $key);
+			$typeGrade =  $GradeModel->where($gradeQuery)->getField('grade');
 			if (is_null($typeGrade)) {
 				return '试卷"'.$paperId.'"分数未设置,请设置分数后重试';
 			}
@@ -105,7 +112,8 @@ class CountLogic {
 
 		//将数据写入数据库
 		$SummaryModel = D('Summary');
-		$data = array('save_id'     => $paperId.$studentId,
+		$data = array(
+			//'save_id'     => $paperId.$studentId,
 			'paper_id'    => $paperId,
 			'student_id' => $studentId,
 			'course_id'   => substr($paperId, 0,3),

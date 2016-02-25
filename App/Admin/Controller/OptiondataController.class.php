@@ -6,9 +6,15 @@ use Admin\Controller\CommonController;
 use Think\Log;
 
 class OptiondataController extends CommonController {
+	function test(){
+		$db=D('optiondata');
+		for($i=0;$i<100;$i++){
+			$db->test();
+		}
+		
+	}
 	function optionList($page = 1, $rows = 10, $sort = 'dictid', $order = 'asc', $courseid = '', $typeid = '') {
 		if (IS_POST && $courseid != '' && $typeid != '') {
-			
 			$option_db = M ( 'Optiondata' );
 			$total = $option_db->count ();
 			$order = $sort . ' ' . $order;
@@ -21,7 +27,8 @@ class OptiondataController extends CommonController {
 			// }
 			// var_dump($option_db->getLastSql());
 			$arr = object_array ( $list );
-			$total = count ( $arr );
+			//$total是datagrid理解的所有数据量
+			//$total = count ( $arr );
 			if ($total > 0) {
 				foreach ( $arr as $key => $value ) {
 					foreach ( $value as $key1 => $value1 ) {
@@ -152,10 +159,6 @@ class OptiondataController extends CommonController {
 				$data [$currentRow] [$currentColumn] = $currentSheet->getCell ( $address )->getValue ();
 			}
 		}
-		$this->save_import ( $data );
-	}
-	// 进行数据写入数据库操作
-	function save_import($data) {
 		$option_db = D ( 'optiondata' );
 		$option_db->ArrayToSql ( $data );
 	}

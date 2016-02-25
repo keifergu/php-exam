@@ -153,7 +153,11 @@ closed="true" buttons="#dlg-buttons">
         }
         function removeUser(){
         	var row = $('#option_index_dg').datagrid('getSelected');
-        	window.open("<{:U('Optiondata/optionRemove')}>&id="+row.question_id);  //打开一个新的页面
+            $.post("index.php?m=Admin&c=Optiondata&a=optionRemove",{
+                id:row.question_id
+            },function(data){
+
+            });
         }
         function onselect()
         {

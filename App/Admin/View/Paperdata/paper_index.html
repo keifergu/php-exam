@@ -35,14 +35,6 @@
 				<form id="paper_new_form" method="post" novalidate>
 					<tr>
 						<td>
-							<label>试卷ID:</label>
-						</td>
-						<td>
-							<input name="paper_id" id="paper_new_paper_id" class="easyui-validatebox" required="true" style="width:200px">
-						</td>
-					</tr>
-					<tr>
-						<td>
 							<label>试卷名称:</label>
 						</td>
 						<td>
@@ -150,13 +142,11 @@
 			$('#paper_new_dlg').form('clear');
 		}
 		function paperNew(){
-			var id=$('#paper_new_paper_id').val();
 			var name=$('#paper_new_paper_name').val();
 			var course=$('#paper_new_course_id').combobox('getValue');
 			var time=$('#paper_new_test_time').val();
 			var deadline=$('#paper_new_deadline').datetimebox('getValue');
 			$.post("index.php?m=Admin&c=Paperdata&a=paperNew",{
-				paper_id:$('#paper_new_paper_id').val(),
 				paper_name:$('#paper_new_paper_name').val(),
 				course_id:$('#paper_new_course_id').combobox('getValue'),
 				test_time:$('#paper_new_test_time').val(),
@@ -209,23 +199,6 @@
 				});
 			}
 		}
-		$('#paper_new_paper_id').blur(function(){
-			$.post("index.php?m=Admin&c=Paperdata&a=paperNewCheckId",{
-				id:$('#paper_new_paper_id').val()
-			},function(data){
-				if(data=='null'){
-					//alert("可用！");
-				}else{
-					//alert("不可用！");
-				}
-			});
-		});
-		/*function paperBack(){
-			$('#paper_index_dg').datagrid('reload');
-			$('#div-paper_index_dg').show();
-			$('#div-paper_add_dg').hide();
-			$('#div-paper_edit_dg').hide();
-		}*/
 	</script>
 </body>
 </html>

@@ -1,4 +1,3 @@
-
 jQuery(document).ready(function(){
  	var num = 1;
  	var oldAnswer = 0;
@@ -30,15 +29,42 @@ jQuery(document).ready(function(){
   		var num = parseInt($("#hid_nowNum").val());
   		var answer = checkAnswer();
   		var status=submitAnswer(answer,paperID,num);
-  		window.location.assign(" index.php?m=&c=index&a=finish");
+  		window.location.assign("index.php?m=&c=index&a=finish"+"&paperID="+paperID);
   	});
 });
+$(document).ready(function () {
+	
+	function getRTime(){
+	        var EndTime= new Date('2015/12/15 14:00:00'); //截止时间
+	        var NowTime = new Date();
+	        var t =EndTime.getTime() - NowTime.getTime();
+	        /*var d=Math.floor(t/1000/60/60/24);
+	        t-=d*(1000*60*60*24);
+	        var h=Math.floor(t/1000/60/60);
+	        t-=h*60*60*1000;
+	        var m=Math.floor(t/1000/60);
+	        t-=m*60*1000;
+	        var s=Math.floor(t/1000);*/
+
+	        var d=Math.floor(t/1000/60/60/24);
+	        var h=Math.floor(t/1000/60/60%24);
+	        var m=Math.floor(t/1000/60%60);
+	        var s=Math.floor(t/1000%60);
+
+	        //document.getElementById("t_d").innerHTML = d + "天";
+	        document.getElementById("t_h").innerHTML = h + ":";
+	        document.getElementById("t_m").innerHTML = m + ":";
+	        document.getElementById("t_s").innerHTML = s ;
+	    }
+	setInterval(getRTime,1000);
+	
+})
 //showFrame ,show the input radio frame
 function showFrame () {
 	for (var i = 1; i < 9; i++) {
 		var labelID = "option-label-"+i;
 		var inputID= "option-input-"+i;
-		var innerHTML= '<div class="col-xs-12 "><input type="radio" name="answer" value="'+(1<<i-1)+'" id="'+inputID+'"><label for="'+inputID+'" id="'+labelID+'" style="margin-top:12px;font-weight:100"></label></div>';
+		var innerHTML= '<div class="col-xs-12" style="margin-top:0.5em"><input type="radio" name="answer" class="col-xs-1" style="" value="'+(1<<i-1)+'" id="'+inputID+'"><label for="'+inputID+'" id="'+labelID+'" class="col-xs-11" style="padding-left:4px;padding-right:4px;font-weight:100;"></label></div>';
 		//var innerHTML=' <div><label id="'+labelID+'"><input type="radio"  name="answer" value="'+(1<<i-1)+'">1</label><div>';
 		$("#option").append(innerHTML);
 	}
@@ -63,7 +89,7 @@ function getShowQuestion( num ){
 			$("#option input").hide();
 			$("#option label").hide();
 			$("#title").hide();
-			$("#title").text(data.num+"."+data.title).fadeIn(500);
+			$("#title").text(data.num+"．"+data.title).fadeIn(500);
 			for (var i = 1; i < 9; i++) {
 				if (data.option[i-1]) {
 					$("#option-label-"+i).fadeIn(i*200);

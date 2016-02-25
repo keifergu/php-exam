@@ -14,8 +14,9 @@ class OptiondataModel extends Model {
 		$course_db = M ( 'data_dict' );
 		foreach ( $data as $key => $value ) {
 			$tempdata = array (
-					// 强制转换成string
-					'id' => intval ( '' . $data [$key] ['A'] ),
+					// 强制转换成string 
+					//question 自增
+					//'question_id' => intval ( '' . $data [$key] ['A'] ),
 					// belong_type=200
 					'course' => intval ( '' . $data [$key] ['B'] ),
 					// belong_type=100
@@ -23,25 +24,14 @@ class OptiondataModel extends Model {
 					'keyword' => '' . $data [$key] ['D'],
 					'title' => '' . $data [$key] ['E'],
 					'answer' => '' . $data [$key] ['F'],
-					'A' => '' . $data [$key] ['G'],
-					'B' => '' . $data [$key] ['H'],
-					'C' => '' . $data [$key] ['I'],
-					'D' => '' . $data [$key] ['J'],
-					'E' => '' . $data [$key] ['K'],
-					'F' => '' . $data [$key] ['L'],
+					'a' => '' . $data [$key] ['G'],
+					'b' => '' . $data [$key] ['H'],
+					'c' => '' . $data [$key] ['I'],
+					'd' => '' . $data [$key] ['J'],
+					'e' => '' . $data [$key] ['K'],
+					'f' => '' . $data [$key] ['L'],
 					'img' => '' . $data [$key] ['M'] 
 			);
-			$findid = array (
-					'id' => $tempdata ['id'] 
-			);
-			if ($course_db->where ( $findid )->select () != NULL) {
-				$this->Error [$this->ErrorNum ++] = '第' . $key . '行数据中题目id已存在！';
-				continue;
-			}
-			if ($tempdata ['id'] < 1000000000 || $tempdata ['id'] > 9999999999) {
-				$this->Error [$this->ErrorNum ++] = '第' . $key . '行数据中题目id命名长度不对，请检查';
-				continue;
-			}
 			$findcourse = array (
 					'type_id' => $tempdata ['course'],
 					'belong_type=' => 200 
@@ -70,6 +60,20 @@ class OptiondataModel extends Model {
 			}
 		}
 		echo json_encode($result);
+	}
+	function test(){
+		$data=array(
+			'title'=>rand(1,99),
+			'course_id'=>'201',
+			'type'=>'101',
+			'a'=>'123',
+			'b'=>'456',
+			'c'=>'789',
+			'd'=>'asdf',
+			);
+		$this->add($data);
+
+
 	}
 }
 ?>

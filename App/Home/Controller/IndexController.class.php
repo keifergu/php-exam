@@ -10,7 +10,10 @@ class IndexController extends Controller {
         $this->display();
     }
     public function question()
-    {
+    {   
+        $LoginLogic = D('Login','Logic');
+        $studentID = $LoginLogic->apiLoginCheck();
+
         $paperID = I('post.paperID');
         $num     = i('post.q');
         $examLogic     = D('Exam','Logic');
@@ -19,7 +22,9 @@ class IndexController extends Controller {
     }
     public function getOldAnswer()
     {
-        $studentID = '123';
+        $LoginLogic = D('Login','Logic');
+        $studentID = $LoginLogic->apiLoginCheck();
+
         $data      = I('post.');
         $paperID      = $data['paperID'];
         $num          = $data['num'];
@@ -29,7 +34,9 @@ class IndexController extends Controller {
     }
     public function submit()
     {
-        $studentID    = '123';
+        $LoginLogic = D('Login','Logic');
+        $studentID = $LoginLogic->apiLoginCheck();
+
         $data         = I('post.');
         $paperID      = $data['paperID'];
         $answer       = $data['answer'];
@@ -40,7 +47,9 @@ class IndexController extends Controller {
     }
     public function set()
     {
-        $studentID = '123';
+        $LoginLogic = D('Login','Logic');
+        $studentID = $LoginLogic->apiLoginCheck();
+
         $data = I('post.');
         $StudentModel = D('Student','Logic');
         switch ($data['type']) {
@@ -57,7 +66,9 @@ class IndexController extends Controller {
 
     public function remove()
     {
-        $studentID = '123';
+        $LoginLogic = D('Login','Logic');
+        $studentID = $LoginLogic->apiLoginCheck();
+
         $data = I("post.");
         //此处应该对数据的合法性进行检查
         $StudentModel = D('Student','Logic');
@@ -98,12 +109,22 @@ class IndexController extends Controller {
     		$this->display();
     	}
     }
+
+    public function logout()
+    {
+        $LoginLogic = D('Login','Logic');
+        $studentID = $LoginLogic->loginCheck();
+
+
+    }
     public function user(){
-    	/*$stuId = session('student.id');
-    	if ($stuid==null) {
-    		$this->error('用户未登录','login.html');
-    	}*/
-        $studentID = '123';
+    	$LoginLogic = D('Login','Logic');
+        $studentID = $LoginLogic->loginCheck();
+        if ($studentID == null) {
+            $this->error('用户未登录',U('Index/login'));
+        }
+
+
         $studentLogic = D('Student','Logic');
         $paperList    = $studentLogic->getPaperList($studentID);
         foreach ($paperList as $key => $value) {
@@ -127,20 +148,43 @@ class IndexController extends Controller {
     }
 
     public function exam_start($paperID){
+        $LoginLogic = D('Login','Logic');
+        $studentID = $LoginLogic->loginCheck();
+        if ($studentID == null) {
+            $this->error('用户未登录',U('Index/login'));
+        }
+
+        //获得试卷信息
         $paperModel = D('Exam','Logic');
         $paperInfo  = $paperModel->getPaperInfo($paperID);
         $dictModel  = D('Dict');
         $paperInfo['course_name'] = $dictModel->getName($paperInfo['course_id']);
         $paperInfo['url'] = U('Index/exam',array('paperID'=>$paperID)); //生成跳转url
+
+        //将试卷信息存入cookie
+        $paperinfo = cookie('paperinfo');
+        $test_id = $paperinfo['test_id'];
+        if ($test_id == null) {
+            $cookieInfo = array('id'    => $paperInfo['paper_id'],
+                                'total' => $paperInfo['question_num'],
+                                'time'  => $paperInfo['test_time']);
+            cookie('paperinfo' , $cookieInfo);
+        }
         $this->assign('paper',$paperInfo);
         $this->display();
     }
 
     public function exam(){
-        //$studentID = session('student.id');
-        $studentID     = '123';
+        $LoginLogic = D('Login','Logic');
+        $studentID = $LoginLogic->loginCheck();
+        if ($studentID == null) {
+            $this->error('用户未登录',U('Index/login'));
+        }
+
         $paperID       = I('get.paperID');
         $examLogic     = D('Exam','Logic');
+        $examLogic->setStartTime($studentID,$paperID);
+
         $paperInfo  = $examLogic->getPaperInfo($paperID);
         $this->assign('paper',$paperInfo);
         $this->display();
@@ -149,8 +193,25 @@ class IndexController extends Controller {
 
 
     public function finish(){
+        $LoginLogic = D('Login','Logic');
+        $studentID = $LoginLogic->loginCheck();
+        if ($studentID == null) {
+            $this->error('用户未登录',U('Index/login'));
+        }
+
+        $paperID   = I('get.paperID');
+        $countLogic = D('Count','Logic');
+        $result = $countLogic->countPaperGrade($paperID,$studentID);
+        if ($result == false) {
+            $resultStr = "分数统计失败";
+        }else{
+            $resultStr = "分数统计成功";
+            $examLogic     = D('Exam','Logic');
+            $examLogic->setEndTime($studentID,$paperID);
+        }
+        $this->assign('grade',$resultStr);
     	$this->display();
-    	$this->redirect('Index/user',array(),2,' ');
+    	//$this->redirect('Index/user',array(),2,' ');
     }
 
 
