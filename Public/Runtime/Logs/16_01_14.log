@@ -1,0 +1,1337 @@
+[ 2016-01-14T13:27:04+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=StuImport&a=upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000829s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000117s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.007419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007568s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Upload.class.php 第 167 行.
+ERR: Could not open Uploads\2016-01-14/160114012704.xls for reading! File does not exist, or it is not readable.
+
+[ 2016-01-14T13:27:19+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=StuImport&a=upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000541s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000098s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.003587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003659s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Upload.class.php 第 167 行.
+ERR: The filename Uploads/2016-01-14/160114012719.xls is not recognised as an OLE file
+
+[ 2016-01-14T13:27:26+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000705s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000125s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.002801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002896s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000052s ]
+
+[ 2016-01-14T13:28:20+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=StuImport&a=upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000384s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000079s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001496s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Upload.class.php 第 167 行.
+ERR: The filename Uploads/2016-01-14/160114012820.xls is not recognised as an OLE file
+
+[ 2016-01-14T13:28:32+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=StuImport&a=upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000394s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000098s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001777s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Upload.class.php 第 167 行.
+ERR: The filename Uploads/2016-01-14/160114012832.xls is not recognised as an OLE file
+
+[ 2016-01-14T13:29:05+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=StuImport&a=upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000413s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000096s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001733s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001806s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Upload.class.php 第 167 行.
+ERR: The filename Uploads/2016-01-14/160114012905.xls is not recognised as an OLE file
+
+[ 2016-01-14T13:29:33+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=StuImport&a=upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000957s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000125s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.005618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005770s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Upload.class.php 第 167 行.
+ERR: The filename Uploads/2016-01-14/160114012933.xls is not recognised as an OLE file
+
+[ 2016-01-14T13:30:02+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=StuImport&a=upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000461s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000126s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001943s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Upload.class.php 第 167 行.
+NOTIC: [8] Use of undefined constant PHPExcel - assumed 'PHPExcel' /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 71 行.
+ERR: The filename Uploads/2016-01-14/160114013002.xls is not recognised as an OLE file
+
+[ 2016-01-14T13:30:10+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=StuImport&a=upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000376s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000096s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001485s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001555s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Upload.class.php 第 167 行.
+ERR: The filename Uploads/2016-01-14/160114013010.xls is not recognised as an OLE file
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php:71) /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Think.class.php 第 226 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php:71) /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Think.class.php 第 227 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php:71) /var/www/html/thinkphpcms/Libs/ThinkPHP/Common/functions.php 第 1313 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php:71) /var/www/html/thinkphpcms/Libs/ThinkPHP/Common/functions.php 第 1315 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php:71) /var/www/html/thinkphpcms/App/Admin/View/Common/exception.html 第 5 行.
+
+[ 2016-01-14T13:30:22+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=StuImport&a=upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000564s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000113s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.002120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002200s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Upload.class.php 第 167 行.
+ERR: The filename Uploads/2016-01-14/160114013022.xls is not recognised as an OLE file
+
+[ 2016-01-14T13:30:45+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=StuImport&a=upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000395s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000090s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001470s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Upload.class.php 第 167 行.
+ERR: The filename Uploads/2016-01-14/160114013045.xls is not recognised as an OLE file
+
+[ 2016-01-14T13:32:00+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000529s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000105s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000083s ]
+
+[ 2016-01-14T13:32:15+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000507s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000104s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001698s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001854s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001896s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000127s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000149s ]
+
+[ 2016-01-14T13:32:28+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000393s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000091s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001536s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001894s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001919s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000037s ]
+
+[ 2016-01-14T13:32:28+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=dictdata&a=getdictnamejson&id=200
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000420s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000093s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001645s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000487s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `belong_type` = 200 )  [ RunTime:0.000429s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000047s ]
+
+[ 2016-01-14T13:32:29+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000394s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000093s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001586s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001667s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001691s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000035s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000013s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000025s ]
+
+[ 2016-01-14T13:32:29+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000379s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000089s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001537s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001674s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001695s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000026s ]
+
+[ 2016-01-14T13:32:33+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000455s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000111s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001694s ]
+SQL: SHOW COLUMNS FROM `app2_paper_content` [ RunTime:0.000404s ]
+SQL: SELECT * FROM `app2_paper_content` WHERE ( `course_id` = '202' ) LIMIT 0,15   [ RunTime:0.000327s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `app2_paper_content` WHERE ( `course_id` = '202' ) LIMIT 1   [ RunTime:0.000256s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000345s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 202 )  [ RunTime:0.000132s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 202 )  [ RunTime:0.000129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000056s ]
+
+[ 2016-01-14T13:32:35+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000143s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000603s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000120s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.003610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003881s ]
+SQL: SHOW COLUMNS FROM `app2_paper_content` [ RunTime:0.002603s ]
+SQL: SELECT * FROM `app2_paper_content` WHERE ( `course_id` = '201' ) LIMIT 0,15   [ RunTime:0.000621s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `app2_paper_content` WHERE ( `course_id` = '201' ) LIMIT 1   [ RunTime:0.000250s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000534s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000142s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000148s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000095s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000090s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000403s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000183s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000407s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000401s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.002925s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000579s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000142s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000110s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000109s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000095s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2016-01-14T13:32:37+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000429s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000091s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001720s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004538s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000040s ]
+
+[ 2016-01-14T13:32:37+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=dictdata&a=getdictnamejson&id=200
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000433s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000094s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001616s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000370s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `belong_type` = 200 )  [ RunTime:0.000169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000051s ]
+
+[ 2016-01-14T13:32:38+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000436s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000099s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.002684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002753s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001781s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000035s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000029s ]
+
+[ 2016-01-14T13:32:38+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000412s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000089s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001637s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001618s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001638s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000022s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000040s ]
+
+[ 2016-01-14T13:32:43+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000455s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000093s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001619s ]
+SQL: SHOW COLUMNS FROM `app2_admin` [ RunTime:0.000408s ]
+SQL: SHOW COLUMNS FROM `app2_menu` [ RunTime:0.000345s ]
+SQL: SHOW COLUMNS FROM `app2_admin_role` [ RunTime:0.000367s ]
+SQL: SELECT `userid`,`username`,`roleid`,`encrypt`,`lastloginip`,`lastlogintime`,`email`,`realname` FROM `app2_admin` WHERE ( `userid` = 1 ) LIMIT 1   [ RunTime:0.000183s ]
+SQL: SELECT `rolename` FROM `app2_admin_role` WHERE ( `roleid` = 1 ) LIMIT 1   [ RunTime:0.000112s ]
+SQL: SELECT * FROM `app2_menu` WHERE ( `parentid` = 0 ) AND ( `display` = 1 ) ORDER BY listorder ASC LIMIT 1000   [ RunTime:0.002073s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004572s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004610s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2016-01-14T13:32:45+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_main&_=1452749565574
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000390s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000144s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001598s ]
+SQL: SHOW COLUMNS FROM `app2_admin` [ RunTime:0.000327s ]
+SQL: SHOW COLUMNS FROM `app2_admin_role` [ RunTime:0.000354s ]
+SQL: SELECT `userid`,`username`,`roleid`,`encrypt`,`lastloginip`,`lastlogintime`,`email`,`realname` FROM `app2_admin` WHERE ( `userid` = 1 ) LIMIT 1   [ RunTime:0.000139s ]
+SQL: SELECT `rolename` FROM `app2_admin_role` WHERE ( `roleid` = 1 ) LIMIT 1   [ RunTime:0.000101s ]
+NOTIC: [8192] Non-static method Admin\Common\Sysinfo::getinfo() should not be called statically, assuming $this from incompatible context /var/www/html/thinkphpcms/App/Admin/Controller/IndexController.class.php 第 111 行.
+NOTIC: [8192] Non-static method Admin\Common\Sysinfo::sys_linux() should not be called statically, assuming $this from incompatible context /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 13 行.
+NOTIC: [8] Undefined index: mhz /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 128 行.
+NOTIC: [8] Undefined index: cache /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 129 行.
+NOTIC: [8] Undefined index: bogomips /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 130 行.
+NOTIC: [8] Undefined offset: 4 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 84 行.
+NOTIC: [8] Undefined offset: 5 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 85 行.
+NOTIC: [8] Undefined offset: 6 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 86 行.
+NOTIC: [8] Undefined offset: 7 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 87 行.
+NOTIC: [8] Undefined offset: 8 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 88 行.
+NOTIC: [8] Undefined offset: 9 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 89 行.
+NOTIC: [8] Undefined offset: 10 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 90 行.
+NOTIC: [8] Undefined offset: 4 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 93 行.
+NOTIC: [8] Undefined offset: 5 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 94 行.
+NOTIC: [8] Undefined offset: 6 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 95 行.
+NOTIC: [8] Undefined offset: 7 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 96 行.
+NOTIC: [8] Undefined offset: 8 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 97 行.
+NOTIC: [8] Undefined offset: 9 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 98 行.
+NOTIC: [8] Undefined offset: 10 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+NOTIC: [8] Undefined index: win_n /var/www/html/thinkphpcms/Public/Runtime/Cache/Admin/80827836cede954c217e71a469bdf47e.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009575s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000041s ]
+
+[ 2016-01-14T13:32:45+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_menuleft
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000401s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000095s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001574s ]
+SQL: SHOW COLUMNS FROM `app2_menu` [ RunTime:0.000322s ]
+SQL: SELECT * FROM `app2_menu` WHERE ( `parentid` = 1 ) AND ( `display` = 1 ) ORDER BY listorder ASC LIMIT 1000   [ RunTime:0.000263s ]
+SQL: SELECT * FROM `app2_menu` WHERE ( `parentid` = 6 ) AND ( `display` = 1 ) ORDER BY listorder ASC LIMIT 1000   [ RunTime:0.000158s ]
+SQL: SELECT * FROM `app2_menu` WHERE ( `parentid` = 47 ) AND ( `display` = 1 ) ORDER BY listorder ASC LIMIT 1000   [ RunTime:0.000145s ]
+SQL: SELECT * FROM `app2_menu` WHERE ( `parentid` = 49 ) AND ( `display` = 1 ) ORDER BY listorder ASC LIMIT 1000   [ RunTime:0.000190s ]
+SQL: SELECT * FROM `app2_menu` WHERE ( `parentid` = 53 ) AND ( `display` = 1 ) ORDER BY listorder ASC LIMIT 1000   [ RunTime:0.000163s ]
+SQL: SELECT * FROM `app2_menu` WHERE ( `parentid` = 55 ) AND ( `display` = 1 ) ORDER BY listorder ASC LIMIT 1000   [ RunTime:0.000135s ]
+
+[ 2016-01-14T13:32:47+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist&menuid=56&_=1452749567031
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000442s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000093s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001507s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001702s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001726s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000030s ]
+
+[ 2016-01-14T13:32:47+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=dictdata&a=getdictnamejson&id=200
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000438s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000093s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001649s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000340s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `belong_type` = 200 )  [ RunTime:0.000139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000044s ]
+
+[ 2016-01-14T13:32:47+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000464s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000098s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001654s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005811s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000020s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000033s ]
+
+[ 2016-01-14T13:32:47+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000401s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000097s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001574s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001613s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001636s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000036s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000027s ]
+
+[ 2016-01-14T13:32:47+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001933s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000163s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.003172s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003226s ]
+SQL: SHOW COLUMNS FROM `app2_paper_content` [ RunTime:0.000637s ]
+SQL: SELECT * FROM `app2_paper_content` WHERE ( `course_id` = '201' ) LIMIT 0,15   [ RunTime:0.000229s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `app2_paper_content` WHERE ( `course_id` = '201' ) LIMIT 1   [ RunTime:0.000176s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000321s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000121s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000098s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000159s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000088s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.002778s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000225s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000129s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000108s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000109s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000095s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000092s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000097s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000088s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000089s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000061s ]
+
+[ 2016-01-14T13:32:51+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000494s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000111s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.003883s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003962s ]
+SQL: SHOW COLUMNS FROM `app2_paper_content` [ RunTime:0.002225s ]
+SQL: SELECT * FROM `app2_paper_content` WHERE ( `course_id` = '202' ) LIMIT 0,15   [ RunTime:0.000623s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `app2_paper_content` WHERE ( `course_id` = '202' ) LIMIT 1   [ RunTime:0.000217s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000481s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 202 )  [ RunTime:0.000168s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 202 )  [ RunTime:0.000137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
+
+[ 2016-01-14T13:32:55+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=StuImport&a=upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000425s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000093s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001510s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Upload.class.php 第 167 行.
+ERR: The filename Uploads/2016-01-14/160114013255.xls is not recognised as an OLE file
+
+[ 2016-01-14T13:32:57+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=StuImport&a=upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000447s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000095s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001511s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Upload.class.php 第 167 行.
+ERR: The filename Uploads/2016-01-14/160114013257.xls is not recognised as an OLE file
+
+[ 2016-01-14T13:32:59+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=StuImport&a=upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000338s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000080s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001385s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Upload.class.php 第 167 行.
+ERR: The filename Uploads/2016-01-14/160114013259.xls is not recognised as an OLE file
+
+[ 2016-01-14T13:33:39+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=StuImport&a=upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000425s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000091s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001649s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Upload.class.php 第 167 行.
+ERR: The filename Uploads/2016-01-14/160114013339.xls is not recognised as an OLE file
+
+[ 2016-01-14T13:33:53+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=StuImport&a=upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000458s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000112s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001778s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Upload.class.php 第 167 行.
+ERR: The filename Uploads/2016-01-14/160114013353.xls is not recognised as an OLE file
+
+[ 2016-01-14T13:33:57+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000381s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000093s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001550s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001608s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001632s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001972s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002003s ]
+
+[ 2016-01-14T13:34:12+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=StuImport&a=upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000473s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000102s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001719s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Upload.class.php 第 167 行.
+ERR: The filename Uploads/2016-01-14/160114013412.xls is not recognised as an OLE file
+
+[ 2016-01-14T13:34:14+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000503s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000159s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001972s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005043s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005091s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000053s ]
+
+[ 2016-01-14T13:34:15+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=dictdata&a=getdictnamejson&id=200
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000366s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000088s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001544s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000591s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `belong_type` = 200 )  [ RunTime:0.000177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000053s ]
+
+[ 2016-01-14T13:34:15+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000493s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000094s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001747s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001676s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001699s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000035s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000026s ]
+
+[ 2016-01-14T13:34:15+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000422s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000093s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001568s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001619s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001641s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000035s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000026s ]
+
+[ 2016-01-14T13:34:19+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=StuImport&a=upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000414s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000140s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001524s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Upload.class.php 第 167 行.
+ERR: The filename Uploads/2016-01-14/160114013419.xls is not recognised as an OLE file
+
+[ 2016-01-14T13:34:27+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000427s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000100s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001591s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002727s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002757s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000035s ]
+
+[ 2016-01-14T13:34:34+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=StuImport&a=upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000448s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000102s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001725s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Upload.class.php 第 167 行.
+ERR: The filename Uploads/2016-01-14/160114013434.xls is not recognised as an OLE file
+
+[ 2016-01-14T13:35:21+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=StuImport&a=upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000454s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000094s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001725s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Upload.class.php 第 167 行.
+ERR: The filename Uploads/2016-01-14/160114013521.xls is not recognised as an OLE file
+
+[ 2016-01-14T13:36:00+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=StuImport&a=upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000487s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000105s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.009985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010103s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Upload.class.php 第 167 行.
+ERR: The filename Uploads/2016-01-14/160114013600.xls is not recognised as an OLE file
+
+[ 2016-01-14T13:36:30+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000472s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000908s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.008253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008346s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000064s ]
+
+[ 2016-01-14T13:36:59+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=XlsToSql
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000468s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000093s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001716s ]
+ERR: 参数错误或者未定义:filename
+
+[ 2016-01-14T13:37:21+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=StuImport&a=upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000336s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000082s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001351s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Upload.class.php 第 167 行.
+ERR: The filename Uploads/2016-01-14/160114013721.xls is not recognised as an OLE file
+
+[ 2016-01-14T13:37:39+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=StuImport&a=upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000492s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000115s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.007418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007514s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Upload.class.php 第 167 行.
+ERR: The filename Uploads/2016-01-14/160114013739.xls is not recognised as an OLE file
+
+[ 2016-01-14T13:37:56+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=XlsToSql&filename=Uploads/2016-01-14/160114013739.xls
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000426s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000098s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001668s ]
+ERR: The filename Uploads/2016-01-14/160114013739.xls is not recognised as an OLE file
+
+[ 2016-01-14T13:38:10+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=XlsToSql&filename=%27Uploads/2016-01-14/160114013739.xls%27
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000505s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000110s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001837s ]
+ERR: Could not open 'Uploads/2016-01-14/160114013739.xls' for reading! File does not exist, or it is not readable.
+
+[ 2016-01-14T13:42:45+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000921s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000204s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.006240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006468s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
+
+[ 2016-01-14T13:45:08+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=XlsToSql&filename=%27Uploads/2016-01-14/160114013739.xls%27
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000719s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.001470s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.003742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003849s ]
+ERR: Could not open 'Uploads/2016-01-14/160114013739.xls' for reading! File does not exist, or it is not readable.
+
+[ 2016-01-14T13:45:10+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=XlsToSql&filename=%27Uploads/2016-01-14/160114013739.xls%27
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000062s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000806s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000171s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.003866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004048s ]
+ERR: Could not open 'Uploads/2016-01-14/160114013739.xls' for reading! File does not exist, or it is not readable.
+
+[ 2016-01-14T13:45:11+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=XlsToSql&filename=%27Uploads/2016-01-14/160114013739.xls%27
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000682s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000186s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.002688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002802s ]
+ERR: Could not open 'Uploads/2016-01-14/160114013739.xls' for reading! File does not exist, or it is not readable.
+
+[ 2016-01-14T13:45:11+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=XlsToSql&filename=%27Uploads/2016-01-14/160114013739.xls%27
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000693s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000186s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.002768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002895s ]
+ERR: Could not open 'Uploads/2016-01-14/160114013739.xls' for reading! File does not exist, or it is not readable.
+
+[ 2016-01-14T13:45:12+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=XlsToSql&filename=%27Uploads/2016-01-14/160114013739.xls%27
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000486s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000106s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001736s ]
+ERR: Could not open 'Uploads/2016-01-14/160114013739.xls' for reading! File does not exist, or it is not readable.
+
+[ 2016-01-14T13:45:32+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=XlsToSql
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000345s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000077s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001456s ]
+ERR: 参数错误或者未定义:filename
+
+[ 2016-01-14T13:45:48+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=XlsToSql
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000420s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000094s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001841s ]
+ERR: The filename Uploads/2016-01-14/160114013739.xls is not recognised as an OLE file
+
+[ 2016-01-14T13:52:45+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001693s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000177s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.006208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000061s ]
+
+[ 2016-01-14T13:57:17+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=XlsToSql
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000078s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000764s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000147s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.008430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008710s ]
+ERR: The filename Uploads/2016-01-14/160114013739.xls is not recognised as an OLE file
+
+[ 2016-01-14T13:57:18+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=XlsToSql
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000670s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000157s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.002473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002568s ]
+ERR: The filename Uploads/2016-01-14/160114013739.xls is not recognised as an OLE file
+
+[ 2016-01-14T13:57:19+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=XlsToSql
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000381s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000101s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001571s ]
+ERR: The filename Uploads/2016-01-14/160114013739.xls is not recognised as an OLE file
+
+[ 2016-01-14T14:00:35+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=XlsToSql
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000948s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.002310s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.006687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006886s ]
+ERR: Could not open Uploads/test.xls for reading! File does not exist, or it is not readable.
+
+[ 2016-01-14T14:01:17+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=XlsToSql
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000572s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000130s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.002388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002495s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000604s ]
+SQL: SHOW COLUMNS FROM `app2_paper_content` [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `app2_student_info` [ RunTime:0.000591s ]
+NOTIC: [8] Undefined index: C /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 95 行.
+SQL: SELECT * FROM `app2_data_dict` WHERE ( `type_name` = null ) AND ( `belong_type` = 200 )  [ RunTime:0.000320s ]
+SQL: SELECT * FROM `app2_student_info` WHERE ( `student_id` = null ) AND ( `student_course` = null )  [ RunTime:0.000155s ]
+SQL: SELECT * FROM `app2_paper_content` WHERE ( `course_id` = null )  [ RunTime:0.000227s ]
+NOTIC: [8] Undefined index: B /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 113 行.
+SQL: INSERT INTO `app2_student_info` (`student_id`,`student_name`,`student_course`,`finish_paper`) VALUES (null,null,null,null) [ RunTime:0.001874s ]
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `app2_student_info` (`student_id`,`student_name`,`student_course`,`finish_paper`) VALUES (null,null,null,null)
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000084s ]
+
+[ 2016-01-14T14:01:37+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=XlsToSql
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000545s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.001876s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.004118s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004225s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `app2_paper_content` [ RunTime:0.000906s ]
+SQL: SHOW COLUMNS FROM `app2_student_info` [ RunTime:0.004548s ]
+NOTIC: [8] Undefined index: C /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 95 行.
+SQL: SELECT * FROM `app2_data_dict` WHERE ( `type_name` = null ) AND ( `belong_type` = 200 )  [ RunTime:0.000298s ]
+SQL: SELECT * FROM `app2_student_info` WHERE ( `student_id` = null ) AND ( `student_course` = null )  [ RunTime:0.000134s ]
+SQL: SELECT * FROM `app2_paper_content` WHERE ( `course_id` = null )  [ RunTime:0.000206s ]
+NOTIC: [8] Undefined index: B /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 113 行.
+SQL: INSERT INTO `app2_student_info` (`student_id`,`student_name`,`student_course`,`finish_paper`) VALUES (null,null,null,null) [ RunTime:0.000117s ]
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `app2_student_info` (`student_id`,`student_name`,`student_course`,`finish_paper`) VALUES (null,null,null,null)
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000556s ]
+
+[ 2016-01-14T14:01:42+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=StuImport&a=upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000403s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000102s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001610s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Upload.class.php 第 167 行.
+ERR: The filename Uploads/2016-01-14/160114020142.xls is not recognised as an OLE file
+
+[ 2016-01-14T14:01:47+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=XlsToSql
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000719s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.001340s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.003731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003845s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000497s ]
+SQL: SHOW COLUMNS FROM `app2_paper_content` [ RunTime:0.000380s ]
+SQL: SHOW COLUMNS FROM `app2_student_info` [ RunTime:0.002712s ]
+NOTIC: [8] Undefined index: C /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 95 行.
+SQL: SELECT * FROM `app2_data_dict` WHERE ( `type_name` = null ) AND ( `belong_type` = 200 )  [ RunTime:0.000252s ]
+SQL: SELECT * FROM `app2_student_info` WHERE ( `student_id` = null ) AND ( `student_course` = null )  [ RunTime:0.000134s ]
+SQL: SELECT * FROM `app2_paper_content` WHERE ( `course_id` = null )  [ RunTime:0.000252s ]
+NOTIC: [8] Undefined index: B /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 113 行.
+SQL: INSERT INTO `app2_student_info` (`student_id`,`student_name`,`student_course`,`finish_paper`) VALUES (null,null,null,null) [ RunTime:0.000097s ]
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `app2_student_info` (`student_id`,`student_name`,`student_course`,`finish_paper`) VALUES (null,null,null,null)
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000079s ]
+
+[ 2016-01-14T14:02:44+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=download
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000390s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000080s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001584s ]
+NOTIC: [2] fopen(/var/www/html/thinkphpcms/Public/Downloads/StuImport_Demo.xls): failed to open stream: Permission denied /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 32 行.
+NOTIC: [2] feof() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 42 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 43 行.
+NOTIC: [2] feof() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 42 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 43 行.
+NOTIC: [2] feof() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 42 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 43 行.
+NOTIC: [2] feof() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 42 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 43 行.
+NOTIC: [2] feof() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 42 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 43 行.
+NOTIC: [2] feof() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 42 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 43 行.
+NOTIC: [2] feof() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 42 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 43 行.
+NOTIC: [2] feof() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 42 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 43 行.
+NOTIC: [2] feof() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 42 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 43 行.
+NOTIC: [2] feof() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 42 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 43 行.
+NOTIC: [2] feof() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 42 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 43 行.
+NOTIC: [2] feof() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 42 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 43 行.
+NOTIC: [2] feof() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 42 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 43 行.
+NOTIC: [2] feof() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 42 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 43 行.
+NOTIC: [2] feof() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 42 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 43 行.
+NOTIC: [2] feof() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 42 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 43 行.
+NOTIC: [2] feof() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 42 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 43 行.
+NOTIC: [2] feof() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 42 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 43 行.
+NOTIC: [2] feof() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 42 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 43 行.
+NOTIC: [2] feof() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 42 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 43 行.
+NOTIC: [2] feof() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 42 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 43 行.
+NOTIC: [2] feof() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 42 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 43 行.
+NOTIC: [2] feof() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 42 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 43 行.
+NOTIC: [2] feof() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 42 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 43 行.
+NOTIC: [2] feof() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 42 行.
+NOTIC: [2] fread() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 43 行.
+NOTIC: [2] feof() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 42 行.
+NOTIC: [2] fclose() expects parameter 1 to be resource, boolean given /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 47 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2016-01-14T14:02:47+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000360s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000083s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001413s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000036s ]
+
+[ 2016-01-14T14:02:54+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=StuImport&a=upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000420s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000190s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001920s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Upload.class.php 第 167 行.
+ERR: The filename Uploads/2016-01-14/160114020254.xls is not recognised as an OLE file
+
+[ 2016-01-14T14:03:03+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=XlsToSql
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000739s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000179s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.007198s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007340s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000509s ]
+SQL: SHOW COLUMNS FROM `app2_paper_content` [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `app2_student_info` [ RunTime:0.002235s ]
+NOTIC: [8] Undefined index: C /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 95 行.
+SQL: SELECT * FROM `app2_data_dict` WHERE ( `type_name` = null ) AND ( `belong_type` = 200 )  [ RunTime:0.000244s ]
+SQL: SELECT * FROM `app2_student_info` WHERE ( `student_id` = null ) AND ( `student_course` = null )  [ RunTime:0.000138s ]
+SQL: SELECT * FROM `app2_paper_content` WHERE ( `course_id` = null )  [ RunTime:0.000276s ]
+NOTIC: [8] Undefined index: B /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 113 行.
+SQL: INSERT INTO `app2_student_info` (`student_id`,`student_name`,`student_course`,`finish_paper`) VALUES (null,null,null,null) [ RunTime:0.000096s ]
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `app2_student_info` (`student_id`,`student_name`,`student_course`,`finish_paper`) VALUES (null,null,null,null)
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000069s ]
+
+[ 2016-01-14T14:03:28+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=XlsToSql
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000591s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000250s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.006744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006859s ]
+ERR: The filename Uploads/2016-01-14/160114020254.xls is not recognised as an OLE file
+
+[ 2016-01-14T14:06:27+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=XlsToSql
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000061s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000804s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000152s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.002711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002845s ]
+ERR: The filename Uploads/2016-01-14/160114020254.xls is not recognised as an OLE file
+
+[ 2016-01-14T14:06:30+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=XlsToSql
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000528s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000132s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.002013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002094s ]
+ERR: The filename Uploads/2016-01-14/160114020254.xls is not recognised as an OLE file
+
+[ 2016-01-14T14:06:30+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=XlsToSql
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000562s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000158s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.002207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002297s ]
+ERR: The filename Uploads/2016-01-14/160114020254.xls is not recognised as an OLE file
+
+[ 2016-01-14T14:06:31+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=XlsToSql
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000071s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001523s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000400s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.007149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007476s ]
+ERR: The filename Uploads/2016-01-14/160114020254.xls is not recognised as an OLE file
+
+[ 2016-01-14T14:06:32+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=XlsToSql
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001169s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.001773s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.006829s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007059s ]
+ERR: The filename Uploads/2016-01-14/160114020254.xls is not recognised as an OLE file
+
+[ 2016-01-14T14:07:04+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=XlsToSql
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000410s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000081s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001417s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001487s ]
+ERR: Could not open Uploads/2016-01-14/160114020254.xls for reading! File does not exist, or it is not readable.
+
+[ 2016-01-14T14:07:44+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=XlsToSql
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000457s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000094s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001729s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `app2_paper_content` [ RunTime:0.000410s ]
+SQL: SHOW COLUMNS FROM `app2_student_info` [ RunTime:0.000287s ]
+NOTIC: [8] Undefined index: C /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 95 行.
+SQL: SELECT * FROM `app2_data_dict` WHERE ( `type_name` = null ) AND ( `belong_type` = 200 )  [ RunTime:0.000155s ]
+SQL: SELECT * FROM `app2_student_info` WHERE ( `student_id` = null ) AND ( `student_course` = null )  [ RunTime:0.000115s ]
+SQL: SELECT * FROM `app2_paper_content` WHERE ( `course_id` = null )  [ RunTime:0.000187s ]
+NOTIC: [8] Undefined index: B /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 113 行.
+SQL: INSERT INTO `app2_student_info` (`student_id`,`student_name`,`student_course`,`finish_paper`) VALUES (null,null,null,null) [ RunTime:0.000086s ]
+ERR: 1048:Column 'student_id' cannot be null
+ [ SQL语句 ] : INSERT INTO `app2_student_info` (`student_id`,`student_name`,`student_course`,`finish_paper`) VALUES (null,null,null,null)
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000054s ]
+
+[ 2016-01-14T21:22:38+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000079s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001869s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000274s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.018484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018702s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000086s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000155s ]
+
+[ 2016-01-14T21:32:40+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000104s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.002061s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.001555s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.015905s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000068s ]
+
+[ 2016-01-14T21:42:40+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000072s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.002806s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000289s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.010988s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000089s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000143s ]
+
+[ 2016-01-14T21:52:40+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000072s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001257s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000264s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.018592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018797s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000615s ]
+
