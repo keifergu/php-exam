@@ -31,11 +31,7 @@
                                 <div class="list-group">
                                     <?php if(is_array($testData)): foreach($testData as $key=>$vo): ?><a href="<?php echo ($vo["examUrl"]); ?>" class="list-group-item"><?php echo ($vo["testName"]); ?></a><?php endforeach; endif; ?>
                                 </div>
-                            <span>完成的试卷</span>
-                                <div class="list-group">
-                                    <?php if(is_array($finishPaper)): foreach($finishPaper as $key=>$vo): ?><a href="#" class="list-group-item"><?php echo ($vo["testName"]); ?></a><?php endforeach; endif; ?>
-                                </div>
-                            </div>
+                    </div>
 
                     <!-- 用户中心 -->
                             <div role="tabpanel" class="tab-pane" id="profile">

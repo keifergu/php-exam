@@ -17,6 +17,7 @@ class ExamLogic {
 				return false;
 			}
 			$paperinfo['test_id'] = $id;
+			$paperinfo['start_time'] = $time['start_time'];
 			cookie('paperinfo', $paperinfo);
 		}
 	}
@@ -31,8 +32,8 @@ class ExamLogic {
 		}
 		$SummaryModel = D('Summary');
 		$field = array('test_id' => $test_id);
-		$time['submit_time'] = date("Y-m-d h:i:s");
-		$id = $SummaryModel->where($field)->add($time);
+		$submit_time = date("Y-m-d h:i:s");
+		$id = $SummaryModel->where($field)->setField('submit_time',$submit_time);
 		if ($id == null) {
 			return false;
 		}

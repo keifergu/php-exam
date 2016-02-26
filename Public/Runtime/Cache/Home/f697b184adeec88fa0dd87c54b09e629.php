@@ -81,6 +81,13 @@ var paperinfo = $.cookie('paperinfo');
 paperinfo = JSON.parse(paperinfo.slice(6)); //由于thinkphp保存cookie的不规范,所以需要将前6个字符裁剪掉才为标准的json字符串
 paperinfo.nowNum = 1;
 
+paperinfo['start_time'] = unescape(paperinfo['start_time']).replace('+',' ').replace(/\-/g, "/");
+paperinfo['total_time'] = unescape(paperinfo['total_time']);
+alert(paperinfo['start_time']);
+alert(paperinfo['total_time']);
+
+
+
   $(document).ready(function(){
     //加载主体框架
     showFrame();
@@ -88,8 +95,8 @@ paperinfo.nowNum = 1;
     showNumberTag();
 
     var oldAnswer = 0;
-    var paperID = paperinfo.id;
-    var totalNum = paperinfo.total;
+    var paperID = paperinfo.paper_id;
+    var totalNum = paperinfo.total_num;
       $("#btn-next").click(function() {
         var num = paperinfo.nowNum+1;
         var nowAnswer = checkAnswer();
@@ -98,7 +105,7 @@ paperinfo.nowNum = 1;
           var status = submitAnswer(answer,paperID,num-1);
         };
         if (num-1 >= totalNum) {
-          alert('ss');
+          alert('已经是最后一题,请提交答案');
           return;};
         paperinfo.nowNum = num;
         getShowQuestion(num);
@@ -117,7 +124,7 @@ paperinfo.nowNum = 1;
   });
 
     function showNumberTag () {
-    var totalNum = parseInt(paperinfo.total);
+    var totalNum = parseInt(paperinfo.total_num);
     var eachTagNum = 4;
     var pageNum  = parseInt(totalNum/eachTagNum);  //the resalut is float,we need an intenger
     var leftNum  = totalNum%eachTagNum;
@@ -183,9 +190,11 @@ paperinfo.nowNum = 1;
   $(document).ready(function () {
     
     function getRTime(){
-            var EndTime= new Date('2015/12/15 14:00:00'); //截止时间
+            var StartTime = new Date(paperinfo['start_time']); //开始时间
+            var TotalTime = new Date('0000/00/00 '+paperinfo['total_time']);
             var NowTime = new Date();
-            var t =EndTime.getTime() - NowTime.getTime();
+            var totalMs = TotalTime.getHours()*1000*60*60+TotalTime.getMinutes()*1000*60+TotalTime.getSeconds()*1000;
+            var t =totalMs - (NowTime.getTime() - StartTime.getTime());
             /*var d=Math.floor(t/1000/60/60/24);
             t-=d*(1000*60*60*24);
             var h=Math.floor(t/1000/60/60);
@@ -194,7 +203,7 @@ paperinfo.nowNum = 1;
             t-=m*60*1000;
             var s=Math.floor(t/1000);*/
 
-            var d=Math.floor(t/1000/60/60/24);
+            //var d=Math.floor(t/1000/60/60/24);
             var h=Math.floor(t/1000/60/60%24);
             var m=Math.floor(t/1000/60%60);
             var s=Math.floor(t/1000%60);
@@ -228,7 +237,7 @@ paperinfo.nowNum = 1;
     $.post("index.php/home/index/question",
     {
       q:num,
-      paperID:paperinfo.id
+      paperID:paperinfo.paper_id
     },
     function(data,status) {
       if (status == "success") {
@@ -249,7 +258,7 @@ paperinfo.nowNum = 1;
             $("#option-input-"+i).hide();
           }
         };
-        getOldAnswer(paperinfo.id,num);
+        getOldAnswer(paperinfo.paper_id,num);
       };    
     });
     

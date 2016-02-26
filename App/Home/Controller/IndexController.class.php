@@ -165,9 +165,9 @@ class IndexController extends Controller {
         $paperinfo = cookie('paperinfo');
         $test_id = $paperinfo['test_id'];
         if ($test_id == null) {
-            $cookieInfo = array('id'    => $paperInfo['paper_id'],
-                                'total' => $paperInfo['question_num'],
-                                'time'  => $paperInfo['test_time']);
+            $cookieInfo = array('paper_id'   => $paperInfo['paper_id'],
+                                'total_num'  => $paperInfo['question_num'],
+                                'total_time' => $paperInfo['test_time']);
             cookie('paperinfo' , $cookieInfo);
         }
         $this->assign('paper',$paperInfo);
@@ -206,72 +206,10 @@ class IndexController extends Controller {
             $resultStr = "分数统计失败";
         }else{
             $resultStr = "分数统计成功";
-            $examLogic     = D('Exam','Logic');
+            $examLogic = D('Exam','Logic');
             $examLogic->setEndTime($studentID,$paperID);
         }
         $this->assign('grade',$resultStr);
     	$this->display();
-    	//$this->redirect('Index/user',array(),2,' ');
     }
-
-
-    public function uploadOption(){
-    	$this->display();
-    }
-    public function optionWrite(){
-	    $upload = new \Think\Upload();// 实例化上传类
-	    $upload->maxSize   =     3145728 ;// 设置附件上传大小
-	    $upload->exts      =     array('xls', 'xlsx', 'png', 'jpeg');// 设置附件上传类型
-	    $upload->rootPath  =     'public/'; // 设置附件上传根目录
-	    $upload->savePath  =     ''; // 设置附件上传（子）目录
-	    // 上传文件 
-	    $info   =   $upload->upload();
-	    dump($info);
-	    if(!$info) {// 上传错误提示错误信息
-	        $this->error($upload->getError());
-	    }else{// 上传成功
-	        $this->show('上传成功');
-	    }
-
-		$excel = new \Tools\Excel;
-		$file_name='Public/'.$info['file_stu']['savepath'].$info['file_stu']['savename'];
-		dump($file_name);
-		$read = $excel->reader($file_name);
-		dump($read);
-	  	/*
-	    重要代码 解决Thinkphp M、D方法不能调用的问题  
-	    如果在thinkphp中遇到M 、D方法失效时就加入下面一句代码
-		  */
-	  	//spl_autoload_register ( array ('Think', 'autoload' ) );
-	  	/*对生成的数组进行数据库的写入*/
-	  	
-  		foreach ( $read as $k => $v ) 
-	  	{
-	    	if ($k != 0) 
-	   		{
-	  		    $type = $v [0];
-	  		    switch ($type) {
-	  		    	case '单选'||'单项选择'||'单项选择题':
-	  		    		$data['type'] ='101';
-  		    			break;
-	  		    	case '多选'||'多项选择'||'多项选择题':
-	  		    		$data['type'] = '102';
-	  		    		break;
-	  		    	case '判断'||'判断题':
-	  		    		$data['type'] = '103';
-	  		    		break;
-	  		    	default:
-	  		    		$this->error('错误');
-	  		    		break;
-	  		    }
-
-		      	$result = M ( 'user' )->add ( $data );
-		     	if (! $result) 
-			    {
-			       $this->error ( '导入数据库失败' );
-			    }
-			}
-  		}
-
-	}
 }

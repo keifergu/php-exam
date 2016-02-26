@@ -112,8 +112,12 @@ class CountLogic {
 
 		//将数据写入数据库
 		$SummaryModel = D('Summary');
+
+		$paperinfo = cookie('paperinfo');
+		$test_id = $paperinfo['test_id'];
+
+		$field = array('test_id' => $test_id); 
 		$data = array(
-			//'save_id'     => $paperId.$studentId,
 			'paper_id'    => $paperId,
 			'student_id' => $studentId,
 			'course_id'   => substr($paperId, 0,3),
@@ -121,14 +125,7 @@ class CountLogic {
 			'question_correct' => json_encode($correcrArray),
 			'question_wrong' => json_encode($wrongArray)
 		);
-		$result = $SummaryModel->data($data)->add();
+		$result = $SummaryModel->where($field)->data($data)->save();
 		return $result;
-		/*dump($SummaryModel->getLastSql());
-		dump($restlt);
-		dump($paperAnswer);
-		dump($studentAnswer);
-		dump($correctQuestion);
-		var_dump($wrongQuestion);
-		dump($totalGrade);*/
  	}
 }
