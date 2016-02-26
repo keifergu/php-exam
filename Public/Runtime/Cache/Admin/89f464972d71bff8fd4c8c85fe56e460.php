@@ -134,8 +134,8 @@ closed="true" buttons="#dlg-buttons">
                 $('#ddv-'+index).panel({
                     border:false,
                     cache:false,
-                   // href:'App/Admin/View/Optiondata/getOptionDetail.php?itemid='+row.question_id,
-                    href:'index.php?m=admin&c=Optiondata&a=test',
+                    href:'App/Admin/View/Optiondata/getOptionDetail.php?itemid='+row.question_id,
+                    //href:'index.php?m=admin&c=Optiondata&a=test',
                     onLoad:function(){
                         $('#option_index_dg').datagrid('fixDetailRowHeight',index);
 
