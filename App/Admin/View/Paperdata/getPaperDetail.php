@@ -51,6 +51,12 @@ $itemid = mysql_real_escape_string($_REQUEST['itemid']);
 			//alert(parseInt($(this).text()));
 		});
 		$('#lable-totalGrade'+testId).text(ans);
+		$.post('index.php?m=admin&c=Paperdata&a=modifyPaperSum',{
+			paper_id:testId,
+			total:ans
+		},function(data){
+			//
+		});
 	}
 </script>
 <table class="dv-table" border="0" style="width:100%;">
@@ -70,7 +76,6 @@ $itemid = mysql_real_escape_string($_REQUEST['itemid']);
 	foreach ($optionTypeArray as $key => $value) {
 		$optionTypeArray[$key]['number']=0;
 	}
-	//var_dump($optionTypeArray);
 	$paperInfo=	mysql_fetch_array( mysql_query("select * from app2_paper_content  where paper_id=".$itemid));
 	$paperContent=$paperInfo['content'];
 	$paperContentArray=json_decode($paperContent);
