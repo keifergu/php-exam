@@ -6,20 +6,16 @@ use Think\Log;
 
 class OptiondataController extends CommonController {
 	function test(){
-		$db=D('optiondata');
-		for($i=0;$i<100;$i++){
-			$db->test();
-		}
-		
+		echo "asdfasdf";
 	}
 	function optionList($page = 1, $rows = 10, $sort = 'dictid', $order = 'asc', $courseid = '', $typeid = '') {
 		if (IS_POST && $courseid != '' && $typeid != '') {
 			$option_db = M ( 'Optiondata' );
-			$total = $option_db->count ();
 			$order = $sort . ' ' . $order;
 			$limit = ($page - 1) * $rows . "," . $rows;
 			$condition ['course_id'] = $courseid;
 			$condition ['type'] = $typeid;
+			$total = $option_db->where($condition)->count ();
 			$list = $option_db->where ( $condition )->limit ( $limit )->select ();
 			// if ($courseid=='' && $typeid=='') {
 			// $list = $option_db->limit($limit)->select();
@@ -37,17 +33,17 @@ class OptiondataController extends CommonController {
 					$coursename = object_array ( getDictName ( $arr [$key] ["course_id"] ) );
 					$data [$key] ["course"] = $coursename [0] ["type_name"];
 					$coursename = object_array ( getDictName ( $arr [$key] ["type"] ) );
-					$data [$key] ["typename"] = $coursename [0] ["type_name"];
+					$data [$key] ["type"] = $coursename [0] ["type_name"];
 				}
 				$data2 = array (
-						'total' => $total,
-						'rows' => $data 
+					'total' => $total,
+					'rows' => $data 
 				); // 这句话可以控制显示的内容
 			} else {
 				$data2 = array (
-						'total' => 0,
-						'rows' => [ ] 
-				);
+					'total' => 0,
+					'rows' => [ ] 
+					);
 			}
 			echo json_encode ( $data2 );
 		} else {
@@ -73,20 +69,20 @@ class OptiondataController extends CommonController {
 	}
 	function update() {
 		$data = array (
-				'question_id' => $_POST ['hidden_option_id'],
-				'course_id' => $_POST ['hidden_option_course'],
-				'type' => $_POST ['hidden_option_type'],
-				'keyword' => $_POST ['hidden_option_keyword'],
-				'title' => $_POST ['option_title'],
-				'answer' => $_POST ['answerRes'],
-				'a' => $_POST ['optionA'],
-				'b' => $_POST ['optionB'],
-				'c' => $_POST ['optionC'],
-				'd' => $_POST ['optionD'],
-				'e' => $_POST ['optionE'],
-				'f' => $_POST ['optionF'],
-				'img' => $_POST ['hidden_option_img'] 
-		);
+			'question_id' => $_POST ['hidden_option_id'],
+			'course_id' => $_POST ['hidden_option_course'],
+			'type' => $_POST ['hidden_option_type'],
+			'keyword' => $_POST ['hidden_option_keyword'],
+			'title' => $_POST ['option_title'],
+			'answer' => $_POST ['answerRes'],
+			'a' => $_POST ['optionA'],
+			'b' => $_POST ['optionB'],
+			'c' => $_POST ['optionC'],
+			'd' => $_POST ['optionD'],
+			'e' => $_POST ['optionE'],
+			'f' => $_POST ['optionF'],
+			'img' => $_POST ['hidden_option_img'] 
+			);
 		$Optiondata_db = M ( 'optiondata' );
 		$result = $Optiondata_db->where ( 'question_id=' . $data ['question_id'] )->delete ();
 		$Optiondata_db->add ( $data );
@@ -104,9 +100,7 @@ class OptiondataController extends CommonController {
 		// 设置附件上传大小3M
 		$upload->maxSize = 3145728;
 		// 设置附件上传类型
-		$upload->exts = array (
-				'xls' 
-		);
+		$upload->exts = array ('xls' );
 		// 设置附件上传根目录
 		// 请建立文件夹 C:\wamp\www\Demo\Uploads，否则会提示失败
 		$upload->rootPath = './Uploads/';
@@ -121,16 +115,20 @@ class OptiondataController extends CommonController {
 			//$this->error ( $upload->getError () );
 			echo json_encode($upload->getError());
 		} else { // 上传成功
-			$filename = 'Uploads\\' . $info ['savepath'] . $info ['savename'];
+			$filename = 'Uploads/' . $info ['savepath'] . $info ['savename'];
+			chmod($filename, 0777);
 			$ext = $info ['ext'];
 			$this->XlsToArray ( $filename, $ext );
 		}
 	}
-	function XlsToArray($filename, $exts = 'xls') {
+	function XlsToArray($filename='', $exts = 'xls') {
+		//$filename='Uploads/160225043124.xls';
 		// import导入library目录下文件
 		// 导入PHPExcel文件
 		// 创建PHPExcel对象
+		
 		vendor ( 'PHPExcel.PHPExcel' );
+		
 		$PHPExcel = new \PHPExcel ();
 		// 根据文件格式实例化对应的对象
 		if ($exts == 'xls') {
@@ -141,13 +139,15 @@ class OptiondataController extends CommonController {
 		// 载入文件
 		$PHPExcel = $PHPReader->load ( $filename );
 		// 获取表中的第一个工作表，如果要获取第二个，把0改为1，依次类推
+
 		$currentSheet = $PHPExcel->getSheet ( 0 );
 		// 获取总列数
 		$allColumn = $currentSheet->getHighestColumn ();
 		// 获取总行数
 		$allRow = $currentSheet->getHighestRow ();
 		// 循环获取表中的数据，$currentRow表示当前行，从哪行开始读取数据，索引值从0开始
-		for($currentRow = 1; $currentRow <= $allRow; $currentRow ++) {
+
+		for($currentRow = 1; $currentRow <=$allRow; $currentRow ++) {
 			// 从哪列开始，A表示第一列
 			for($currentColumn = 'A'; $currentColumn <= $allColumn; $currentColumn ++) {
 				// 数据坐标
@@ -156,8 +156,10 @@ class OptiondataController extends CommonController {
 				$data [$currentRow] [$currentColumn] = $currentSheet->getCell ( $address )->getValue ();
 			}
 		}
+		
 		$option_db = D ( 'optiondata' );
 		$option_db->ArrayToSql ( $data );
+		
 	}
 }
 

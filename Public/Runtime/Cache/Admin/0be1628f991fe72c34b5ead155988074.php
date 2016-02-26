@@ -64,7 +64,9 @@ $(document).ready(function(){
 
 
     	function getData(){
-    		$.post('index.php/admin/Optiondata/getOptionData',{id:$("#hidden_option_id").val()},function(data){
+    		$.post('index.php/admin/Optiondata/getOptionData',{
+    			id:$("#hidden_option_id").val()
+    		},function(data){
     			$("*[name=option_title]").val(data['title']);
     			$("#hidden_option_course").val(data['course_id']);
     			$("#hidden_option_type").val(data['type']);
@@ -103,8 +105,9 @@ $(document).ready(function(){
 		  }else if(data['type']=='102'){
 		  	var tempans=data['answer'];
 		  	for(var i=5;i>=0;i--){
-		  		if(tempans/(1<<i)){
-		  			var answerid="answer"+i;
+		  		alert(tempans);
+		  		if(parseInt(tempans/(1<<i))){
+		  			var answerid="answer"+(i+1);
 		  			$("#"+answerid).attr("checked","true");
 		  			tempans=tempans-(1<<i);
 		  		}
@@ -131,25 +134,19 @@ $(document).ready(function(){
 			var len=el.length;
 			var val=0;
 			var res=0;
-			try
-			{
-				for (var i = 1; i <len; i++) 
-				{
-					if (el[i].type=="checkbox" ) 
-					{
-						if (el[i].checked==true) 
-						{
-	   	 					//val=val+Number(el[i].value);
-                   			//alert(typeof(el[i].value)+el[i].value);
-                   			val=Number(el[i].value);
-                   			res=res+val;
-                   			//alert(val);
-                   		}
-                   	}
-                   	if (el[i].type=="radio"  ) 
-                   	{
-                   		if (el[i].checked==true)
-                   		{
+			try{
+				for (var i = 1; i <len; i++) {
+					if (el[i].type=="checkbox" ) {
+						if (el[i].checked==true) {
+		   	 				//val=val+Number(el[i].value);
+	                   					//alert(typeof(el[i].value)+el[i].value);
+	                   					val=Number(el[i].value);
+	                   					res=res+val;
+	                   					//alert(val);
+	                   				}
+	                   			}
+	                   			if (el[i].type=="radio"  ) {
+	                   				if (el[i].checked==true){
 	   	 					//val=Number(el[i].value);
 	   	 					val=Number(el[i].value);
 	   	 					res=val;
@@ -161,18 +158,18 @@ $(document).ready(function(){
 	   	 			var target=document.getElementById("answerserial");
 	   	 			target.value=res;
 	   	 		}
-   	    		//res=Number(val);
+   	    			//res=Number(val);
+   	    		}
+   	    		catch(err)
+   	    		{
+   	    			txt="There was an error on this page.\n\n";
+   	    			txt+="Error description: " + err.message +i+ "\n\n";
+   	    			txt+="Click OK to continue.\n\n";
+   	    			alert(txt);
+   	    		}  	 
    	    	}
-   	    	catch(err)
+   	    	function onselect()
    	    	{
-   	    		txt="There was an error on this page.\n\n";
-   	    		txt+="Error description: " + err.message +i+ "\n\n";
-   	    		txt+="Click OK to continue.\n\n";
-   	    		alert(txt);
-   	    	}  	 
-   	    }
-   	    function onselect()
-   	    {
 			//获取题目类型
 			var pType=$('#option_t').combobox('getValue');
 			$("#hidden_option_type").val(pType);
@@ -357,7 +354,7 @@ $(document).ready(function(){
 	<table style="width: 700px" cellspacing="0" cellpadding="0">
 		<tr>
 			<th></th>
-			<th><input type="submit"></th>
+			<th><input type="submit" value="确认修改"></th>
 		</tr>
 	</table>
 </form>
@@ -366,7 +363,7 @@ $(document).ready(function(){
 	$('.txtNewsContent').xheditor({
 		tools:'full',
 		skin:'default',
-		showBlocktag:false,
+		showBlocktag:false,	//
 		internalScript:false,
 		internalStyle:false,
 		width:600,

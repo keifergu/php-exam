@@ -85,8 +85,8 @@ class StuImportController extends CommonController
 				$data [$currentRow] [$currentColumn] = $currentSheet->getCell ( $address )->getValue ();
 			}
 		}
-		
-		
+		 
+		 //
 		$Dictdata_db=D('Dictdata');
 		$Paperdata_db=D('Paperdata');
 		$StuImport_db=D('StuImport');
@@ -116,7 +116,7 @@ class StuImportController extends CommonController
 					'student_course'=>$courseId,
 					'finish_paper'=>$paperId
 					);
-				$StuImport_db->add($item);
+				$result=$StuImport_db->add($item);
 				$count++;
 			}else{
 				$error.='学号:'.$value['A'].' 姓名:'.$value['B'].' 课程:'.$value['C'].' 数据已存在！<br/>';
@@ -126,12 +126,18 @@ class StuImportController extends CommonController
 		$susses='成功导入'.$count.'条数据！<br/>';
 		echo json_encode ($susses.$error);
 	}
-	public function test(){
-		$a['name']="asdfadsfsdfsadf";
-		$a['id']=20001;
-		$a['address']="asdfasdfsadf";
-		var_dump($a);
-		
+	function removeStudent(){
+		if(IS_POST){
+			$studentid=$_POST['studentid'];
+			$paperid=$_POST['paperid'];
+			$StuImport_db=D('StXuImport');
+			$condition=array();
+			$condition['student_id']=$studentid;
+			$condition['paperid']=$paperid;
+			$result=$StuImport_db->where($condition)->delete();
+			echo json_encode($result);
+		}
+
 	}
 }
 ?>

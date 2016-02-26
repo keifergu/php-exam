@@ -101,16 +101,16 @@ class PaperdataController extends CommonController {
 	}
 
 	function EditOptionList($page = 1, $rows = 10, $sort = 'dictid', $order = 'asc', $typeid = '' ,$courseid='',$paper_id='') {
-		$courseid=201;
+		/*$courseid=201;
 		$typeid=101;
-		$paper_id=201001;
+		$paper_id=201001;*/
 		//只需要查询PaperData表进行数据导出
 		if($paper_id!=''){
 			$Paperdata_db=D('Paperdata');
 			$Optiondata_db=D('Optiondata');
-			$paperinfo=$Paperdata_db->where('paper_id='.$paper_id)->select();
+			$condition=array('paper_id'=>$paper_id);
+			$paperinfo=$Paperdata_db->where($condition)->select();
 			$paper_option=json_decode($paperinfo[0]['content'],true);
-			//$paper_option=array_filter(explode(';', $paperinfo[0]['content']));
 			$total=count($paper_option);
 			if($total>0){
 				//data：id-course-type-title数据数组

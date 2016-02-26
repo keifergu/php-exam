@@ -70,7 +70,7 @@ $(document).ready(function(){
         </div>
     </div>
 
-    <table id="option_index_dg" title="数据字典" class="easyui-datagrid" style="width:700px;height:450px" url="<?php echo U('Optiondata/optionList');?>"  toolbar="#option_index_toolbar" pagination="true" pageSize='15' pageNumber='1' multiSort='true' sortOrder="desc" pageList="[10,15,20,25,30,40,50]" rownumbers="true" fitColumns="true" singleSelect="true">
+    <table id="option_index_dg" title="题目列表" class="easyui-datagrid" style="width:700px;height:450px" url="<?php echo U('Optiondata/optionList');?>"  toolbar="#option_index_toolbar" pagination="true" pageSize='15' pageNumber='1' multiSort='true' sortOrder="desc" pageList="[10,15,20,25,30,40,50]" rownumbers="true" fitColumns="true" singleSelect="true">
         <thead>
             <tr>
                 <!-- <th field="ck" checkbox="true"></th> -->
@@ -78,7 +78,7 @@ $(document).ready(function(){
                 <th field="question_id" width="15%" sortable="true">ID</th>
                 <th field="course" width="15%"sortable="true">课程名称</th>
                 <th field="type" width="15%">题目类型</th>
-                <th field="title" width="55%">题干</th>
+                <th field="title" width="55%">题目</th>
             </tr>
         </thead>
     </table>
@@ -134,7 +134,8 @@ closed="true" buttons="#dlg-buttons">
                 $('#ddv-'+index).panel({
                     border:false,
                     cache:false,
-                    href:'App/Admin/View/Optiondata/getOptionDetail.php?itemid='+row.question_id,
+                   // href:'App/Admin/View/Optiondata/getOptionDetail.php?itemid='+row.question_id,
+                    href:'index.php?m=admin&c=Optiondata&a=test',
                     onLoad:function(){
                         $('#option_index_dg').datagrid('fixDetailRowHeight',index);
 
@@ -186,7 +187,7 @@ closed="true" buttons="#dlg-buttons">
             $.post("index.php?m=Admin&c=Optiondata&a=optionRemove",{
                 id:row.question_id
             },function(data){
-
+                $('#option_index_dg').datagrid('reload');
             });
         }
         function onselect()

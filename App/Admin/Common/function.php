@@ -16,7 +16,7 @@ function dict($key = '', $fileName = 'Setting') {
     if ($key && isset($_dictFileCache[$key])) return $_dictFileCache[$key];
     $data = require_once $file;
     $_dictFileCache = $data;
-	return $key ? $data[$key] : $data;
+    return $key ? $data[$key] : $data;
 }
 function object_array($array){
     if(is_object($array)){
@@ -32,18 +32,12 @@ function object_array($array){
 function getDictName($id)
 {
     $dict_db=D('Dictdata');
-    // $pid=mysql_real_escape_string($id);
-    // $rs = mysql_query("select * from data_dict where type_id='$pid'");
-    // $result = array();
-    // while($row = mysql_fetch_object($rs))
-    // {
-    //     array_push($result, $row);
-    // }
     $field=array('type_id','type_name');
     $condition['type_id']=$id;
     $result=$dict_db->field($field)->where($condition)->select();
     return $result;
 }
+
 ///str表示需要补零的数字，bit表示形成多少位编码
 function strFormat($str,$bit)
 {

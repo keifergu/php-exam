@@ -10,52 +10,45 @@ class OptiondataModel extends Model {
 	public $error;
 	public $Error = array ();
 	public $ErrorNum = 0;
+	
 	function ArrayToSql($data) {
-		$course_db = M ( 'data_dict' );
+		$Dict_db = D( 'Dictdata' );
 		foreach ( $data as $key => $value ) {
+			if($key==1)	continue;
 			$tempdata = array (
-					// 强制转换成string 
-					//question 自增
-					//'question_id' => intval ( '' . $data [$key] ['A'] ),
-					// belong_type=200
-					'course' => intval ( '' . $data [$key] ['A'] ),
-					// belong_type=100
-					'type' => intval ( '' . $data [$key] ['B'] ),
-					'keyword' => '' . $data [$key] ['C'],
-					'title' => '' . $data [$key] ['D'],
-					
-					'a' => '' . $data [$key] ['E'],
-					'b' => '' . $data [$key] ['F'],
-					'c' => '' . $data [$key] ['G'],
-					'd' => '' . $data [$key] ['H'],
-					'e' => '' . $data [$key] ['I'],
-					'f' => '' . $data [$key] ['J'],
-					'g' => '' . $data [$key] ['K'],
-					'h' => '' . $data [$key] ['L'],
-					
-					'img' => '' . $data [$key] ['M'] ,
-					'answer' => '' . $data [$key] ['N']
-			);
-			$findcourse = array (
-					'type_id' => $tempdata ['course'],
-					'belong_type=' => 200 
-			);
-			if ($course_db->where ( $findcourse )->select () == NULL) {
+				// 强制转换成string 
+				//question 自增
+				'course_id' =>   '' . $Dict_db->NameToId($data [$key] ['A'],200 ),
+				'type' =>   '' . $Dict_db->NameToId($data [$key] ['B'],100 ),
+				'title' => '' . $data [$key] ['C'],
+				'a' => '' . $data [$key] ['D'],
+				'b' => '' . $data [$key] ['E'],
+				'c' => '' . $data [$key] ['F'],
+				'd' => '' . $data [$key] ['G'],
+				'e' => '' . $data [$key] ['H'],
+				'f' => '' . $data [$key] ['I'],
+				'g' => '' . $data [$key] ['J'],
+				'h' => '' . $data [$key] ['K'],
+				'answer' => '' . ord($data [$key] ['L'])-64
+				);
+			//var_dump($tempdata);
+			/*
+			var_dump($tempdata['course']);
+			var_dump($tempdata['type']);
+			var_dump($Dict_db->IdToName($tempdata['course']));
+			var_dump($Dict_db->IdToName($tempdata['type']) );
+			*/
+			if ($Dict_db->IdToName($tempdata['course_id'])==NULL) {
 				$this->Error [$this->ErrorNum ++] = '第' . $key . '行数据中课程id错误：不存在该课程';
 				continue;
 			}
-			
-			$findtype = array (
-					'type_id' => $tempdata ['type'],
-					'belong_type=' => 100 
-			);
-			if ($course_db->where ( $findtype )->select () == NULL) {
+			if ($Dict_db->IdToName($tempdata['type']) ==NULL){
 				$this->Error [$this->ErrorNum ++] = '第' . $key . '行数据中题目类型id错误：不存在该种题目类型';
 				continue;
 			}
 			$this->add ( $tempdata );
 		}
-		$SuccessNum = count ( $data ) - $this->ErrorNum;
+		$SuccessNum = count ( $data ) - $this->ErrorNum-1;
 		$result= '导入成功' . $SuccessNum . '条数据！<br/>';
 		if ($this->ErrorNum) {
 			$result=$result. '错误信息:<br/>';
@@ -63,7 +56,7 @@ class OptiondataModel extends Model {
 				$result= $result.$value . '<br/>';
 			}
 		}
-		echo json_encode($result);
+		echo json_encode ($result);
 	}
 }
 ?>

@@ -21162,3 +21162,2258 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000024s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000039s ]
 
+[ 2016-02-23T14:47:28+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist&menuid=56&_=1456210048124
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000545s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000085s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.003806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003887s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008535s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008582s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000049s ]
+
+[ 2016-02-23T14:47:28+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=dictdata&a=getdictnamejson&id=200
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000440s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000085s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001607s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000429s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `belong_type` = 200 )  [ RunTime:0.000142s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000048s ]
+
+[ 2016-02-23T14:47:28+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000410s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000086s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001565s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001673s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001695s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000035s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000028s ]
+
+[ 2016-02-23T14:47:28+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000453s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000081s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001569s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001564s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001586s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000027s ]
+
+[ 2016-02-23T14:47:28+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000435s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000084s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001545s ]
+SQL: SHOW COLUMNS FROM `app2_paper_content` [ RunTime:0.000381s ]
+SQL: SELECT * FROM `app2_paper_content` WHERE ( `course_id` = '201' ) LIMIT 0,15   [ RunTime:0.000226s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `app2_paper_content` WHERE ( `course_id` = '201' ) LIMIT 1   [ RunTime:0.000217s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000360s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000432s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000923s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000152s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000102s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000085s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000082s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000080s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000086s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000079s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.002472s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000239s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000090s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000104s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000083s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000085s ]
+
+[ 2016-02-23T14:47:35+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=download
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000463s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000092s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001667s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000084s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000134s ]
+
+[ 2016-02-23T14:47:40+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=download
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001169s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000411s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.003121s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000083s ]
+
+[ 2016-02-23T14:47:51+08:00 ] 10.10.4.241 /thinkphpcms/index.php?m=admin&c=index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000460s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000081s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001505s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002942s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002991s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000052s ]
+
+[ 2016-02-23T14:47:53+08:00 ] 10.10.4.241 /thinkphpcms/index.php?m=admin&c=index&a=login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001218s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000185s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.003668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003826s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001867s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001909s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000062s ]
+
+[ 2016-02-23T14:47:53+08:00 ] 10.10.4.241 /thinkphpcms/index.php?m=admin&c=index&a=code&code_len=4&font_size=14&width=100&height=28&code=1456210073
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000557s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000127s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001891s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000095s ]
+
+[ 2016-02-23T14:48:04+08:00 ] 10.10.4.241 /thinkphpcms/index.php?m=admin&c=index&a=code&code_len=4&font_size=14&width=100&height=28&code=1456210073&0.9290543959941715
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000634s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000119s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.003250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000145s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000225s ]
+
+[ 2016-02-23T14:48:08+08:00 ] 10.10.4.241 /thinkphpcms/index.php?m=admin&c=index&a=login&dosubmit=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001396s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000364s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.004600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004780s ]
+SQL: SHOW COLUMNS FROM `app2_admin` [ RunTime:0.001336s ]
+SQL: SHOW COLUMNS FROM `app2_times` [ RunTime:0.001249s ]
+SQL: SELECT * FROM `app2_admin` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000672s ]
+SQL: SELECT * FROM `app2_times` WHERE ( `username` = 'admin' ) AND ( `isadmin` = 1 ) LIMIT 1   [ RunTime:0.000382s ]
+SQL: DELETE FROM `app2_times` WHERE ( `username` = 'admin' ) [ RunTime:0.000275s ]
+SQL: UPDATE `app2_admin` SET `lastloginip`='10.10.4.241',`lastlogintime`=1456210088 WHERE ( `userid` = 1 ) [ RunTime:0.000402s ]
+
+[ 2016-02-23T14:48:08+08:00 ] 10.10.4.241 /thinkphpcms/index.php?m=admin&c=index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000895s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000235s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.002801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002947s ]
+SQL: SHOW COLUMNS FROM `app2_admin` [ RunTime:0.000959s ]
+SQL: SHOW COLUMNS FROM `app2_menu` [ RunTime:0.000833s ]
+SQL: SHOW COLUMNS FROM `app2_admin_role` [ RunTime:0.000858s ]
+SQL: SELECT `userid`,`username`,`roleid`,`encrypt`,`lastloginip`,`lastlogintime`,`email`,`realname` FROM `app2_admin` WHERE ( `userid` = 1 ) LIMIT 1   [ RunTime:0.000340s ]
+SQL: SELECT `rolename` FROM `app2_admin_role` WHERE ( `roleid` = 1 ) LIMIT 1   [ RunTime:0.000219s ]
+SQL: SELECT * FROM `app2_menu` WHERE ( `parentid` = 0 ) AND ( `display` = 1 ) ORDER BY listorder ASC LIMIT 1000   [ RunTime:0.000458s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006773s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006847s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000082s ]
+
+[ 2016-02-23T14:48:08+08:00 ] 10.10.4.241 /thinkphpcms/index.php?m=admin&c=index&a=public_main&_=1456210087887
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000620s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000144s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001972s ]
+SQL: SHOW COLUMNS FROM `app2_admin` [ RunTime:0.000523s ]
+SQL: SHOW COLUMNS FROM `app2_admin_role` [ RunTime:0.000456s ]
+SQL: SELECT `userid`,`username`,`roleid`,`encrypt`,`lastloginip`,`lastlogintime`,`email`,`realname` FROM `app2_admin` WHERE ( `userid` = 1 ) LIMIT 1   [ RunTime:0.000245s ]
+SQL: SELECT `rolename` FROM `app2_admin_role` WHERE ( `roleid` = 1 ) LIMIT 1   [ RunTime:0.000273s ]
+NOTIC: [8192] Non-static method Admin\Common\Sysinfo::getinfo() should not be called statically, assuming $this from incompatible context /var/www/html/thinkphpcms/App/Admin/Controller/IndexController.class.php 第 111 行.
+NOTIC: [8192] Non-static method Admin\Common\Sysinfo::sys_linux() should not be called statically, assuming $this from incompatible context /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 13 行.
+NOTIC: [8] Undefined index: mhz /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 128 行.
+NOTIC: [8] Undefined index: cache /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 129 行.
+NOTIC: [8] Undefined index: bogomips /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 130 行.
+NOTIC: [8] Undefined offset: 4 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 84 行.
+NOTIC: [8] Undefined offset: 5 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 85 行.
+NOTIC: [8] Undefined offset: 6 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 86 行.
+NOTIC: [8] Undefined offset: 7 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 87 行.
+NOTIC: [8] Undefined offset: 8 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 88 行.
+NOTIC: [8] Undefined offset: 9 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 89 行.
+NOTIC: [8] Undefined offset: 10 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 90 行.
+NOTIC: [8] Undefined offset: 4 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 93 行.
+NOTIC: [8] Undefined offset: 5 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 94 行.
+NOTIC: [8] Undefined offset: 6 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 95 行.
+NOTIC: [8] Undefined offset: 7 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 96 行.
+NOTIC: [8] Undefined offset: 8 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 97 行.
+NOTIC: [8] Undefined offset: 9 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 98 行.
+NOTIC: [8] Undefined offset: 10 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Undefined index: win_n /var/www/html/thinkphpcms/Public/Runtime/Cache/Admin/80827836cede954c217e71a469bdf47e.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006798s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000055s ]
+
+[ 2016-02-23T14:48:08+08:00 ] 10.10.4.241 /thinkphpcms/index.php?m=admin&c=index&a=public_menuleft
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000484s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000090s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001715s ]
+SQL: SHOW COLUMNS FROM `app2_menu` [ RunTime:0.000447s ]
+SQL: SELECT * FROM `app2_menu` WHERE ( `parentid` = 1 ) AND ( `display` = 1 ) ORDER BY listorder ASC LIMIT 1000   [ RunTime:0.000306s ]
+SQL: SELECT * FROM `app2_menu` WHERE ( `parentid` = 6 ) AND ( `display` = 1 ) ORDER BY listorder ASC LIMIT 1000   [ RunTime:0.000191s ]
+SQL: SELECT * FROM `app2_menu` WHERE ( `parentid` = 47 ) AND ( `display` = 1 ) ORDER BY listorder ASC LIMIT 1000   [ RunTime:0.000150s ]
+SQL: SELECT * FROM `app2_menu` WHERE ( `parentid` = 49 ) AND ( `display` = 1 ) ORDER BY listorder ASC LIMIT 1000   [ RunTime:0.000144s ]
+SQL: SELECT * FROM `app2_menu` WHERE ( `parentid` = 53 ) AND ( `display` = 1 ) ORDER BY listorder ASC LIMIT 1000   [ RunTime:0.000133s ]
+SQL: SELECT * FROM `app2_menu` WHERE ( `parentid` = 55 ) AND ( `display` = 1 ) ORDER BY listorder ASC LIMIT 1000   [ RunTime:0.000143s ]
+
+[ 2016-02-23T14:48:10+08:00 ] 10.10.4.241 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist&menuid=56&_=1456210089638
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000519s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000172s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001905s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000099s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000144s ]
+
+[ 2016-02-23T14:48:10+08:00 ] 10.10.4.241 /thinkphpcms/index.php?m=admin&c=dictdata&a=getdictnamejson&id=200
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000063s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000935s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000158s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.002708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002838s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000655s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `belong_type` = 200 )  [ RunTime:0.000269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000094s ]
+
+[ 2016-02-23T14:48:10+08:00 ] 10.10.4.241 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000588s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000129s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001910s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001798s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000020s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000036s ]
+
+[ 2016-02-23T14:48:10+08:00 ] 10.10.4.241 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000561s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000107s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001719s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002770s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002817s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000068s ]
+
+[ 2016-02-23T14:48:10+08:00 ] 10.10.4.241 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001954s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000142s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.005061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005210s ]
+SQL: SHOW COLUMNS FROM `app2_paper_content` [ RunTime:0.000561s ]
+SQL: SELECT * FROM `app2_paper_content` WHERE ( `course_id` = '201' ) LIMIT 0,15   [ RunTime:0.000208s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `app2_paper_content` WHERE ( `course_id` = '201' ) LIMIT 1   [ RunTime:0.000278s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000525s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000165s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000113s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000090s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000097s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000096s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000110s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000091s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000089s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000088s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000085s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000122s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000099s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000083s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000088s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2016-02-23T14:48:11+08:00 ] 10.10.4.241 /thinkphpcms/index.php?m=admin&c=stu_import&a=download
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.002188s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000125s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.007600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007702s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000280s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001089s ]
+
+[ 2016-02-23T14:49:02+08:00 ] 10.10.4.241 /thinkphpcms/index.php?m=admin&c=StuImport&a=upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000087s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001238s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000270s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.003956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004142s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Upload.class.php 第 167 行.
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000656s ]
+SQL: SHOW COLUMNS FROM `app2_paper_content` [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `app2_student_info` [ RunTime:0.000582s ]
+SQL: SELECT * FROM `app2_data_dict` WHERE ( `type_name` = '高等数学' ) AND ( `belong_type` = 200 )  [ RunTime:0.000738s ]
+SQL: SELECT * FROM `app2_student_info` WHERE ( `student_id` = 1001 ) AND ( `student_course` = '201' )  [ RunTime:0.000312s ]
+SQL: SELECT * FROM `app2_data_dict` WHERE ( `type_name` = '高等数学' ) AND ( `belong_type` = 200 )  [ RunTime:0.000129s ]
+SQL: SELECT * FROM `app2_student_info` WHERE ( `student_id` = 1002 ) AND ( `student_course` = '201' )  [ RunTime:0.000130s ]
+SQL: SELECT * FROM `app2_data_dict` WHERE ( `type_name` = '高等数学' ) AND ( `belong_type` = 200 )  [ RunTime:0.000116s ]
+SQL: SELECT * FROM `app2_student_info` WHERE ( `student_id` = 1003 ) AND ( `student_course` = '201' )  [ RunTime:0.000180s ]
+SQL: SELECT * FROM `app2_data_dict` WHERE ( `type_name` = '高等数学' ) AND ( `belong_type` = 200 )  [ RunTime:0.000117s ]
+SQL: SELECT * FROM `app2_student_info` WHERE ( `student_id` = 1004 ) AND ( `student_course` = '201' )  [ RunTime:0.000140s ]
+SQL: SELECT * FROM `app2_data_dict` WHERE ( `type_name` = '高等数学' ) AND ( `belong_type` = 200 )  [ RunTime:0.000113s ]
+SQL: SELECT * FROM `app2_student_info` WHERE ( `student_id` = 1005 ) AND ( `student_course` = '201' )  [ RunTime:0.000118s ]
+SQL: SELECT * FROM `app2_data_dict` WHERE ( `type_name` = '高等数学' ) AND ( `belong_type` = 200 )  [ RunTime:0.000123s ]
+SQL: SELECT * FROM `app2_student_info` WHERE ( `student_id` = 1006 ) AND ( `student_course` = '201' )  [ RunTime:0.000119s ]
+SQL: SELECT * FROM `app2_data_dict` WHERE ( `type_name` = '高等数学' ) AND ( `belong_type` = 200 )  [ RunTime:0.000099s ]
+SQL: SELECT * FROM `app2_student_info` WHERE ( `student_id` = 1007 ) AND ( `student_course` = '201' )  [ RunTime:0.000096s ]
+SQL: SELECT * FROM `app2_paper_content` WHERE ( `course_id` = '201' )  [ RunTime:0.000419s ]
+SQL: INSERT INTO `app2_student_info` (`student_id`,`student_name`,`student_course`,`finish_paper`) VALUES (1007,'qwe','201','202029') [ RunTime:0.001110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000061s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000109s ]
+
+[ 2016-02-23T14:49:13+08:00 ] 10.10.4.241 /thinkphpcms/index.php?m=admin&c=index&a=public_main&_=1456210152152
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000772s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000119s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.002755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002878s ]
+SQL: SHOW COLUMNS FROM `app2_admin` [ RunTime:0.001318s ]
+SQL: SHOW COLUMNS FROM `app2_admin_role` [ RunTime:0.001318s ]
+SQL: SELECT `userid`,`username`,`roleid`,`encrypt`,`lastloginip`,`lastlogintime`,`email`,`realname` FROM `app2_admin` WHERE ( `userid` = 1 ) LIMIT 1   [ RunTime:0.000552s ]
+SQL: SELECT `rolename` FROM `app2_admin_role` WHERE ( `roleid` = 1 ) LIMIT 1   [ RunTime:0.000518s ]
+NOTIC: [8192] Non-static method Admin\Common\Sysinfo::getinfo() should not be called statically, assuming $this from incompatible context /var/www/html/thinkphpcms/App/Admin/Controller/IndexController.class.php 第 111 行.
+NOTIC: [8192] Non-static method Admin\Common\Sysinfo::sys_linux() should not be called statically, assuming $this from incompatible context /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 13 行.
+NOTIC: [8] Undefined index: mhz /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 128 行.
+NOTIC: [8] Undefined index: cache /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 129 行.
+NOTIC: [8] Undefined index: bogomips /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 130 行.
+NOTIC: [8] Undefined offset: 4 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 84 行.
+NOTIC: [8] Undefined offset: 5 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 85 行.
+NOTIC: [8] Undefined offset: 6 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 86 行.
+NOTIC: [8] Undefined offset: 7 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 87 行.
+NOTIC: [8] Undefined offset: 8 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 88 行.
+NOTIC: [8] Undefined offset: 9 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 89 行.
+NOTIC: [8] Undefined offset: 10 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 90 行.
+NOTIC: [8] Undefined offset: 4 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 93 行.
+NOTIC: [8] Undefined offset: 5 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 94 行.
+NOTIC: [8] Undefined offset: 6 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 95 行.
+NOTIC: [8] Undefined offset: 7 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 96 行.
+NOTIC: [8] Undefined offset: 8 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 97 行.
+NOTIC: [8] Undefined offset: 9 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 98 行.
+NOTIC: [8] Undefined offset: 10 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Undefined index: win_n /var/www/html/thinkphpcms/Public/Runtime/Cache/Admin/80827836cede954c217e71a469bdf47e.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008492s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008543s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2016-02-23T14:49:13+08:00 ] 10.10.4.241 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist&menuid=56&_=1456210152626
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000683s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000116s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.002227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002330s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004279s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004356s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000067s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2016-02-23T14:49:13+08:00 ] 10.10.4.241 /thinkphpcms/index.php?m=admin&c=dictdata&a=getdictnamejson&id=200
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000469s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000100s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001737s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000591s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `belong_type` = 200 )  [ RunTime:0.000206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000081s ]
+
+[ 2016-02-23T14:49:13+08:00 ] 10.10.4.241 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000542s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000108s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001747s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002770s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000029s ]
+
+[ 2016-02-23T14:49:13+08:00 ] 10.10.4.241 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000478s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000094s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001627s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000728s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001021s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007415s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007517s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.005257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2016-02-23T14:49:13+08:00 ] 10.10.4.241 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000190s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000648s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000146s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.004007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004624s ]
+SQL: SHOW COLUMNS FROM `app2_paper_content` [ RunTime:0.001217s ]
+SQL: SELECT * FROM `app2_paper_content` WHERE ( `course_id` = '201' ) LIMIT 0,15   [ RunTime:0.000672s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `app2_paper_content` WHERE ( `course_id` = '201' ) LIMIT 1   [ RunTime:0.000623s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000504s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000172s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000094s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000083s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000116s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000100s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000118s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000116s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000138s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000663s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000182s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000093s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000114s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000242s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000304s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000068s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000097s ]
+
+[ 2016-02-23T14:49:37+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=paperdata&a=editoptionlist&paper_id=201003&_=1456210177048
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000498s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000096s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001716s ]
+SQL: SHOW COLUMNS FROM `app2_paper_content` [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `app2_optiondata` [ RunTime:0.000476s ]
+SQL: SELECT * FROM `app2_paper_content` WHERE ( paper_id=201001 )  [ RunTime:0.000251s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.003786s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000249s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011010002 )  [ RunTime:0.000133s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000124s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000107s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030001 )  [ RunTime:0.000113s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000109s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 103 )  [ RunTime:0.000106s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011010001 )  [ RunTime:0.000132s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000097s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000094s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011010003 )  [ RunTime:0.000127s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000096s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000094s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030004 )  [ RunTime:0.000113s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000094s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000113s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030007 )  [ RunTime:0.000109s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000093s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000152s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030009 )  [ RunTime:0.000111s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000094s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000099s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030010 )  [ RunTime:0.000107s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000118s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000095s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030015 )  [ RunTime:0.006163s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000224s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000143s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030011 )  [ RunTime:0.000111s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000090s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000080s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030014 )  [ RunTime:0.000091s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000093s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000078s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030019 )  [ RunTime:0.000116s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = null )  [ RunTime:0.000096s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = null )  [ RunTime:0.000070s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030028 )  [ RunTime:0.000091s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 202 )  [ RunTime:0.000088s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000077s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030008 )  [ RunTime:0.000089s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000093s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000077s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030025 )  [ RunTime:0.000083s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = null )  [ RunTime:0.000096s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = null )  [ RunTime:0.000068s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030031 )  [ RunTime:0.000088s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000113s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000082s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030013 )  [ RunTime:0.000088s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000077s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000081s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030029 )  [ RunTime:0.000088s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 202 )  [ RunTime:0.000077s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000082s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030032 )  [ RunTime:0.000088s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000076s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000113s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030012 )  [ RunTime:0.000092s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000077s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000081s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030027 )  [ RunTime:0.000081s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = null )  [ RunTime:0.000069s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = null )  [ RunTime:0.000106s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030033 )  [ RunTime:0.000088s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000078s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000076s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030035 )  [ RunTime:0.000091s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000077s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000076s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030036 )  [ RunTime:0.000091s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000077s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000075s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030039 )  [ RunTime:0.000125s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000077s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000075s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030302 )  [ RunTime:0.000135s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000079s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000075s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030300 )  [ RunTime:0.000087s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000080s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000075s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030299 )  [ RunTime:0.000087s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.006919s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000199s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030297 )  [ RunTime:0.000144s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000084s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000079s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030298 )  [ RunTime:0.000102s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000082s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000118s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030294 )  [ RunTime:0.000116s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000080s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000131s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030295 )  [ RunTime:0.000094s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000077s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000114s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030296 )  [ RunTime:0.000089s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000077s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000075s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030291 )  [ RunTime:0.000129s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000089s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000089s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030292 )  [ RunTime:0.000093s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000081s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000085s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030293 )  [ RunTime:0.000092s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000080s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000087s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011030301 )  [ RunTime:0.000091s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000079s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2016-02-23T14:49:38+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist&menuid=56&_=1456210178129
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000456s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000080s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001499s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001799s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001821s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000038s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000020s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000036s ]
+
+[ 2016-02-23T14:49:38+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=dictdata&a=getdictnamejson&id=200
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000430s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000088s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001512s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000361s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `belong_type` = 200 )  [ RunTime:0.000184s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000047s ]
+
+[ 2016-02-23T14:49:38+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000446s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000083s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001525s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005699s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005733s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000030s ]
+
+[ 2016-02-23T14:49:38+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000440s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000080s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001454s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001582s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001605s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000035s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000028s ]
+
+[ 2016-02-23T14:49:38+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000478s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000085s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001521s ]
+SQL: SHOW COLUMNS FROM `app2_paper_content` [ RunTime:0.000357s ]
+SQL: SELECT * FROM `app2_paper_content` WHERE ( `course_id` = '201' ) LIMIT 0,15   [ RunTime:0.000213s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `app2_paper_content` WHERE ( `course_id` = '201' ) LIMIT 1   [ RunTime:0.000150s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000330s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000133s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000087s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000083s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000080s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000079s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000079s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000107s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000081s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.001766s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000187s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000118s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000090s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000084s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000083s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000062s ]
+
+[ 2016-02-23T14:49:59+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=optiondata&a=optionlist&menuid=50&_=1456210199643
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000502s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000093s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001773s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000315s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000383s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008654s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008681s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000081s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000103s ]
+
+[ 2016-02-23T14:49:59+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=dictdata&a=getdictnamejson&id=200
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000421s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000084s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001678s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000334s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `belong_type` = 200 )  [ RunTime:0.000198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000046s ]
+
+[ 2016-02-23T14:49:59+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=dictdata&a=getdictnamejson&id=100
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000427s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000392s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001918s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000547s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `belong_type` = 100 )  [ RunTime:0.000148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000051s ]
+
+[ 2016-02-23T14:49:59+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=optiondata&a=optionlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000487s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000157s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003491s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003522s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000032s ]
+
+[ 2016-02-23T14:50:00+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=optiondata&a=optionlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000457s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000079s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001595s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001897s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001919s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000035s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000032s ]
+
+[ 2016-02-23T14:50:00+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=optiondata&a=optionlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000454s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000081s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001530s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001898s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000080s ]
+
+[ 2016-02-23T14:50:00+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=optiondata&a=optionlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000478s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000080s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.003573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003624s ]
+SQL: SHOW COLUMNS FROM `app2_optiondata` [ RunTime:0.000413s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `app2_optiondata` LIMIT 1   [ RunTime:0.000151s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( `course_id` = '201' ) AND ( `type` = '101' ) LIMIT 0,15   [ RunTime:0.000264s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.002493s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000204s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000140s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000475s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000102s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000084s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000085s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000080s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000079s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000083s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000078s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000078s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000082s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.001234s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000173s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000160s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000113s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000088s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000090s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000083s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000081s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000095s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.002411s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000274s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000092s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000083s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000107s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000080s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000078s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000148s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000085s ]
+
+[ 2016-02-23T14:50:01+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist&menuid=56&_=1456210201260
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000456s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000080s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001509s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001529s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001550s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000034s ]
+
+[ 2016-02-23T14:50:01+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=dictdata&a=getdictnamejson&id=200
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000487s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000080s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001648s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000354s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `belong_type` = 200 )  [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000044s ]
+
+[ 2016-02-23T14:50:01+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000413s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000085s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001542s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001535s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001557s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000028s ]
+
+[ 2016-02-23T14:50:01+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000427s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000095s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001522s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001899s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000036s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000028s ]
+
+[ 2016-02-23T14:50:01+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000421s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000084s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001539s ]
+SQL: SHOW COLUMNS FROM `app2_paper_content` [ RunTime:0.000361s ]
+SQL: SELECT * FROM `app2_paper_content` WHERE ( `course_id` = '201' ) LIMIT 0,15   [ RunTime:0.000165s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `app2_paper_content` WHERE ( `course_id` = '201' ) LIMIT 1   [ RunTime:0.000190s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000443s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000110s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000109s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000088s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000081s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000104s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000824s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000131s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000085s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000108s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000085s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000316s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000093s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000079s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.002212s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
+
+[ 2016-02-23T14:51:27+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000088s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001867s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000338s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.006240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006515s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003192s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003303s ]
+
+[ 2016-02-23T14:58:09+08:00 ] 10.10.4.241 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000657s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000111s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.002269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002343s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000040s ]
+
+[ 2016-02-23T15:01:27+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000060s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001423s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000201s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.006588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006755s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000097s ]
+
+[ 2016-02-23T15:08:09+08:00 ] 10.10.4.241 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001837s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000255s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.005052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000101s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000151s ]
+
+[ 2016-02-23T15:11:27+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000771s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000098s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.008679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008771s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000048s ]
+
+[ 2016-02-23T15:21:27+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000096s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001772s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000333s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.007999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000094s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000175s ]
+
+[ 2016-02-23T15:24:42+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001956s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.002512s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.009100s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009221s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000113s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000242s ]
+
+[ 2016-02-23T15:24:55+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=removeStudent
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000495s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000093s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001902s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000075s ]
+
+[ 2016-02-23T16:16:46+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000525s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000125s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.006871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006968s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004248s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004292s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000111s ]
+
+[ 2016-02-23T16:16:48+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_main&_=1456215408143
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000550s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000115s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.002040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002097s ]
+
+[ 2016-02-23T16:16:48+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_menuleft
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000453s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000081s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001959s ]
+
+[ 2016-02-23T16:16:50+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000513s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000095s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.002082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002151s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002660s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002730s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000079s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000103s ]
+
+[ 2016-02-23T16:16:51+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=code&code_len=4&font_size=14&width=100&height=28&code=1456215410
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.002006s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.001350s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.007638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007697s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000054s ]
+
+[ 2016-02-23T16:17:06+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=login&dosubmit=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000838s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000151s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.007508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007622s ]
+SQL: SHOW COLUMNS FROM `app2_admin` [ RunTime:0.003784s ]
+SQL: SHOW COLUMNS FROM `app2_times` [ RunTime:0.001017s ]
+SQL: SELECT * FROM `app2_admin` WHERE ( `username` = 'admin' ) LIMIT 1   [ RunTime:0.000342s ]
+SQL: SELECT * FROM `app2_times` WHERE ( `username` = 'admin' ) AND ( `isadmin` = 1 ) LIMIT 1   [ RunTime:0.000307s ]
+SQL: DELETE FROM `app2_times` WHERE ( `username` = 'admin' ) [ RunTime:0.000223s ]
+SQL: UPDATE `app2_admin` SET `lastloginip`='127.0.0.1',`lastlogintime`=1456215426 WHERE ( `userid` = 1 ) [ RunTime:0.000255s ]
+
+[ 2016-02-23T16:17:06+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000431s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000080s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002026s ]
+SQL: SHOW COLUMNS FROM `app2_admin` [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `app2_menu` [ RunTime:0.000390s ]
+SQL: SHOW COLUMNS FROM `app2_admin_role` [ RunTime:0.000331s ]
+SQL: SELECT `userid`,`username`,`roleid`,`encrypt`,`lastloginip`,`lastlogintime`,`email`,`realname` FROM `app2_admin` WHERE ( `userid` = 1 ) LIMIT 1   [ RunTime:0.000136s ]
+SQL: SELECT `rolename` FROM `app2_admin_role` WHERE ( `roleid` = 1 ) LIMIT 1   [ RunTime:0.000127s ]
+SQL: SELECT * FROM `app2_menu` WHERE ( `parentid` = 0 ) AND ( `display` = 1 ) ORDER BY listorder ASC LIMIT 1000   [ RunTime:0.000228s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.004384s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004430s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007385s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007411s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000046s ]
+
+[ 2016-02-23T16:17:07+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_main&_=1456215427075
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000471s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000089s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.002031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002080s ]
+SQL: SHOW COLUMNS FROM `app2_admin` [ RunTime:0.000425s ]
+SQL: SHOW COLUMNS FROM `app2_admin_role` [ RunTime:0.000330s ]
+SQL: SELECT `userid`,`username`,`roleid`,`encrypt`,`lastloginip`,`lastlogintime`,`email`,`realname` FROM `app2_admin` WHERE ( `userid` = 1 ) LIMIT 1   [ RunTime:0.000128s ]
+SQL: SELECT `rolename` FROM `app2_admin_role` WHERE ( `roleid` = 1 ) LIMIT 1   [ RunTime:0.000088s ]
+NOTIC: [8192] Non-static method Admin\Common\Sysinfo::getinfo() should not be called statically, assuming $this from incompatible context /var/www/html/thinkphpcms/App/Admin/Controller/IndexController.class.php 第 111 行.
+NOTIC: [8192] Non-static method Admin\Common\Sysinfo::sys_linux() should not be called statically, assuming $this from incompatible context /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 13 行.
+NOTIC: [8] Undefined index: mhz /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 128 行.
+NOTIC: [8] Undefined index: cache /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 129 行.
+NOTIC: [8] Undefined index: bogomips /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 130 行.
+NOTIC: [8] Undefined offset: 4 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 84 行.
+NOTIC: [8] Undefined offset: 5 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 85 行.
+NOTIC: [8] Undefined offset: 6 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 86 行.
+NOTIC: [8] Undefined offset: 7 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 87 行.
+NOTIC: [8] Undefined offset: 8 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 88 行.
+NOTIC: [8] Undefined offset: 9 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 89 行.
+NOTIC: [8] Undefined offset: 10 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 90 行.
+NOTIC: [8] Undefined offset: 4 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 93 行.
+NOTIC: [8] Undefined offset: 5 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 94 行.
+NOTIC: [8] Undefined offset: 6 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 95 行.
+NOTIC: [8] Undefined offset: 7 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 96 行.
+NOTIC: [8] Undefined offset: 8 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 97 行.
+NOTIC: [8] Undefined offset: 9 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 98 行.
+NOTIC: [8] Undefined offset: 10 /var/www/html/thinkphpcms/App/Admin/Common/Sysinfo.class.php 第 99 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+NOTIC: [8] Undefined index: win_n /var/www/html/thinkphpcms/Public/Runtime/Cache/Admin/80827836cede954c217e71a469bdf47e.php 第 49 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009639s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009665s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000029s ]
+
+[ 2016-02-23T16:17:07+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_menuleft
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000444s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000082s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001964s ]
+SQL: SHOW COLUMNS FROM `app2_menu` [ RunTime:0.000363s ]
+SQL: SELECT * FROM `app2_menu` WHERE ( `parentid` = 1 ) AND ( `display` = 1 ) ORDER BY listorder ASC LIMIT 1000   [ RunTime:0.000278s ]
+SQL: SELECT * FROM `app2_menu` WHERE ( `parentid` = 6 ) AND ( `display` = 1 ) ORDER BY listorder ASC LIMIT 1000   [ RunTime:0.000191s ]
+SQL: SELECT * FROM `app2_menu` WHERE ( `parentid` = 47 ) AND ( `display` = 1 ) ORDER BY listorder ASC LIMIT 1000   [ RunTime:0.000131s ]
+SQL: SELECT * FROM `app2_menu` WHERE ( `parentid` = 49 ) AND ( `display` = 1 ) ORDER BY listorder ASC LIMIT 1000   [ RunTime:0.000127s ]
+SQL: SELECT * FROM `app2_menu` WHERE ( `parentid` = 53 ) AND ( `display` = 1 ) ORDER BY listorder ASC LIMIT 1000   [ RunTime:0.000125s ]
+SQL: SELECT * FROM `app2_menu` WHERE ( `parentid` = 55 ) AND ( `display` = 1 ) ORDER BY listorder ASC LIMIT 1000   [ RunTime:0.000130s ]
+
+[ 2016-02-23T16:17:08+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist&menuid=56&_=1456215428279
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000461s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000083s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.002027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002149s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001561s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001582s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000072s ]
+
+[ 2016-02-23T16:17:08+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=dictdata&a=getdictnamejson&id=200
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000542s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000093s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.002170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002222s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000450s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `belong_type` = 200 )  [ RunTime:0.000141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000045s ]
+
+[ 2016-02-23T16:17:08+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000454s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000083s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.002006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002057s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001925s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001953s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000029s ]
+
+[ 2016-02-23T16:17:08+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000427s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000083s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001886s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002160s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002183s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000038s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000029s ]
+
+[ 2016-02-23T16:17:08+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000456s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000089s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.002029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002085s ]
+SQL: SHOW COLUMNS FROM `app2_paper_content` [ RunTime:0.000461s ]
+SQL: SELECT * FROM `app2_paper_content` WHERE ( `course_id` = '201' ) LIMIT 0,15   [ RunTime:0.000218s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `app2_paper_content` WHERE ( `course_id` = '201' ) LIMIT 1   [ RunTime:0.000151s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000397s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000182s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000089s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000082s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000125s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000082s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000080s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000249s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.001320s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000174s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000088s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000083s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000082s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000121s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000083s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2016-02-23T16:27:28+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000222s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.011787s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000790s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.027856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.028305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000161s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000227s ]
+
+[ 2016-02-23T16:35:36+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=upload
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000063s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001573s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.001454s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.009689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009845s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000173s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000306s ]
+
+[ 2016-02-23T16:35:41+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stuImport&a=removeStudent
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000589s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000099s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.002200s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002275s ]
+ERR: 参数错误或者未定义:studentid
+
+[ 2016-02-23T16:35:58+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stuImport&a=removeStudent
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000235s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001570s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000301s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.010691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011083s ]
+NOTIC: [8] Undefined index: studentid /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 130 行.
+NOTIC: [8] Undefined index: paperid /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 131 行.
+SQL: SHOW COLUMNS FROM `app2_student_info` [ RunTime:0.002678s ]
+SQL: SELECT * FROM `app2_student_info` WHERE ( `student_id` = null )  [ RunTime:0.000691s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000121s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000184s ]
+
+[ 2016-02-23T16:37:28+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001975s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000297s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.008310s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008413s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000044s ]
+
+[ 2016-02-23T16:47:28+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001695s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.001939s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.005884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005963s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000072s ]
+
+[ 2016-02-23T16:47:58+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stuImport&a=removeStudent
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000556s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000095s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001854s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000056s ]
+
+[ 2016-02-23T16:48:00+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stuImport&a=removeStudent
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001544s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000408s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.004186s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2016-02-23T16:48:12+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stuImport&a=removeStudent
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000498s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000151s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001957s ]
+SQL: SHOW COLUMNS FROM `app2_student_info` [ RunTime:0.001222s ]
+SQL: SELECT * FROM `app2_student_info` WHERE ( `student_id` = '1001' )  [ RunTime:0.003305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000117s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000143s ]
+
+[ 2016-02-23T16:48:16+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stuImport&a=removeStudent
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000510s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000097s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001781s ]
+SQL: SHOW COLUMNS FROM `app2_student_info` [ RunTime:0.000444s ]
+SQL: SELECT * FROM `app2_student_info` WHERE ( `student_id` = '1004' )  [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
+
+[ 2016-02-23T16:48:31+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stuImport&a=removeStudent
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001223s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000466s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.003540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003610s ]
+SQL: SHOW COLUMNS FROM `app2_student_info` [ RunTime:0.000584s ]
+SQL: DELETE FROM `app2_student_info` WHERE ( `student_id` = '1001' ) [ RunTime:0.002869s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000079s ]
+
+[ 2016-02-23T16:49:28+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stuImport&a=removeStudent
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000506s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000125s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001768s ]
+SQL: SHOW COLUMNS FROM `app2_student_info` [ RunTime:0.002882s ]
+SQL: DELETE FROM `app2_student_info` WHERE ( `student_id` = '1004' ) [ RunTime:0.002722s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000076s ]
+
+[ 2016-02-23T16:55:27+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stuImport&a=removeStudent
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000061s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001412s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.001520s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.007728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007937s ]
+NOTIC: [8] Undefined index: studentid /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 130 行.
+NOTIC: [8] Undefined index: paperid /var/www/html/thinkphpcms/App/Admin/Controller/StuImportController.class.php 第 131 行.
+SQL: SHOW COLUMNS FROM `app2_student_info` [ RunTime:0.002621s ]
+SQL: DELETE FROM `app2_student_info` WHERE ( `student_id` = null ) [ RunTime:0.000384s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000091s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000140s ]
+
+[ 2016-02-23T16:57:28+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000222s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001846s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000333s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.013723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000140s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000244s ]
+
+[ 2016-02-23T17:00:59+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=optiondata&a=optionlist&menuid=50&_=1456218059234
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000642s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000097s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001924s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004421s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004457s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000080s ]
+
+[ 2016-02-23T17:00:59+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=dictdata&a=getdictnamejson&id=200
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000458s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000105s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001822s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000538s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `belong_type` = 200 )  [ RunTime:0.000262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000114s ]
+
+[ 2016-02-23T17:00:59+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=dictdata&a=getdictnamejson&id=100
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000570s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000089s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.003580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003633s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000420s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `belong_type` = 100 )  [ RunTime:0.000149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000046s ]
+
+[ 2016-02-23T17:00:59+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=optiondata&a=optionlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000449s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000081s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001542s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001820s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000033s ]
+
+[ 2016-02-23T17:00:59+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=optiondata&a=optionlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000538s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000096s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001711s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002957s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000035s ]
+
+[ 2016-02-23T17:00:59+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=optiondata&a=optionlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000455s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000084s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001558s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001784s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000020s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000037s ]
+
+[ 2016-02-23T17:00:59+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=optiondata&a=optionlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000443s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000100s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001947s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002009s ]
+SQL: SHOW COLUMNS FROM `app2_optiondata` [ RunTime:0.001361s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `app2_optiondata` LIMIT 1   [ RunTime:0.000523s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( `course_id` = '201' ) AND ( `type` = '101' ) LIMIT 0,15   [ RunTime:0.000506s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000991s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.002081s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000234s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000104s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000198s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000123s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000102s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000122s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000098s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000096s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000124s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.001276s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000175s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000094s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000082s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000096s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000087s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000080s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000079s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000083s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.001879s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000222s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000097s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000082s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000130s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000094s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000103s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000099s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000124s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000083s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 101 )  [ RunTime:0.000079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2016-02-23T17:02:35+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=optiondata&a=optionedit&id=2011010002
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000499s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000087s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.002025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002088s ]
+SQL: SHOW COLUMNS FROM `app2_optiondata` [ RunTime:0.000447s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( question_id=2011010002 )  [ RunTime:0.000147s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005453s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005509s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000105s ]
+
+[ 2016-02-23T17:02:35+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=dictdata&a=getdictnamejson&id=200
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000444s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000095s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.002028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002089s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000406s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `belong_type` = 200 )  [ RunTime:0.000158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000071s ]
+
+[ 2016-02-23T17:02:35+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=dictdata&a=getdictnamejson&id=100
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000479s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000085s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001560s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000399s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `belong_type` = 100 )  [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
+
+[ 2016-02-23T17:02:35+08:00 ] 127.0.0.1 /thinkphpcms/index.php/admin/Optiondata/getOptionData
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000456s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000082s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001611s ]
+SQL: SHOW COLUMNS FROM `app2_optiondata` [ RunTime:0.000423s ]
+SQL: SELECT * FROM `app2_optiondata` WHERE ( `question_id` = 2011010002 )  [ RunTime:0.000137s ]
+
+[ 2016-02-23T17:02:45+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=optiondata&a=update
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000447s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000086s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001486s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001542s ]
+SQL: SHOW COLUMNS FROM `app2_optiondata` [ RunTime:0.000417s ]
+SQL: DELETE FROM `app2_optiondata` WHERE ( question_id=2011010002 ) [ RunTime:0.001173s ]
+SQL: INSERT INTO `app2_optiondata` (`question_id`,`course_id`,`type`,`keyword`,`title`,`answer`,`a`,`b`,`c`,`d`,`e`,`f`,`img`) VALUES (2011010002,'201','101','','title','2','<p>网络协议范德萨阿斯蒂芬爱上 啊啊<img src=\"http://127.0.0.1/thinkphpcms/Uploads/day_151207/201512071458438126.png\" alt=\"\" /><br />啊啊啊啊啊啊啊啊</p>','网络操作系统类型','覆盖范围与规模','网络服务器类型与规模','','','') [ RunTime:0.005924s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000043s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001081s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001111s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000037s ]
+
+[ 2016-02-23T17:03:56+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist&menuid=56&_=1456218236364
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000078s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001263s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.001701s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.006801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006997s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003185s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003235s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000035s ]
+
+[ 2016-02-23T17:03:56+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=dictdata&a=getdictnamejson&id=200
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000451s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000086s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001596s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000391s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `belong_type` = 200 )  [ RunTime:0.000174s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000055s ]
+
+[ 2016-02-23T17:03:56+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000437s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000080s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001458s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001554s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000035s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000028s ]
+
+[ 2016-02-23T17:03:56+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000410s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000083s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001543s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002478s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002538s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000029s ]
+
+[ 2016-02-23T17:03:56+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=paperlist
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000415s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000393s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001972s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002024s ]
+SQL: SHOW COLUMNS FROM `app2_paper_content` [ RunTime:0.000757s ]
+SQL: SELECT * FROM `app2_paper_content` WHERE ( `course_id` = '201' ) LIMIT 0,15   [ RunTime:0.000293s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `app2_paper_content` WHERE ( `course_id` = '201' ) LIMIT 1   [ RunTime:0.000259s ]
+SQL: SHOW COLUMNS FROM `app2_data_dict` [ RunTime:0.000788s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000143s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000410s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000227s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000864s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.001292s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000280s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000094s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000105s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000207s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000809s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000173s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000093s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000086s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000115s ]
+SQL: SELECT `type_id`,`type_name` FROM `app2_data_dict` WHERE ( `type_id` = 201 )  [ RunTime:0.000219s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000076s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000097s ]
+
+[ 2016-02-23T17:07:28+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001654s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000269s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.003406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003541s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000047s ]
+
+[ 2016-02-23T17:17:04+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=download
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000159s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001158s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000131s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.005203s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005465s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000071s ]
+
+[ 2016-02-23T17:17:13+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=download
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000576s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000098s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.005362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005519s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000111s ]
+
+[ 2016-02-23T17:17:19+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=stu_import&a=download
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000501s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000136s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.001808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001889s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000075s ]
+
+[ 2016-02-23T17:17:28+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001309s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000323s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.012015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000402s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000513s ]
+
+[ 2016-02-23T17:27:28+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000181s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.003045s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000251s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.019505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019868s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000111s ]
+
+[ 2016-02-23T18:34:38+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001112s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000124s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.004278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2016-02-23T18:44:38+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000095s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.004667s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.003446s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.018980s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.019259s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000184s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000296s ]
+
+[ 2016-02-23T18:54:38+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000080s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.002247s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000305s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.012116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012420s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000061s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000138s ]
+
+[ 2016-02-23T19:04:39+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.005725s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000207s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.018456s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.018612s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000103s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000142s ]
+
+[ 2016-02-23T19:14:39+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001080s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000197s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.004990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005068s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000055s ]
+
+[ 2016-02-23T19:24:39+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.003949s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.004975s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.019777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.024609s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000137s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000189s ]
+
+[ 2016-02-23T19:34:39+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000093s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.002321s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000291s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.016030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000100s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000155s ]
+
+[ 2016-02-23T19:44:39+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000139s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001296s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000170s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.011055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.011311s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000089s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000151s ]
+
+[ 2016-02-23T19:54:39+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.002274s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.002824s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.014440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014696s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000074s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000193s ]
+
+[ 2016-02-23T20:04:39+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000687s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000088s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.007559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007697s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000086s ]
+
+[ 2016-02-23T20:14:39+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000107s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001524s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000217s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.010413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010658s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000103s ]
+
+[ 2016-02-23T20:24:39+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000086s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001316s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000192s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.009554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009852s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000105s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000198s ]
+
+[ 2016-02-23T20:34:39+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.001493s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.001714s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.007403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007679s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000211s ]
+
+[ 2016-02-23T20:44:39+08:00 ] 127.0.0.1 /thinkphpcms/index.php?m=admin&c=index&a=public_sessionlife
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `app2_setting` [ RunTime:0.000531s ]
+SQL: SELECT `key`,`value` FROM `app2_setting`  [ RunTime:0.000085s ]
+NOTIC: [2] unlink(/var/www/html/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/html/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.004184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004272s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000086s ]
+
