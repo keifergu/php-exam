@@ -5,9 +5,6 @@ use Admin\Controller\CommonController;
 use Think\Log;
 
 class OptiondataController extends CommonController {
-	function test(){
-		echo "asdfasdf";
-	}
 	function optionList($page = 1, $rows = 10, $sort = 'dictid', $order = 'asc', $courseid = '', $typeid = '') {
 		if (IS_POST && $courseid != '' && $typeid != '') {
 			$option_db = M ( 'Optiondata' );

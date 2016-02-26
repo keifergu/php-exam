@@ -376,7 +376,6 @@ class PaperdataController extends CommonController {
 	}
 	//统计有多少不同类型的题目
 	function getOptionTypeCount(){
-		//$PaperId=201001;
 		$PaperId=$_POST['PaperId'];
 		$Dictdata_db=D('Dictdata');
 		$result=$Dictdata_db->where('belong_type=100')->select();
@@ -386,18 +385,17 @@ class PaperdataController extends CommonController {
 		}
 		$Optiondata_db=D('Optiondata');
 		$Paperdata_db=D('Paperdata');
-		$paperinfo=$Paperdata_db->where('paper_id='.$PaperId)->select()[0];
+		$paperinfo=$Paperdata_db->where(array('paper_id'=>$PaperId))->select()[0];
 		$paper_content=$paperinfo['content'];
 		$paper_option=json_decode($paperinfo[0]['content'],true);
 		//$array_content=explode(';', $paper_content);
 		foreach ($array_content as $key => $value) {
-			$optioninfo=$Optiondata_db->where('question_id='.$value)->select()[0];
+			$optioninfo=$Optiondata_db->where(array('question_id'=>$value))->select()[0];
 			if($optioninfo){
 				$TypeCount[$optioninfo['type']]++;
 			}
 		}
 		echo json_encode($TypeCount);
-		//var_dump($TypeCount);
 	}
 	function modifyPaperGrade(){
 		$paperGrade_db=D('Papergrade');
@@ -412,12 +410,16 @@ class PaperdataController extends CommonController {
 		$paperGrade_db->setTypeInfo($paperId,$typeId,$typeGrade);
 		echo json_encode($typeGrade);
 	}
-	function test(){
-		$db=D('Paperdata');
-		for($i=0;$i<100;$i++){
-			$db->test();
-		}
-		
+	function modifyPaperSum(){
+		$Paperdata_db=D('Paperdata');
+		$paper_id=$_POST['paper_id'];
+		$total_grade=$_POST['total'];
+		$condition=array('paper_id'=>$paper_id);
+		$data=$Paperdata_db->where($condition)->select()[0];
+		$data['total_grade']=$total_grade;
+		$data['question_num']=count(json_decode($data['content'],true));
+		$Paperdata_db->where($condition)->save($data);
 	}
+
 }
 ?>
