@@ -1,2 +1,6 @@
+.buildpath
+.project
+.log
+Public/Runtime
 Uploads
-/Public/Runtime
+App/Common/Conf/config.php

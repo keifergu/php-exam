@@ -1,0 +1,36 @@
+[ 2015-10-31T16:51:18+08:00 ] 192.168.0.103 /thinkphpcms/index.php/home/index/question
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /var/www/thinkphpcms/Libs/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `app_setting` [ RunTime:0.001134s ]
+ERR: 1146:Table 'app.app_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `app_setting`
+SQL: SELECT `key`,`value` FROM `app_setting`  [ RunTime:0.000356s ]
+ERR: 1146:Table 'app.app_setting' doesn't exist
+ [ SQL语句 ] : SELECT `key`,`value` FROM `app_setting` 
+NOTIC: [2] unlink(/var/www/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.007304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007477s ]
+SQL: SHOW COLUMNS FROM `app_paper_content` [ RunTime:0.003154s ]
+SQL: SELECT `question_num` FROM `app_paper_content` WHERE ( `paper_id` = '201001' ) LIMIT 1   [ RunTime:0.000443s ]
+SQL: SELECT `content` FROM `app_paper_content` WHERE ( `paper_id` = '201001' ) LIMIT 1   [ RunTime:0.001680s ]
+SQL: SHOW COLUMNS FROM `app_option` [ RunTime:0.004397s ]
+SQL: SELECT `title`,`type` FROM `app_option` WHERE ( question_id=2011010001 ) LIMIT 1   [ RunTime:0.002453s ]
+SQL: SELECT `a`,`b`,`c`,`d`,`e`,`f`,`g`,`h` FROM `app_option` WHERE ( `question_id` = '2011010001' ) LIMIT 1   [ RunTime:0.002189s ]
+
+[ 2015-10-31T16:51:18+08:00 ] 192.168.0.103 /thinkphpcms/index.php/home/index/getOldAnswer
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /var/www/thinkphpcms/Libs/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `app_setting` [ RunTime:0.000763s ]
+ERR: 1146:Table 'app.app_setting' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `app_setting`
+SQL: SELECT `key`,`value` FROM `app_setting`  [ RunTime:0.000478s ]
+ERR: 1146:Table 'app.app_setting' doesn't exist
+ [ SQL语句 ] : SELECT `key`,`value` FROM `app_setting` 
+NOTIC: [2] unlink(/var/www/thinkphpcms/Public/Runtime/Temp/71df8fced343b2a8ba67c00a47a67b50.php): No such file or directory /var/www/thinkphpcms/Libs/ThinkPHP/Library/Think/Cache/Driver/File.class.php 第 157 行.
+INFO: Run \Common\Behavior\SettingBehavior [ RunTime:0.009790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009962s ]
+SQL: SHOW COLUMNS FROM `app_submit_exam` [ RunTime:0.002880s ]
+SQL: SELECT `answer` FROM `app_submit_exam` WHERE ( `student_id` = '123' ) AND ( `paper_id` = '201001' ) AND ( `num` = '1' ) LIMIT 1   [ RunTime:0.001189s ]
+
