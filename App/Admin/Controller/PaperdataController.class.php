@@ -420,6 +420,6 @@ class PaperdataController extends CommonController {
 		$data['question_num']=count(json_decode($data['content'],true));
 		$Paperdata_db->where($condition)->save($data);
 	}
-
+	
 }
 ?>

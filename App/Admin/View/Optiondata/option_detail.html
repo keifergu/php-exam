@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<style type="text/css">
+		.dv-table td{
+			border:0;
+		}
+		.dv-label {
+			font-weight:bold;
+			color:#15428B;
+			width:100px;
+		}
+	</style>
+	<table class="dv-table" border="0" style="width:100%;">
+		<tr>
+			<td class="dv-label">title</td>
+			<td colspan="5"><{$detail_title}></td>
+
+		</tr>
+		<switch name="detail_type">
+			<case  value="103">
+				<tr>
+					<td class="dv-label">A: </td>
+					<td><{$detail_A}></td>
+					<td class="dv-label">B:</td>
+					<td><{$detail_B}></td>
+				</tr>
+			</case>
+			<case  value="101">
+				<tr>
+					<td class="dv-label">A: </td>
+					<td><{$detail_A}></td>
+					<td class="dv-label">B:</td>
+					<td><{$detail_B}></td>
+				</tr>
+				<tr>
+					<td class="dv-label">C: </td>
+					<td><{$detail_C}></td>
+					<td class="dv-label">D:</td>
+					<td><{$detail_D}></td>
+				</tr>
+			</case>
+			<case  value="102">
+				<tr>
+					<td class="dv-label">A: </td>
+					<td><{$detail_A}></td>
+					<td class="dv-label">B:</td>
+					<td><{$detail_B}></td>
+				</tr>
+				<tr>
+					<td class="dv-label">C: </td>
+					<td><{$detail_C}></td>
+					<td class="dv-label">D:</td>
+					<td><{$detail_D}></td>
+				</tr>
+				<tr>
+					<td class="dv-label">E: </td>
+					<td><{$detail_E}></td>
+					<td class="dv-label">F:</td>
+					<td><{$detail_F}></td>
+				</tr>
+				<tr>
+					<td class="dv-label">G: </td>
+					<td><{$detail_G}></td>
+					<td class="dv-label">H:</td>
+					<td><{$detail_H}></td>
+				</tr>
+			</case>	
+		</switch>
+		<tr>
+			<td class="dv-label">ans</td>
+			<td colspan="5"><{$detail_ans}></td>
+
+		</tr>
+	</table>
+</body>
+</html>

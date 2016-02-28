@@ -158,6 +158,34 @@ class OptiondataController extends CommonController {
 		$option_db->ArrayToSql ( $data );
 		
 	}
+	function getOptionDetail($itemid){
+		$Optiondata_db=D('Optiondata');
+		$result=$Optiondata_db->where(array('question_id'=>$itemid))->select()[0];
+		$this->assign('detail_title',$result['title']);
+		$this->assign('detail_type',$result['type']);
+		$this->assign('detail_A',$result['a']);
+		$this->assign('detail_B',$result['b']);
+		$this->assign('detail_C',$result['c']);
+		$this->assign('detail_D',$result['d']);
+		$this->assign('detail_E',$result['e']);
+		$this->assign('detail_F',$result['f']);
+		$this->assign('detail_G',$result['g']);
+		$this->assign('detail_H',$result['h']);
+		$this->assign('detail_ans',$this->ansToChar($result['answer'],$result['type']));
+		$this->display('option_detail');
+	}
+	function ansToChar($num,$type){
+		if($type==101||$type==103){
+			return chr(64+$num);
+		}
+		$ans='';
+		for ($i=0; $i < 8; $i++) { 
+			if(($num&(1<<$i))==(1<<$i)){
+				$ans=$ans.chr(65+$i);
+			}
+		}
+		return $ans;
+	}
 }
 
 ?>

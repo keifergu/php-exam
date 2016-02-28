@@ -40,7 +40,7 @@
 				{
 					border : false,
 					cache : false,
-					href : 'App/Admin/View/Paperdata/getOptionDetail.php?itemid='+ row.question_id,
+					href:'index.php?m=admin&c=Optiondata&a=getOptionDetail&itemid='+row.question_id,
 					onLoad : function() {
 						$('#paper<{$hidden_paper_id}>_add_dg').datagrid('fixDetailRowHeight',index);
 					}
