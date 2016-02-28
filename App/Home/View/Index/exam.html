@@ -83,9 +83,7 @@ paperinfo.nowNum = 1;
 
 paperinfo['start_time'] = unescape(paperinfo['start_time']).replace('+',' ').replace(/\-/g, "/");
 paperinfo['total_time'] = unescape(paperinfo['total_time']);
-alert(paperinfo['start_time']);
-alert(paperinfo['total_time']);
-
+alert(paperinfo['start_time'])
 
 
   $(document).ready(function(){
@@ -190,10 +188,13 @@ alert(paperinfo['total_time']);
     
     function getRTime(){
             var StartTime = new Date(paperinfo['start_time']); //开始时间
-            var TotalTime = new Date('0000/00/00 '+paperinfo['total_time']);
+            var TotalTime = new Date('1999/01/01 '+paperinfo['total_time']);
             var NowTime = new Date();
             var totalMs = TotalTime.getHours()*1000*60*60+TotalTime.getMinutes()*1000*60+TotalTime.getSeconds()*1000;
-            var t =totalMs - (NowTime.getTime() - StartTime.getTime());
+            var t = totalMs - NowTime.getTime() + StartTime.getTime();
+            // alert(NowTime.getTime())
+            // alert(StartTime.getTime())
+            // alert(t)
             /*var d=Math.floor(t/1000/60/60/24);
             t-=d*(1000*60*60*24);
             var h=Math.floor(t/1000/60/60);

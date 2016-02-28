@@ -11,7 +11,7 @@ class ExamLogic {
 			return false;
 		}else {
 			$SummaryModel = D('Summary');
-			$time['start_time'] = date("Y-m-d h:i:s");
+			$time['start_time'] = date("Y-m-d H:i:s");
 			$id = $SummaryModel->add($time);
 			if ($id == null) {
 				return false;
@@ -32,7 +32,7 @@ class ExamLogic {
 		}
 		$SummaryModel = D('Summary');
 		$field = array('test_id' => $test_id);
-		$submit_time = date("Y-m-d h:i:s");
+		$submit_time = date("Y-m-d H:i:s");
 		$id = $SummaryModel->where($field)->setField('submit_time',$submit_time);
 		if ($id == null) {
 			return false;
