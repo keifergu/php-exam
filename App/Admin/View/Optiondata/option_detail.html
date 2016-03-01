@@ -54,16 +54,31 @@
 					<td><{$detail_D}></td>
 				</tr>
 				<tr>
-					<td class="dv-label">E: </td>
-					<td><{$detail_E}></td>
-					<td class="dv-label">F:</td>
-					<td><{$detail_F}></td>
+					<if condition="$detail_E">
+						<td class="dv-label">E: </td>
+						<td><{$detail_E}></td>
+						<if condition="$detail_F">
+							<td class="dv-label">F:</td>
+							<td><{$detail_F}></td>
+							<else/>
+							<td class="dv-label"></td>
+							<td></td>
+						</if>
+					</if>
 				</tr>
 				<tr>
-					<td class="dv-label">G: </td>
-					<td><{$detail_G}></td>
-					<td class="dv-label">H:</td>
-					<td><{$detail_H}></td>
+					<if condition="$detail_G">
+						<td class="dv-label">G: </td>
+						<td><{$detail_G}></td>
+						<if condition="$detail_H">
+							<td class="dv-label">H:</td>
+							<td><{$detail_H}></td>
+							<else/>
+							<td class="dv-label"></td>
+							<td></td>
+						</if>
+						
+					</if>
 				</tr>
 			</case>	
 		</switch>

@@ -9,6 +9,7 @@
 <body>
     <script type="text/javascript">
         $(function(){
+
             $("#fileForm").ajaxForm({
                 //定义返回JSON数据，还包括xml和script格式
                 dataType:'json',
@@ -34,9 +35,6 @@
             <div id="option_new_dlg-buttons" >
                 <a href="#" class="easyui-linkbutton" iconCls="icon-ok" onclick="$('#fileForm').submit()">上传</a>
             </div>
-
-
-
         </div>
     </div>
 
@@ -104,7 +102,6 @@ closed="true" buttons="#dlg-buttons">
                 $('#ddv-'+index).panel({
                     border:false,
                     cache:false,
-                   //href:'App/Admin/View/Optiondata/getOptionDetail.php?itemid='+row.question_id,
                     href:'index.php?m=admin&c=Optiondata&a=getOptionDetail&itemid='+row.question_id,
                     onLoad:function(){
                         $('#option_index_dg').datagrid('fixDetailRowHeight',index);
@@ -136,61 +133,44 @@ closed="true" buttons="#dlg-buttons">
         onLoadSuccess:onOptionComboSuccess
 
     });
-        // $('#option_index_dg').datagrid({
-        //         onLoadSuccess: function(data){
-        //             if (data.total==0) {
-        //                 alert("没有数据");
-        //                 // $('#option_index_dg').datagrid('loadData',{total:0,rows:[]});
-        //             }
-        //         }
-        //     });
 
-        function newUser(){
-           $('#option_new_dlg').dialog('open');
-       }
-       function editUser(){
-           var row = $('#option_index_dg').datagrid('getSelected');
-        	window.open("<{:U('Optiondata/optionEdit')}>&id="+row.question_id);  //打开一个新的页面
+    function newUser(){
+       $('#option_new_dlg').dialog('open');
+   }
+   function editUser(){
+       var row = $('#option_index_dg').datagrid('getSelected');
+       window.open("<{:U('Optiondata/optionEdit')}>&id="+row.question_id); 
+   }
+   function removeUser(){
+       var row = $('#option_index_dg').datagrid('getSelected');
+       $.post("index.php?m=Admin&c=Optiondata&a=optionRemove",{
+        id:row.question_id
+    },function(data){
+        $('#option_index_dg').datagrid('reload');
+    });
+   }
+   function onselect(){
+    var pCourse=$('#option_index_toolbar_course_name').combobox('getValue');
+    var pType=$('#option_index_toolbar_option_type').combobox('getValue');
+    var param = {"courseid" :pCourse,"typeid":pType};
+    $('#option_index_dg').datagrid('load',param);
+}
+function onOptionComboSuccess(){
+    var val = $('#option_index_toolbar_option_type').combobox("getData");
+    for (var item in val[0])  {
+        if (item == "type_id")  {
+            $('#option_index_toolbar_option_type').combobox("select", val[0][item]);
         }
-        function removeUser(){
-        	var row = $('#option_index_dg').datagrid('getSelected');
-            $.post("index.php?m=Admin&c=Optiondata&a=optionRemove",{
-                id:row.question_id
-            },function(data){
-                $('#option_index_dg').datagrid('reload');
-            });
+    }
+}
+function onCourseComboSuccess(){
+    var val = $('#option_index_toolbar_course_name').combobox("getData");
+    for (var item in val[0]) {
+        if (item == "type_id")  {
+            $('#option_index_toolbar_course_name').combobox("select", val[0][item]);
         }
-        function onselect()
-        {
-            var pCourse=$('#option_index_toolbar_course_name').combobox('getValue');
-            var pType=$('#option_index_toolbar_option_type').combobox('getValue');
-            var param = {"courseid" :pCourse,"typeid":pType};
-            $('#option_index_dg').datagrid('load',param);
-        }
-        function onOptionComboSuccess()
-        {
-            var val = $('#option_index_toolbar_option_type').combobox("getData");
-            for (var item in val[0]) 
-            {
-                if (item == "type_id") 
-                {
-                    $('#option_index_toolbar_option_type').combobox("select", val[0][item]);
-                }
-            }
-        }
-        function onCourseComboSuccess()
-        {
-            var val = $('#option_index_toolbar_course_name').combobox("getData");
-            // "\""+变量+"\""
-            for (var item in val[0]) 
-            {
-
-                if (item == "type_id") 
-                {
-                    $('#option_index_toolbar_course_name').combobox("select", val[0][item]);
-                }
-            }
-        }
-    </script>
+    }
+}
+</script>
 </body>
 </html>

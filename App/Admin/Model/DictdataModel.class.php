@@ -15,17 +15,17 @@ class DictdataModel extends Model
         return $info;
     }
 
-    public function NameToId($name,$belong){
+    public function getID($name,$belong){
     	$condition=array(
             'type_name'=>$name,
-           'belong_type'=>$belong
+            'belong_type'=>$belong
             );
-        $result=$this->where($condition)->select()[0]['type_id'];
+        $result=$this->where($condition)->find()['type_id'];
         return $result;
     }
-    public function IdToName($id){
+    public function getName($id){
         $condition=array('type_id'=>$id);
-        $result= $this->where($condition)->select()[0]['type_name'];
+        $result= $this->where($condition)->find()['type_name'];
         return $result;
     }
 }

@@ -49,3 +49,17 @@ function strFormat($str,$bit)
     $real_num = $zero.$str;
     return $real_num;
 }
+
+//二进制数转字符串
+function ansToChar($num,$type){
+    if($type==101||$type==103){
+        return chr(64+$num);
+    }
+    $ans='';
+    for ($i=0; $i < 8; $i++) { 
+        if(($num&(1<<$i))==(1<<$i)){
+            $ans=$ans.chr(65+$i);
+        }
+    }
+    return $ans;
+}

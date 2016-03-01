@@ -34,10 +34,5 @@ class PapergradeModel extends Model
 		$condition['paper_id']=$paperId;
 		$this->where($condition)->delete();
 	}
-	function test(){
-		$data=array(
-			'paper_name'=>rand(1,99),
-			);
-		$this->add($data);
-	}
+	
 }

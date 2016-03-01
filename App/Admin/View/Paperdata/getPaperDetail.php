@@ -51,12 +51,6 @@ $itemid = mysql_real_escape_string($_REQUEST['itemid']);
 			//alert(parseInt($(this).text()));
 		});
 		$('#lable-totalGrade'+testId).text(ans);
-		$.post('index.php?m=admin&c=Paperdata&a=modifyPaperSum',{
-			paper_id:testId,
-			total:ans
-		},function(data){
-			//
-		});
 	}
 </script>
 <table class="dv-table" border="0" style="width:100%;">
