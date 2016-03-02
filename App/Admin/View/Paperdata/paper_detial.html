@@ -12,18 +12,11 @@
 		}
 	</style>
 	<script type="text/javascript">
-		$(function(){
-			$('[name="<{$paperID}>-name"]').each(function(){
-				typeID=$(this).attr('id').match(/[0-9]*/g);
-				//alert(typeID);
-				getTypeTotal(<{$paperID}>,typeID[2]);
-			});
-			getAllTotal(paperID);
-		});
 		function getTypeTotal(paperID,typeID){
-			alert(typeID);
 			typeNum = $('#'+paperID+'-'+typeID+'-num').text();
 			typeGrade= $('#'+paperID+'-'+typeID+'-grade').val();
+			curTypeTotal =  $('#'+paperID+'-'+typeID+'-total').text();
+			curAllTotal = $('#'+paperID+'-all-total').text();
 			$.post("index.php?m=admin&c=Paperdata&a=modifyPaperGrade",{
 				testId:paperID,
 				typeId:typeID,
@@ -31,18 +24,11 @@
 			},function(data){
 				if(data){
 					typeTotal = typeNum * typeGrade;
-					typeNum = $('#'+paperID+'-'+typeID+'-total').text(typeTotal);
-					//getAllTotal(paperID);
+					$('#'+paperID+'-'+typeID+'-total').text(typeTotal);
+					result = curAllTotal - curTypeTotal +typeTotal ;
+					$('#'+paperID+'-all-total').text(result);
 				}
 			});
-		}
-
-		function getAllTotal(paperID){
-			total = 0;
-			$('#'+paperID+'-total').each(function(){
-				total = +int($(this).text());
-			});
-			alert(total);
 		}
 	</script>
 	<table class="dv-table" border="0" style="width:100%;">
@@ -57,11 +43,11 @@
 			<tr>
 				<td><label id="<{$paperID}>-<{$vo.type_id}>-name"><{$vo.type_name}></label></td>
 				<td><label id="<{$paperID}>-<{$vo.type_id}>-num" name="<{$paperID}>-name"><{$vo.type_num}></label></td>
-				<td><input type="number" id="<{$paperID}>-<{$vo.type_id}>-grade" value="<{$vo.type_grade}>" onblur="getTypeTotal(<{$paperID}>,<{$vo.type_id}>)"></input></td>
-				<td><label id="<{$paperID}>-<{$vo.type_id}>-total" name="<{$paperID}>-total"></label></td>
+				<td><input  id="<{$paperID}>-<{$vo.type_id}>-grade" value="<{$vo.type_grade}>" onblur="getTypeTotal(<{$paperID}>,<{$vo.type_id}>)" onkeyup="value=value.replace(/[^0-9]/,'')"></input></td>
+				<td><label id="<{$paperID}>-<{$vo.type_id}>-total" name="<{$paperID}>-total"><{$vo.type_total}></label></td>
 			</tr>
 		</foreach>
-		<tr><td>total:<label id="<{$paperID}>-total"></label></td></tr>
+		<tr><td>总分:<label id="<{$paperID}>-all-total"><{$total}></label></td></tr>
 	</table>
 </body>
 </html>

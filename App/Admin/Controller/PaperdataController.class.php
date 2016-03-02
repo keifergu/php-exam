@@ -222,6 +222,7 @@ class PaperdataController extends CommonController {
 		echo json_encode($TypeCount);
 	}
 	function modifyPaperGrade(){
+		$ret = false ;
 		$paperGrade_db=D('Papergrade');
 		$paperID=$_POST['testId'];
 		$typeID=$_POST['typeId'];
@@ -247,14 +248,18 @@ class PaperdataController extends CommonController {
 				}
 			}
 		}
+		$total=0;
 		$Papergrade_db=D('Papergrade');
 		foreach ($typeList as $key => $value) {
 			if($value['type_num']==0){
 				unset($typeList[$key]);
 			}else{
 				$typeList[$key]['type_grade']=$Papergrade_db->getPaperTypeGrade($paperID,$value['type_id']);
+				$typeList[$key]['type_total']=$typeList[$key]['type_grade'] * $typeList[$key]['type_num'];
+				$total +=$typeList[$key]['type_total'];
 			}
 		}
+		$this->assign('total',$total);
 		$this->assign('list',$typeList);
 		$this->assign('paperID',$paperID);
 		$this->display('paper_detial');

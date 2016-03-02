@@ -85,7 +85,7 @@ class StuImportController extends CommonController
 				$data [$currentRow] [$currentColumn] = $currentSheet->getCell ( $address )->getValue ();
 			}
 		}
-		 
+
 		 //
 		$Dictdata_db=D('Dictdata');
 		$Paperdata_db=D('Paperdata');
@@ -93,36 +93,18 @@ class StuImportController extends CommonController
 		$count=0;
 		$error='';
 		foreach ($data as $key => $value){
-			$condition=array(
-				'type_name'=>$value['C'],
-				'belong_type'=>200
-				);
-			$courseId=$Dictdata_db->where($condition)->select()[0]['type_id'];
-			$condition=array(
-				'student_id'=>$value['A'],
-				'student_course'=>$courseId
-				);
-			$check=$StuImport_db->where($condition)->select();
+			$courseId=$Dictdata_db->getID($value['C'],200);
+			$check=$StuImport_db->getPaperID($value['A'],$courseId);
 			if(!$check){
-				$condition=array(
-					'course_id'=>$courseId
-					);
-				$paperlist=$Paperdata_db->where($condition)->select();
+				$paperlist=$Paperdata_db->getCourseInfo($courseid);
 				$total=count($paperlist);
 				$paperId=$paperlist[rand(0,$total-1)]['paper_id'];
-				$item=array(
-					'student_id'=>$value['A'],
-					'student_name'=>$value['B'],
-					'student_course'=>$courseId,
-					'finish_paper'=>$paperId
-					);
-				$result=$StuImport_db->add($item);
+				$StuImport_db->addItem($value['A'],$value['B'],$courseId,$paperId);
 				$count++;
 			}else{
 				$error.='学号:'.$value['A'].' 姓名:'.$value['B'].' 课程:'.$value['C'].' 数据已存在！<br/>';
 			}
 		}
-		
 		$susses='成功导入'.$count.'条数据！<br/>';
 		echo json_encode ($susses.$error);
 	}
@@ -131,10 +113,7 @@ class StuImportController extends CommonController
 			$studentid=$_POST['studentid'];
 			$paperid=$_POST['paperid'];
 			$StuImport_db=D('StXuImport');
-			$condition=array();
-			$condition['student_id']=$studentid;
-			$condition['paperid']=$paperid;
-			$result=$StuImport_db->where($condition)->delete();
+			$result=$StuImport_db->delItem($studentID,$paperID);
 			echo json_encode($result);
 		}
 

@@ -128,5 +128,12 @@ class PaperdataModel extends Model{
 		}
 		return $ret;
 	}
+	public function getCourseInfo($courseID){
+		$ret = false ;
+		if(isset($courseID)){
+			$ret = $this ->where(array('course_id'=>$courseID))->select();
+		}
+		return $ret;
+	}
 }
 ?>
