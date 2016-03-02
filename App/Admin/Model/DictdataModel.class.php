@@ -16,16 +16,19 @@ class DictdataModel extends Model
     }
 
     public function getID($name,$belong){
-    	$condition=array(
-            'type_name'=>$name,
-            'belong_type'=>$belong
-            );
-        $result=$this->where($condition)->find()['type_id'];
+        $result=$this->where(array('type_name'=>$name,'belong_type'=>$belong ))->find()['type_id'];
         return $result;
     }
     public function getName($id){
-        $condition=array('type_id'=>$id);
-        $result= $this->where($condition)->find()['type_name'];
-        return $result;
-    }
+        $ret = false;
+        if(isset($id)){
+           $ret= $this->where(array('type_id'=>$id))->find()['type_name'];
+       }
+
+       return $ret;
+   }
+   public function getTypeList(){
+        $ret  = $this->where(array('belong_type'=>100))->select();
+        return $ret;
+   }
 }

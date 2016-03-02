@@ -8,6 +8,7 @@ class PaperdataController extends CommonController {
 	function paperList($page = 1, $rows = 10, $sort = 'dictid', $order = 'asc', $courseid = '', $typeid = '') {
 		if (IS_POST && $courseid != '' ) {
 			$paper_db = D( 'Paperdata' );
+			$dict_db=D('Dictdata');
 			$limit = ($page - 1) * $rows . "," . $rows;
 			$condition ['course_id'] = $courseid;
 			$list = $paper_db->where ( $condition )->limit ( $limit )->select ();
@@ -17,25 +18,17 @@ class PaperdataController extends CommonController {
 					foreach ($value as $key1=>$value1){
 						$data[$key][$key1]=$value1;
 					}
-					$coursename = array ();
-					$coursename=getDictName( $list [$key] ["course_id"] );
-					$data [$key] ["course_id"] = $coursename [0] ["type_name"];
+					$data [$key] ["course_id"] = $dict_db->getName($value['course_id']);
 				}
-				$result=array(
-					'total' => $total,
-					'rows' => $data
-					);
+				$result=array('total' => $total,'rows' => $data);
 			}else{
-				$result=array(
-					'total' =>0,
-					'rows' => []
-					);
+				$result=array('total' =>0,'rows' => []);
 			}
 			echo json_encode($result);
 		} else {
 			$this->display ( 'paper_index' );
 		}
-	}
+	} 
 
 	//含有去重处理的添加列表
 	function AddOptionList($page = 1, $rows = 10, $sort = 'dictid', $order = 'asc', $typeid = '' ,$courseid='',$paper_id='') {
@@ -45,9 +38,7 @@ class PaperdataController extends CommonController {
 		//var_dump($paper_option);
 		if (IS_POST && $courseid != '' && $typeid != '') {
 			$paper_db=D('Paperdata');
-			$condition=array('paper_id'=>$paper_id,);
-			$paperinfo=$paper_db->where($condition)->select();
-			$paper_option=json_decode($paperinfo[0]['content'],true);
+			$paper_option=$paper_db->getContent($paper_id);
 			if($paper_option){
 				$condition=array(
 					'course_id'=>$courseid,
@@ -61,7 +52,8 @@ class PaperdataController extends CommonController {
 					);
 			};
 			//var_dump($condition);
-			$option_db = M ( 'Optiondata' );
+			$option_db = D( 'Optiondata' );
+			$dict_db=D('Dictdata');
 			$total = $option_db->where($condition)->count ();
 			$order = $sort . ' ' . $order;
 			$limit = ($page - 1) * $rows . "," . $rows;
@@ -72,34 +64,24 @@ class PaperdataController extends CommonController {
 					foreach ( $value as $key1 => $value1 ) {
 						$data [$key] [$key1] = $value1;
 					}
-					$coursename = array (); 	 
-					$coursename = object_array ( getDictName ( $arr [$key] ["course_id"] ) );
-					$data [$key] ["course"] = $coursename [0] ["type_name"];
-					$coursename = object_array ( getDictName ( $arr [$key] ["type"] ) );
-					$data [$key] ["type"] = $coursename [0] ["type_name"];
+					$data [$key] ["course"] = $dict_db->getName($value['course_id']);
+					$data [$key] ["type"] =$dict_db->getName($value['type']);
 				}
 				//假如所有题目都被添加到该试卷
-				$data2 = array (
-					'total' => $total,
-					'rows' => $data
-					); 
+				$data2 = array ('total' => $total,'rows' => $data); 
 			} else {
-				$data2 = array (
-					'total' => 0,
-					'rows' => [ ]
-					);
+				$data2 = array ('total' => 0,'rows' => [ ]);
 			}
 			echo json_encode ( $data2 );
 		}else{
-			$Paperdata_db=D('Paperdata');
-			$paperinfo=$Paperdata_db->where('paper_id='.$paper_id)->select();
-			$course_id=$paperinfo[0]['course_id'];
+			$paper_db=D('Paperdata');
+			$course_id=$paper_db->getCourseID($paper_id);
 			$this->assign('hidden_course_id',$course_id);
 			$this->assign('hidden_paper_id',$paper_id);
 			$this->display('paper_add');
 		}
 	}
-
+	//preview
 	function EditOptionList($page = 1, $rows = 10, $sort = 'dictid', $order = 'asc', $typeid = '' ,$courseid='',$paper_id='') {
 		/*$courseid=201;
 		$typeid=101;
@@ -108,117 +90,38 @@ class PaperdataController extends CommonController {
 		if($paper_id!=''){
 			$Paperdata_db=D('Paperdata');
 			$Optiondata_db=D('Optiondata');
-			$condition=array('paper_id'=>$paper_id);
-			$paperinfo=$Paperdata_db->where($condition)->select();
-			$paper_option=json_decode($paperinfo[0]['content'],true);
+			$dict_db=D('Dictdata');
+			$paper_option=$Paperdata_db->getContent($paper_id);
+			var_dump($paper_id);
 			$total=count($paper_option);
 			if($total>0){
 				//data：id-course-type-title数据数组
-				/*foreach ($paper_option as $key=>$value){
-					$optioninfo=$Optiondata_db->where('question_id='.$value)->select();
-					$data[$key]['question_id'] = $optioninfo[0]['question_id'];
-					$data[$key]['course'] = getDictName($optioninfo[0]['course_id'])[0]['type_name'];
-					$data[$key]['type'] = getDictName($optioninfo[0]['type'])[0]['type_name'];
-					$data[$key]['title'] = $optioninfo[0]['title'];
-				}*/
-				//echo "<table width='700px'>";
-				echo '
-				<script type="text/javascript">
-					function openUrl(url, title){
-						if($("#pagetabs").tabs("exists", title)){
-							$("#pagetabs").tabs("select", title);
-						}else{
-							$("#pagetabs").tabs("add",{
-								title: title,
-								href: url,
-								closable: true,
-								cache: false
-							});
-						}
-					}
-					function RemoveOption(paperid,optionid){
-						$.post("index.php?m=Admin&c=Paperdata&a=paperEdit",{
-							paperid:paperid,
-							optionid:optionid
-						},function(data){
-							var tab=$("#pagetabs").tabs("getSelected");
-							$("#tt").tabs("update",{
-								tab: tab,
-							});
-							tab.panel("refresh");
-						});
-					}
-				</script>
-				';
-				echo '<h6>试卷名称:' .$paperinfo[0]['paper_name'].'</h6>';
-				echo '<h6>所属科目:'.getDictName($paperinfo[0]['course_id'])[0]['type_name'].'</h6>';
+				echo '<script type="text/javascript" src="Public/static/js/Admin/paperdata/edit.js"></script>';
+				echo '<h6>试卷名称:' .$Paperdata_db->getPaperName($paper_id).'</h6>';
+				echo '<h6>所属科目:'.$Paperdata_db->getCourseName($paper_id).'</h6>';
 				foreach ($paper_option as $key=>$value){
-					$optioninfo=$Optiondata_db->where('question_id='.$value)->select();
-					$data['question_id'] = $optioninfo[0]['question_id'];
-					$data['course'] = getDictName($optioninfo[0]['course_id'])[0]['type_name'];
-					$data['typeid']=$optioninfo[0]['type'];
-					$data['type'] = getDictName($optioninfo[0]['type'])[0]['type_name'];
-					$data['title'] = $optioninfo[0]['title'];
-					$data['keyword']=$optioninfo[0]['keyword'];
-					$data['A']=$optioninfo[0]['a'];
-					$data['B']=$optioninfo[0]['b'];
-					$data['C']=$optioninfo[0]['c'];
-					$data['D']=$optioninfo[0]['d'];
-					$data['E']=$optioninfo[0]['e'];
-					$data['F']=$optioninfo[0]['f'];
-					$data['G']=$optioninfo[0]['g'];
-					$data['H']=$optioninfo[0]['h'];
-					$data['img']=$optioninfo[0]['img'];
-					$data['ans']=$optioninfo[0]['answer'];
 					//$value=$data['question_id']   使用value可以处理题目被删除之后的$data['question_id']查询不到没有数据的情况
 					$urlEdit="\"index.php?m=admin&c=Optiondata&a=Optionedit&id=".$value."\" ";
-					//<td><a href='javascript:void(0)'  onclick='openUrl(".$url.",".$data['question_id'].")'>修改</a></td>
-					//<td><a href=".$url.">修改</td>
-					echo"
-					<hr />
-					<table width='700px'>
-						<tr>
-							<td colspan='3'>第".($key+1)."题:</td>
-							<td><a target='_blank' href=".$urlEdit.">修改</td>
-							<td><a href='javascript:void(0)'  onclick='RemoveOption(".$paper_id.",".$value.")'>删除</a></td>
-						</tr>
-						<tr>
-							<td width='25%'>".$data['question_id']."</td>
-							<td width='25%'>".$data['type']."</td>
-							<td width='25%'>".$data['keyword']."</td>
-						</tr>
-						<tr>
-							<td colspan='3'>标题:".$data['title']."</td>
-						</tr>
-						";
-						if($data['A']){
-							echo"<tr><td colspan='3'>A:".$data['A']."</td></tr>";
-						}
-						if($data['B']){
-							echo"
-							<tr><td colspan='3'>B:".$data['B']."</td></tr>";
-						}
-						if($data['C']){
-							echo"<tr><td colspan='3'>C:".$data['C']."</td></tr>";
-						}
-						if($data['D']){
-							echo"<tr><td colspan='3'>D:".$data['D']."</td></tr>";
-						}
-						if($data['E']){
-							echo"<tr><td colspan='3'>E:".$data['E']."</td></tr>";
-						}
-						if($data['F']){
-							echo"<tr><td colspan='3'>F:".$data['F']."</td></tr>";
-						}
-						if($data['G']){
-							echo"<tr><td colspan='3'>G:".$data['G']."</td></tr>";
-						}
-						if($data['H']){
-							echo"<tr><td colspan='3'>H:".$data['H']."</td></tr>";
-						}
-						$ans=ansToChar($data['answer'],$data['type']);
-						echo"
-						<tr><td colspan='3'>答案:".$ans."</td></tr>";
+					echo"<hr /><table width='700px'>
+					<tr>
+						<td colspan='3'>第".($key+1)."题:</td><td><a target='_blank' href=".$urlEdit.">修改</td>
+						<td><a href='javascript:void(0)'  onclick='RemoveOption(".$paper_id.",".$value.")'>删除</a></td>
+					</tr>
+					<tr>
+						<td width='25%'>".$value."</td>
+						<td width='25%'>".$Optiondata_db->getTypeName($value)."</td>
+						<td width='25%'>".$Optiondata_db->getKeyword($value)."</td>
+					</tr>
+					<tr><td colspan='3'>标题:".$Optiondata_db->getTitle($value)."</td></tr>";
+					if($option=$Optiondata_db->getOptionA($value)) echo"<tr><td colspan='3'>A:".$option."</td></tr>";
+					if($option=$Optiondata_db->getOptionB($value)) echo"<tr><td colspan='3'>B:".$option."</td></tr>";
+					if($option=$Optiondata_db->getOptionC($value)) echo"<tr><td colspan='3'>C:".$option."</td></tr>";
+					if($option=$Optiondata_db->getOptionD($value)) echo"<tr><td colspan='3'>D:".$option."</td></tr>";
+					if($option=$Optiondata_db->getOptionE($value)) echo"<tr><td colspan='3'>E:".$option."</td></tr>";
+					if($option=$Optiondata_db->getOptionF($value)) echo"<tr><td colspan='3'>F:".$option."</td></tr>";
+					if($option=$Optiondata_db->getOptionG($value)) echo"<tr><td colspan='3'>G:".$option."</td></tr>";
+					if($option=$Optiondata_db->getOptionH($value)) echo"<tr><td colspan='3'>H:".$option."</td></tr>";
+					echo"<tr><td colspan='3'>答案:".ansToChar($Optiondata_db->getOptionAnswer($value),$Optiondata_db->getTypeID($value))."</td></tr>";
 					echo "</table>";
 				}
 			}else{
@@ -239,7 +142,7 @@ class PaperdataController extends CommonController {
 		echo json_encode($result);
 	}
 
-	//新建试卷
+//新建试卷
 	function paperNew(){
 		$Paperdata_db=M('paper_content');
 		$data = array(
@@ -261,9 +164,9 @@ class PaperdataController extends CommonController {
 		$paperid=$_POST['paperid'];
 		$paper_option=$Paperdata_db->getContent($paperid);
 		//添加该题目
+		$option_count=count($paper_option);
 		foreach ($optionid as $key => $value) {
-			$optioninfo=$Optiondata_db->where(array('question_id'=>$value))->find();
-			$paper_option[$option_count+$key]=$optioninfo['question_id'];
+			$paper_option[$option_count+$key+1]=$value;
 		}
 		$paper_option = array_values($paper_option);
 		$Paperdata_db->setContent($paperid,$paper_option);
@@ -274,25 +177,20 @@ class PaperdataController extends CommonController {
 		$optionid=$_POST['optionid'];
 		$paperid=$_POST['paperid'];
 		//需要修改的试卷信息和需要添加的题目信息
-		$condition=array('paper_id'=>$paperid);
-		$paperinfo=$Paperdata_db->where($condition)->select()[0];
-		$paper_option=json_decode($paperinfo['content'],true);
+		$paper_option=$Paperdata_db->getContent($paperid);
 		foreach ($paper_option as $key => $value) {
 			if($value==$optionid){
 				unset($paper_option[$key]);
 			}		
 		}
-		//重建索引
 		$paper_option=array_values($paper_option);
-		$paperinfo['content']=json_encode($paper_option);
-		var_dump($paper_option);
-		$Paperdata_db->where($condition)->save($paperinfo);
+		$Paperdata_db->setContent($paperid,$paper_option);
 	}
 	//删除试卷
 	function paperRemove(){
 		$paper_id=$_POST['paper_id'];
 		$Paperdata_db=D('Paperdata');
-		$Paperdata_db->where('paper_id='.$paper_id)->delete();
+		$Paperdata_db->deleteItem($paper_id);
 		$paperGrade_db=D('Paperdata');
 		$paperGrade_db->deletePaperInfo($paper_id);
 		echo json_encode($paper_id);
@@ -313,13 +211,10 @@ class PaperdataController extends CommonController {
 			$TypeCount[$value['type_id']]=0;
 		}
 		$Optiondata_db=D('Optiondata');
-		$Paperdata_db=D('Paperdata');
-		$paperinfo=$Paperdata_db->where(array('paper_id'=>$PaperId))->select()[0];
-		$paper_content=$paperinfo['content'];
-		$paper_option=json_decode($paperinfo[0]['content'],true);
-		//$array_content=explode(';', $paper_content);
+		$paper_db=D('Paperdata');
+		$paper_option=$paper_db->getContent($paper_id);
 		foreach ($array_content as $key => $value) {
-			$optioninfo=$Optiondata_db->where(array('question_id'=>$value))->select()[0];
+			$optioninfo=$Optiondata_db->where(array('question_id'=>$value))->find();
 			if($optioninfo){
 				$TypeCount[$optioninfo['type']]++;
 			}
@@ -328,23 +223,40 @@ class PaperdataController extends CommonController {
 	}
 	function modifyPaperGrade(){
 		$paperGrade_db=D('Papergrade');
-		$paperId=$_POST['testId'];
-		$typeId=$_POST['typeId'];
+		$paperID=$_POST['testId'];
+		$typeID=$_POST['typeId'];
 		$typeGrade=intval($_POST['typeGrade']);
-		$data=array(
-			'paper_id'=>$paperId,
-			'question_type'=>$typeId,
-			'grade'=>$typeGrade
-			);
-		$paperGrade_db->setTypeInfo($paperId,$typeId,$typeGrade);
-		echo json_encode($typeGrade);
+		$ret = $paperGrade_db->setTypeInfo($paperID,$typeID,$typeGrade);
+		echo json_encode($ret);
 	}
-	
+
 	function getPaperDetail($itemid){
-		$this->assign('detial_paperid',$itemid);
+		$paperID=$itemid;
 		$Dictdata_db=D('Dictdata');
-		$typeList=$Dictdata_db->where(array('belong_type'=>100))->select();
+		$typeList=$Dictdata_db->getTypeList();
+		foreach ($typeList as $key => $value) {
+			$typeList[$key]['type_num']=0;
+		}
+		$Paperdata_db=D('Paperdata');
+		$Optiondata_db=D('Optiondata');
+		$contentList=$Paperdata_db->getContent($paperID);
+		foreach ($contentList as $k => $optionID) {
+			foreach ($typeList as $key => $value) {
+				if($Optiondata_db->getTypeID($optionID)==$value['type_id']){
+					$typeList[$key]['type_num']++;
+				}
+			}
+		}
+		$Papergrade_db=D('Papergrade');
+		foreach ($typeList as $key => $value) {
+			if($value['type_num']==0){
+				unset($typeList[$key]);
+			}else{
+				$typeList[$key]['type_grade']=$Papergrade_db->getPaperTypeGrade($paperID,$value['type_id']);
+			}
+		}
 		$this->assign('list',$typeList);
+		$this->assign('paperID',$paperID);
 		$this->display('paper_detial');
 	}
 }

@@ -69,6 +69,16 @@ class OptiondataModel extends Model {
 		}
 		return $ret;
 	}
+	public function getTypeName($questionID){
+		$ret = false;
+		if(isset($questionID)){
+			$condition=array('question_id'=>$questionID);
+			$typeID=$this->where($condition)->getField('type');
+			$dict_db=D('Dictdata');
+			$ret = $dict_db->getName($typeID);
+		}
+		return $ret;
+	}
 	public function getKeyword($questionID){
 		$ret = false;
 		if(isset($questionID)){

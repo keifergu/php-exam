@@ -5,9 +5,7 @@ class PaperdataModel extends Model{
 	protected $tableName = 'paper_content';
 	public function paperList($page, $rows, $courseid) {
 		$limit = ($page - 1) * $rows . "," . $rows;
-		$condition =array(
-			'course_id' => $courseid
-			);
+		$condition =array('course_id' => $courseid);
 		$list=$this->where ( $condition )->limit ( $limit )->select ();
 		$total=$this->where ( $condition )->count ();
 		if($total>0){
@@ -15,19 +13,11 @@ class PaperdataModel extends Model{
 				foreach ($value as $key1=>$value1){
 					$data[$key][$key1]=$value1;
 				}
-				$coursename = array ();
-				$coursename=getDictName( $list [$key] ['course_id'] );
-				$data [$key] ['course_id'] = $coursename [0] ['type_name'];
+				$data [$key] ["course_id"] = $dict_db->getName($value['course_id']);
 			}
-			$result=array(
-				'total' => $total,
-				'rows' => $data
-				);
+			$result=array('total' => $total,'rows' => $data);
 		}else{
-			$result=array(
-				'total' =>0,
-				'rows' => []
-				);
+			$result=array('total' =>0,'rows' => []);
 		}
 		return $result;
 	}
@@ -45,6 +35,16 @@ class PaperdataModel extends Model{
 		if(isset($paperID)){
 			$condition=array('paper_id'=>$paperID);
 			$ret=$this->where($condition)->getField('course_id');
+		}
+		return $ret;
+	}
+	public function getCourseName($paperID){
+		$ret = false;
+		if(isset($paperID)){
+			$condition=array('paper_id'=>$paperID);
+			$courseID=$this->where($condition)->getField('course_id');
+			$dict_db=D('Dictdata');
+			$ret = $dict_db->getName($courseID);
 		}
 		return $ret;
 	}
@@ -85,7 +85,7 @@ class PaperdataModel extends Model{
 		if(isset($paperID)){
 			$condition=array('paper_id'=>$paperID);
 			$json=$this->where($condition)->getField('content');
-			$result=json_decode($json,true);
+			$ret=json_decode($json,true);
 		}
 		return $ret;
 	}
@@ -98,7 +98,7 @@ class PaperdataModel extends Model{
 			$ret=$this->where($condition)->save($data);
 		}
 		return $ret;
-	}
+	} 
 	public function setTotalGrade($paperID,$totalGrade){
 		$ret = false;
 		if(isset($paperID)){
@@ -120,6 +120,13 @@ class PaperdataModel extends Model{
 		}
 		return $ret;
 	}
-	
+	public function deleteItem($paperID){
+		$ret = false;
+		if(isset($paperID)){
+			$condition=array('paper_id'=>$paperID);
+			$json=$this->where($condition)->delete();
+		}
+		return $ret;
+	}
 }
 ?>
