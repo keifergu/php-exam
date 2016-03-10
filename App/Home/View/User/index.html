@@ -1,4 +1,5 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -29,18 +30,22 @@
                             <div role="tabpanel" class="tab-pane active" id="home">
                             <span>正在进行的考试</span>
                                 <div class="list-group">
-                                    <?php if(is_array($testData)): foreach($testData as $key=>$vo): ?><a href="<?php echo ($vo["examUrl"]); ?>" class="list-group-item"><?php echo ($vo["testName"]); ?></a><?php endforeach; endif; ?>
+                                    <foreach name="testData" item="vo">
+                                        <a href="<{$vo.examUrl}>" class="list-group-item"><{$vo.testName}></a>
+                                    </foreach>
                                 </div>
                     </div>
 
                     <!-- 用户中心 -->
                             <div role="tabpanel" class="tab-pane" id="profile">
                                 <ul>
-                                    <li><p>姓名：<?php echo ($user["name"]); ?></p></li>
+                                    <li><p>姓名：<{$user.name}></p></li>
                                     <li>
                                         <p>课程：</p>
                                         <ul>
-                                            <?php if(is_array($user['course'])): foreach($user['course'] as $key=>$vo): ?><li><?php echo ($vo); ?></li><?php endforeach; endif; ?>
+                                            <foreach name="user['course']" item="vo">
+                                                <li><{$vo}></li>
+                                            </foreach>
                                         </ul>
                                     </li>
                                 </ul>
@@ -52,35 +57,19 @@
                                     <td>试卷名称</td>
                                     <td>得分</td>
                                 </tr>
-                                 <?php if(is_array($grade)): foreach($grade as $key=>$vo): ?><tr>
-                                         <td><?php echo ($vo["name"]); ?></td>
-                                         <td><?php echo ($vo["grade"]); ?></td>
-                                    </tr><?php endforeach; endif; ?>
+                                 <foreach name="grade" item="vo">
+                                    <tr>
+                                         <td><{$vo.name}></td>
+                                         <td><{$vo.grade}></td>
+                                    </tr>
+                                 </foreach>
                             </table>
                             </div>
                     <!-- 设置 -->
                             <div role="tabpanel" class="tab-pane" id="settings">
-                                    <div class="btn-group" role="group">
-                                    <!-- 下拉按钮组 -->
-                                        <div class="btn-group"> 
-                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                       添加课程 <span class="caret"></span>
-                                            </button>
-                                            <ul class="dropdown-menu">
-                                                <?php if(is_array($course)): foreach($course as $k=>$vo): ?><li><a href="#"  value="<?php echo ($k); ?>" onclick="setCourse(<?php echo ($k); ?>)"><?php echo ($vo); ?></a></li><?php endforeach; endif; ?>
-                                            </ul>
-                                        </div>
-                                    <!-- 删除按钮 -->
-                                        <button type="button" class="btn btn-default" onclick="removeCourse()"><span>删除</span></button>
-                                    </div>
-                                    <!-- 课程显示 -->
-                                        <div class="input-group">
-                                            <?php if(is_array($user['course'])): foreach($user['course'] as $k=>$vo): ?><div class="checkbox">
-                                                    <label><input type="checkbox" value="<?php echo ($k); ?>" name="courseCheck"><?php echo ($vo); ?></label>
-                                                </div><?php endforeach; endif; ?>
-                                        </div>
+                                <a href="index.php/home/index/logout">LogOut</a>
                             </div>
-                  </div>
+                 </div>
             </div>
         </div>
     </div>
