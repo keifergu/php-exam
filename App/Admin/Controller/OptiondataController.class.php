@@ -161,6 +161,78 @@ class OptiondataController extends CommonController {
 		}
 		
 	}
+
+	function test(){
+		$this->exportXls($this->jsonToItem());
+	}
+	function  jsonToItem(){
+		$str = '{"a":{"a":"","b":"","c":"","d":"0","e":"0"},"b":[{"id":"114297","a":"浙江省中小学（初中）信息技术等级考试（二级）试题第一套","b":"102810","c":"黄海","d":"理工学院","e":"50","f":"1307177297","g":"1307177297","h":"45","i":"1","j":"1","k":"1","l":"2","m":"0","n":"0","o":"","p":"0","q":""},{"id":"b","c":[{"c":"一、判断题","p":"1"}]},{"id":"s3_473347","a":"在计算机的存储器中，内存的存取速度比外存储器要快。（&nbsp; &nbsp; &nbsp; ）","c":"1","d":"2","e":"0","f":0},{"id":"s3_473348","a":"一个完整的计算机系统应包括系统软件和应用软件。（&nbsp; &nbsp; &nbsp; ）","c":"2","d":"2","e":"0","f":0},{"id":"s3_473349","a":"Windows 98中，窗口被最大化后，最大化按钮会变为还原按钮。（&nbsp; &nbsp; &nbsp; ）","c":"1","d":"2","e":"0","f":0},{"id":"s3_473350","a":"计算机网络不会传播计算机病毒。（&nbsp; &nbsp; &nbsp; ）","c":"2","d":"2","e":"0","f":0},{"id":"s3_473351","a":"删除后的文件一定能从回收站中恢复。（&nbsp;&nbsp; ）","c":"2","d":"2","e":"0","f":0},{"id":"b","c":[{"c":"二、选择题","p":"2"}]},{"id":"s1_473352","a":"办公自动化是计算机的一项应用，按计算机应用的分类，它属于（&nbsp; ）","b":"[{\"o\":\"科学计算\"},{\"o\":\"实时控制\"},{\"o\":\"数据处理\"},{\"o\":\"辅助设计\"}]","c":"4","d":"4","e":"0","f":0},{"id":"s1_473353","a":"Windows 98操作系统是一个","b":"[{\"o\":\"单用户多任务操作系统\"},{\"o\":\"单用户单任务操作系统\"},{\"o\":\"多用户单任务操作系统\"},{\"o\":\"多用户多任务操作系统\"}]","c":"1","d":"4","e":"0","f":0},{"id":"s1_473354","a":"设Windows 98桌面上已经有某应用程序的图标，在系统默认方式下，要运行该程序，可以（&nbsp; ）","b":"[{\"o\":\"用鼠标左键单击该图标\"},{\"o\":\"用鼠标右键单击该图标\"},{\"o\":\"用鼠标左键双击该图标\"},{\"o\":\"用鼠标右键双击该图标\"}]","c":"4","d":"4","e":"0","f":0},{"id":"s1_473355","a":"在只有一个软驱的计算机中，软驱的盘符通常用（&nbsp; ）。","b":"[{\"o\":\"A：\"},{\"o\":\"B：\"},{\"o\":\"C：\"},{\"o\":\"D：\"}]","c":"1","d":"4","e":"0","f":0},{"id":"s1_473356","a":"微型计算机的键盘上用于输入上档字符和转换英文大小写字母输入的键是（&nbsp; ）","b":"[{\"o\":\"&lt;Alt&gt;键\"},{\"o\":\"&lt;Ctrl&gt;键\"},{\"o\":\"&lt;Shift&gt;键\"},{\"o\":\"&lt;Tab&gt;键\"}]","c":"4","d":"4","e":"0","f":0},{"id":"s1_473357","a":"下列存储器中，存取速度最快的是（&nbsp; ）。","b":"[{\"o\":\"软盘\"},{\"o\":\"硬盘\"},{\"o\":\"光盘\"},{\"o\":\"内存\"}]","c":"8","d":"4","e":"0","f":0},{"id":"s1_473358","a":"对计算机软件正确的认识应该是（&nbsp; ）。","b":"[{\"o\":\"计算机软件受法律保护是多余的\"},{\"o\":\"正版软件太贵，软件能复制就不必购买\"},{\"o\":\"受法律保护的计算机软件不能随便复制\"},{\"o\":\"正版软件只要能解密就能随意使用\"}]","c":"4","d":"4","e":"0","f":0},{"id":"s1_473359","a":"Word的\"文件\"命令菜单底部显示的文件名所对应的文件是（&nbsp; ）","b":"[{\"o\":\"当前被操作的文件\"},{\"o\":\"当前已经打开的所有文件\"},{\"o\":\"最近被操作过的文件\"},{\"o\":\"扩展名是.doc的所有文件\"}]","c":"4","d":"4","e":"0","f":0},{"id":"s1_473360","a":"在Windows网络环境中，要访问其他计算机，可以打开（&nbsp; ）","b":"[{\"o\":\"我的电脑\"},{\"o\":\"控制面板\"},{\"o\":\"网上邻居\"},{\"o\":\"我的文档\"}]","c":"4","d":"4","e":"0","f":0},{"id":"s1_473361","a":"电子邮件地址一般的格式是（&nbsp; ）","b":"[{\"o\":\"用户名@域名\"},{\"o\":\"域名@用户名\"},{\"o\":\"IP@域名\"},{\"o\":\"域名@IP\"}]","c":"1","d":"4","e":"0","f":0}],"c":"[{\"id\":\"s3_473347\"},{\"id\":\"s3_473348\"},{\"id\":\"s3_473349\"},{\"id\":\"s3_473350\"},{\"id\":\"s3_473351\"},{\"id\":\"s1_473352\"},{\"id\":\"s1_473353\"},{\"id\":\"s1_473354\"},{\"id\":\"s1_473355\"},{\"id\":\"s1_473356\"},{\"id\":\"s1_473357\"},{\"id\":\"s1_473358\"},{\"id\":\"s1_473359\"},{\"id\":\"s1_473360\"},{\"id\":\"s1_473361\"}]"}';
+		$arr = json_decode($str,true)[b];
+		for ($i=0; $i <10 ; $i++) { 
+			array_shift($arr);
+		}
+		//echo json_encode($arr);
+		$data = array();
+		foreach ($arr as $key => $value) {
+			$data[$key]['title']=$value['a'];
+			$data[$key]['type']=101;
+			$data[$key]['course_id']=201;
+			$option = json_decode($value['b'],true);
+			for ($i=0; $i <count($option) ; $i++) { 
+				$data[$key][chr(97+$i)]=$option[$i]['o'];
+			}
+			$data[$key]['answer']=$value['c'];
+		}
+		return $data;
+	}
+	function exportXls($data){
+		vendor ( 'PHPExcel.PHPExcel' );
+		$resultPHPExcel = new \PHPExcel ();
+		$Dict_db=D('Dictdata');
+		//设置参数 
+		$resultPHPExcel->getActiveSheet()->setCellValue('A1', '课程名称'); 
+		$resultPHPExcel->getActiveSheet()->setCellValue('B1', '题目类型'); 
+		$resultPHPExcel->getActiveSheet()->setCellValue('C1', '题目名称'); 
+		$resultPHPExcel->getActiveSheet()->setCellValue('D1', 'a'); 
+		$resultPHPExcel->getActiveSheet()->setCellValue('E1', 'b'); 
+		$resultPHPExcel->getActiveSheet()->setCellValue('F1', 'c'); 
+		$resultPHPExcel->getActiveSheet()->setCellValue('G1', 'd'); 
+		$resultPHPExcel->getActiveSheet()->setCellValue('H1', 'e'); 
+		$resultPHPExcel->getActiveSheet()->setCellValue('I1', 'f'); 
+		$resultPHPExcel->getActiveSheet()->setCellValue('J1', 'g'); 
+		$resultPHPExcel->getActiveSheet()->setCellValue('K1', 'h'); 
+		$resultPHPExcel->getActiveSheet()->setCellValue('L1', '答案'); 
+		$i = 2; 
+		foreach($data as $item){ 
+			$resultPHPExcel->getActiveSheet()->setCellValue('A' . $i, $Dict_db->getName($item['course_id'])); 
+			$resultPHPExcel->getActiveSheet()->setCellValue('B' . $i, $Dict_db->getName($item['type'])); 
+			$resultPHPExcel->getActiveSheet()->setCellValue('C' . $i, $item['title']); 
+			$resultPHPExcel->getActiveSheet()->setCellValue('D' . $i, $item['a']); 
+			$resultPHPExcel->getActiveSheet()->setCellValue('E' . $i, $item['b']); 
+			$resultPHPExcel->getActiveSheet()->setCellValue('F' . $i, $item['c']); 
+			$resultPHPExcel->getActiveSheet()->setCellValue('G' . $i, $item['d']); 
+			$resultPHPExcel->getActiveSheet()->setCellValue('H' . $i, $item['e']); 
+			$resultPHPExcel->getActiveSheet()->setCellValue('I' . $i, $item['f']); 
+			$resultPHPExcel->getActiveSheet()->setCellValue('J' . $i, $item['g']); 
+			$resultPHPExcel->getActiveSheet()->setCellValue('K' . $i, $item['h']); 
+			$resultPHPExcel->getActiveSheet()->setCellValue('L' . $i, chr(64+$item['answer'])); 
+			$i ++; 
+			//var_dump($item);
+		}
+		//设置导出文件名 
+		$outputFileName = 'total.xls'; 
+		$xlsWriter = new \PHPExcel_Writer_Excel5($resultPHPExcel); 
+		header("Content-Type: application/force-download"); 
+		header("Content-Type: application/octet-stream"); 
+		header("Content-Type: application/download"); 
+		header('Content-Disposition:inline;filename="'.$outputFileName.'"'); 
+		header("Content-Transfer-Encoding: binary"); 
+		header("Expires: Mon, 26 Jul 1997 05:00:00 GMT"); 
+		header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT"); 
+		header("Cache-Control: must-revalidate, post-check=0, pre-check=0"); 
+		header("Pragma: no-cache"); 
+		$xlsWriter->save( "php://output" );
+	}
 }
 
 ?>
