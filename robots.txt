@@ -1,5 +1,6 @@
 #
 # robots.txt
-#
+#www
 User-agent: * 
 Disallow: /
+
