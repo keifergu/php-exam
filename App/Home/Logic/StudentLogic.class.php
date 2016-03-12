@@ -138,7 +138,7 @@ class StudentLogic {
 		$GradeModel = D('Summary');
 		$PaperModel = D('Paper');
 		$query = array('student_id' => $studentID);
-		$field 	= array('paper_id','grade');
+		$field 	= array('paper_id','grade' , 'submit_time');
 		$gradeInfo = $GradeModel->where($query)->field($field)->select();
 		if($gradeInfo != null){
 
