@@ -63,3 +63,11 @@ function ansToChar($num,$type){
     }
     return $ans;
 }
+
+
+function isRadioAns($ans){
+    for ($i=0; $i < 8; $i++) { 
+        if($ans == 1<<$i)  return true;
+        else return false;
+    }
+}
