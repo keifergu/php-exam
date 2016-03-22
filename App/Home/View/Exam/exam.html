@@ -184,34 +184,37 @@ paperinfo['total_time'] = unescape(paperinfo['total_time']);
   }
 
   $(document).ready(function () {
-    
     function getRTime(){
-            var StartTime = new Date(paperinfo['start_time']); //开始时间
-            var TotalTime = new Date('1999/01/01 '+paperinfo['total_time']);
-            var NowTime = new Date();
-            var totalMs = TotalTime.getHours()*1000*60*60+TotalTime.getMinutes()*1000*60+TotalTime.getSeconds()*1000;
-            var t = totalMs - NowTime.getTime() + StartTime.getTime();
-            // alert(NowTime.getTime())
-            // alert(StartTime.getTime())
-            // alert(t)
-            /*var d=Math.floor(t/1000/60/60/24);
-            t-=d*(1000*60*60*24);
-            var h=Math.floor(t/1000/60/60);
-            t-=h*60*60*1000;
-            var m=Math.floor(t/1000/60);
-            t-=m*60*1000;
-            var s=Math.floor(t/1000);*/
+      var StartTime = new Date(paperinfo['start_time']); //开始时间
+      var TotalTime = new Date('1999/01/01 '+paperinfo['total_time']);
+      var NowTime = new Date();
+      var totalMs = TotalTime.getHours()*1000*60*60+TotalTime.getMinutes()*1000*60+TotalTime.getSeconds()*1000;
+      var t = totalMs - NowTime.getTime() + StartTime.getTime();
+      if (t <= 0) {
+        window.location.assign("index.php?m=&c=exam&a=finish"+"&paperID="+paperinfo.paper_id);
+      } else {
+        // alert(NowTime.getTime())
+        // alert(StartTime.getTime())
+        // alert(t)
+        /*var d=Math.floor(t/1000/60/60/24);
+        t-=d*(1000*60*60*24);
+        var h=Math.floor(t/1000/60/60);
+        t-=h*60*60*1000;
+        var m=Math.floor(t/1000/60);
+        t-=m*60*1000;
+        var s=Math.floor(t/1000);*/
 
-            //var d=Math.floor(t/1000/60/60/24);
-            var h=Math.floor(t/1000/60/60%24);
-            var m=Math.floor(t/1000/60%60);
-            var s=Math.floor(t/1000%60);
+        //var d=Math.floor(t/1000/60/60/24);
+        var h=Math.floor(t/1000/60/60%24);
+        var m=Math.floor(t/1000/60%60);
+        var s=Math.floor(t/1000%60);
 
-            //document.getElementById("t_d").innerHTML = d + "天";
-            document.getElementById("t_h").innerHTML = h + ":";
-            document.getElementById("t_m").innerHTML = m + ":";
-            document.getElementById("t_s").innerHTML = s ;
-        }
+        //document.getElementById("t_d").innerHTML = d + "天";
+        document.getElementById("t_h").innerHTML = h + ":";
+        document.getElementById("t_m").innerHTML = m + ":";
+        document.getElementById("t_s").innerHTML = s ;
+      }
+    }
     setInterval(getRTime,1000);
     
   })
