@@ -119,7 +119,7 @@ paperinfo['total_time'] = unescape(paperinfo['total_time']);
       });
   });
 
-    function showNumberTag () {
+  function showNumberTag () {
     var totalNum = parseInt(paperinfo.total_num);
     var eachTagNum = 4;
     var pageNum  = parseInt(totalNum/eachTagNum);  //the resalut is float,we need an intenger
@@ -139,7 +139,7 @@ paperinfo['total_time'] = unescape(paperinfo['total_time']);
         };
       });
       $("#page_num_next").click(function () {
-        if (nowPage == pageNum+1 || leftNum == 0) {
+        if (nowPage == pageNum+1 || (nowPage ==pageNum&&leftNum == 0)) {
         }else if(nowPage == pageNum){
           nowPage++;
           showEachPage((nowPage-1)*eachTagNum+1,leftNum);
@@ -248,13 +248,13 @@ paperinfo['total_time'] = unescape(paperinfo['total_time']);
         $("#option input").hide();
         $("#option label").hide();
         $("#title").hide();
-        $("#title").text(data.num+"．"+data.title).fadeIn(500);
+        $("#title").html(data.num+"．"+data.title).fadeIn(500);
         for (var i = 1; i < 9; i++) {
           if (data.option[i-1]) {
             $("#option-label-"+i).fadeIn(i*200);
             $("#option-input-"+i).fadeIn(i*200);
             var option = String.fromCharCode(i+64);
-            $("#option-label-"+i).text(option+"."+data["option"][i-1]);
+            $("#option-label-"+i).html(option+"."+data["option"][i-1]);
           }else{
             $("#option-label-"+i).hide();
             $("#option-input-"+i).hide();

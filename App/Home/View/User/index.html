@@ -13,81 +13,81 @@
     </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div>
-                  <!-- Nav tabs -->
-                  <ul class="nav nav-tabs" role="tablist">
-                            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">试卷信息</a></li>
-                            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">我的信息</a></li>
-                            <li role="presentation"><a href="#grade" aria-controls="grade" role="tab" data-toggle="tab">成绩查询</a></li>
-                            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">设置</a></li>
-                  </ul>
+  <div class="container">
+    <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+      <div>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">试卷信息</a></li>
+          <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">我的信息</a></li>
+          <li role="presentation"><a href="#grade" aria-controls="grade" role="tab" data-toggle="tab">成绩查询</a></li>
+          <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">设置</a></li>
+        </ul>
 
-                  <!-- Tab panes -->
-                  <div class="tab-content" style="padding:0.5em">
-                    <!-- 个人的试卷信息 -->
-                            <div role="tabpanel" class="tab-pane active" id="home">
-                            <span>正在进行的考试</span>
-                                <div class="list-group">
-                                    <foreach name="testData" item="vo">
-                                        <a href="<{$vo.examUrl}>" class="list-group-item"><{$vo.testName}></a>
-                                    </foreach>
-                                </div>
-                    </div>
-
-                    <!-- 用户中心 -->
-                            <div role="tabpanel" class="tab-pane" id="profile">
-                                <ul>
-                                    <li><p>姓名：<{$user.name}></p></li>
-                                    <li>
-                                        <p>课程：</p>
-                                        <ul>
-                                            <foreach name="user['course']" item="vo">
-                                                <li><{$vo}></li>
-                                            </foreach>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                    <!--成绩查询  -->
-                            <div role="tabpanel" class="tab-pane" id="grade">
-                            <table class="table table-striped">
-                                <tr>
-                                    <td>试卷名称</td>
-                                    <td>完成时间</td>
-                                    <td>得分</td>
-                                </tr>
-                                 <foreach name="grade" item="vo">
-                                    <tr>
-                                         <td><{$vo.name}></td>
-                                         <td><{$vo.submit_time}></td>
-                                         <td><{$vo.grade}></td>
-                                    </tr>
-                                 </foreach>
-                            </table>
-                            </div>
-                    <!-- 设置 -->
-                            <div role="tabpanel" class="tab-pane" id="settings">
-                                <a href="index.php/home/index/logout">注销</a>
-                            </div>
-                 </div>
+        <!-- Tab panes -->
+        <div class="tab-content" style="padding:0.5em">
+          <!-- 个人的试卷信息 -->
+          <div role="tabpanel" class="tab-pane active" id="home">
+            <span>正在进行的考试</span>
+            <div class="list-group">
+              <foreach name="testData" item="vo">
+                <a href="<{$vo.examUrl}>" class="list-group-item"><{$vo.testName}></a>
+              </foreach>
             </div>
+          </div>
+
+          <!-- 用户中心 -->
+          <div role="tabpanel" class="tab-pane" id="profile">
+            <ul>
+              <li><p>姓名：<{$user.name}></p></li>
+              <li>
+                <p>课程：</p>
+                <ul>
+                  <foreach name="user['course']" item="vo">
+                    <li><{$vo}></li>
+                  </foreach>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!--成绩查询  -->
+          <div role="tabpanel" class="tab-pane" id="grade">
+          <table class="table table-striped">
+            <tr>
+              <td>试卷名称</td>
+              <td>完成时间</td>
+              <td>得分</td>
+            </tr>
+             <foreach name="grade" item="vo">
+                <tr>
+                  <td><{$vo.name}></td>
+                  <td><{$vo.submit_time}></td>
+                  <td><{$vo.grade}></td>
+                </tr>
+             </foreach>
+          </table>
+          </div>
+          <!-- 设置 -->
+          <div role="tabpanel" class="tab-pane" id="settings">
+            <a href="index.php/home/index/logout">注销</a>
+          </div>
         </div>
+      </div>
     </div>
-    <script type="text/javascript">
-    $('#navTab li:eq(0)').click(function (e) {
-      e.preventDefault();
-      $(this).tab('show');
-    });
-    $('#navTab li:eq(1)').click(function (e) {
-      e.preventDefault();
-      $(this).tab('show');
-    });
-    $('#navTab li:eq(2)').click(function (e) {
-      e.preventDefault();
-      $(this).tab('show');
-    });
-    </script>
+  </div>
+  <script type="text/javascript">
+  $('#navTab li:eq(0)').click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+  });
+  $('#navTab li:eq(1)').click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+  });
+  $('#navTab li:eq(2)').click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+  });
+  </script>
 </body>
 </html>
