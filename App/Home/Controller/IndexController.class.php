@@ -9,7 +9,7 @@ class IndexController extends Controller {
     	if ($v==null) {
     		$this->redirect('Index/login',array(),0,' ');
     	}else{
-    		$this->redirect('Index/user',array(),0,' ');
+    		$this->redirect('User/index',array(),0,' ');
     	}
     }
 
@@ -21,11 +21,13 @@ class IndexController extends Controller {
             $result = $StudentModel->loginUser($student_id,$password);
             if ($result) {
                 session('student_id',$student_id);
-                $this->success('登录成功',U('User/index'));
+                $this->redirect('User/index',array(),0,' ');
             }else{
-                $this->error('登录失败',U('Index/login'));
+                $this->assign('error','true');
+                $this->display();
             }
     	}else{
+            $this->assign('error','none');
     		$this->display();
     	}
     }
