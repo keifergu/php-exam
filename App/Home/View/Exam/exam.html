@@ -17,8 +17,8 @@
     <div>
         <input type="hidden" id="hid_nowNum" value="1">
     </div>
-    
-        
+
+
 <div class="container-fluid">
     <div class="row">
       <nav class="navbar navbar-default navbar-fixed-top">
@@ -52,7 +52,7 @@
                 <nav class="nav navbar-fixed-bottom">
                   <ul class="pager" style="font-size:19px;margin-bottom:2.7em">
                     <li class=""><a href="#" id="btn-last">上一题</a></li>
-                    <li><a href="#" id="btn-submit">交卷</a></li>    
+                    <li><a href="#" id="btn-submit">交卷</a></li>
                     <li><a href="#" id="btn-next">下一题</a></li>
                   </ul>
                 </nav>
@@ -77,7 +77,7 @@
 </div><!-- /.container-fluid -->
 <script type="text/javascript">
 //获取保存试卷信息的cookie
-var paperinfo = $.cookie('paperinfo'); 
+var paperinfo = $.cookie('paperinfo');
 paperinfo = JSON.parse(paperinfo.slice(6)); //由于thinkphp保存cookie的不规范,所以需要将前6个字符裁剪掉才为标准的json字符串
 paperinfo.nowNum = 1;
 
@@ -216,7 +216,7 @@ paperinfo['total_time'] = unescape(paperinfo['total_time']);
       }
     }
     setInterval(getRTime,1000);
-    
+
   })
   //showFrame ,show the input radio frame
   function showFrame () {
@@ -236,7 +236,7 @@ paperinfo['total_time'] = unescape(paperinfo['total_time']);
     };
   }
   function getShowQuestion( num ){
-    $.post("index.php/home/exam/question",
+    $.post("index.php?m=&c=exam&a=question",
     {
       q:num,
       paperID:paperinfo.paper_id
@@ -261,10 +261,10 @@ paperinfo['total_time'] = unescape(paperinfo['total_time']);
           }
         };
         getOldAnswer(paperinfo.paper_id,num);
-      };    
+      };
     });
-    
-    
+
+
   }
   function checkAnswer () {
     var answer = 0;
@@ -302,13 +302,13 @@ paperinfo['total_time'] = unescape(paperinfo['total_time']);
     return answer;
   }
   function getOldAnswer (paperID,num) {
-    $.post("index.php/home/exam/getOldAnswer",
+    $.post("index.php?m=&c=exam&a=getOldAnswer",
         {
           num:num,
           paperID:paperID
         },
         function(data,status) {
-          $("#option input:checked").prop("checked",false);    
+          $("#option input:checked").prop("checked",false);
           data = convertAnswer(data);
           for (var i = 0; i < data.length; i++) {
             $("#option-input-"+data[i]).prop("checked",true);

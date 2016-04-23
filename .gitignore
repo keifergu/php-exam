@@ -2,5 +2,5 @@
 .project
 .log
 Public/Runtime
-Uploads
+Uploads/
 App/Common/Conf/config.php
